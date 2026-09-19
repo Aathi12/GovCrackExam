@@ -1,0 +1,77 @@
+# GovCrackExam Weak-Topic Drill
+
+A free, client-side, browser-based diagnostic and drill tool for the SSC CGL General Intelligence & Reasoning section.
+
+## Features
+- **Diagnostic Quiz**: Takes you through a randomly selected set of 15 questions across multiple subtopics.
+- **Weak-Topic Analysis**: Calculates accuracy and weakness (1 - accuracy) for each topic.
+- **Priority Scoring**: Multiplies weakness by the historical frequency weight of the topic to determine the highest-priority weak topic.
+- **Drill Mode**: Generates a quick 10-question drill focused exclusively on your highest-priority weak topics, with immediate feedback.
+- **Local Storage**: Automatically saves your progress so you don't lose it if you refresh the page. No login required!
+
+## Current Pilot Scope
+The current version is a **v1 pilot** containing exclusively independently verified Previous Year Questions (PYQ) from the SSC CGL Tier 1 exams. The candidate's original chosen options were discarded and answers were verified independently to ensure data quality.
+
+**Included Subtopics:**
+- Coded Language 
+- Letter-cluster Analogy / Series 
+
+*Note: If the bank contains fewer than 20 verified questions per topic, it is because only questions with complete text and verifiable answers were included.*
+
+## Question Bank Format
+The data is stored in `data/questions.json` and follows this schema:
+```json
+{
+  "qid": "unique-id",
+  "question": "Question text",
+  "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+  "correctOption": 2,
+  "sourceChosenOption": 3,
+  "subtopic": "Coded Language",
+  "difficulty": 2,
+  "sourceYear": 2019,
+  "sourcePaper": "3-march-shift-1-2019.pdf",
+  "explanation": "Short explanation of why option 2 is correct."
+}
+```
+
+## Scoring Formula
+- **Accuracy** = Correct Answers / Attempted Questions
+- **Weakness** = 1 - Accuracy
+- **Priority Score** = Weakness × Frequency Weight
+
+Frequency weights are stored in `data/frequency.json`. Currently, they are set to a neutral pilot weight of `1.0`.
+
+## How to Run Locally
+1. Clone or download this repository.
+2. Serve the directory using any local web server. For example, using Python:
+   ```bash
+   python -m http.server 8000
+   ```
+3. Open `http://localhost:8000` in your web browser.
+
+*(A server is required only because modern browsers block fetching local JSON files via `file://` protocol for security reasons).*
+
+## How to Deploy to GitHub Pages
+1. Push this repository to GitHub.
+2. Go to the repository **Settings** > **Pages**.
+3. Under **Build and deployment**, select **Deploy from a branch**.
+4. Select the `main` (or `master`) branch and the `/ (root)` folder.
+5. Click **Save**. Your site will be live shortly.
+
+## How to Add New Questions
+1. Append new JSON objects to `data/questions.json` following the schema.
+2. Ensure you independently verify the `correctOption` (1-4).
+3. If introducing a new subtopic, add its frequency weight to `data/frequency.json`.
+
+## Testing Instructions
+- **Load Application**: Start the local server and verify the UI loads without console errors.
+- **Run Diagnostic**: Click "Start Diagnostic Quiz", answer all 15 questions, and click Submit.
+- **Check Results**: Verify the math on the results screen (Accuracy, Weakness, Priority Score).
+- **Test Drill**: Click "Drill My Weak Topics". Verify it only shows questions from the topics marked "Highest Priority".
+- **Test Storage**: Refresh the page. You should see "Previous Results Found". Click "View Last Result" to restore your scores.
+
+## Known Limitations
+- V1 contains a limited pilot subset of questions.
+- Does not support user accounts across devices (uses localStorage).
+- No API/AI live integration (fully static).
