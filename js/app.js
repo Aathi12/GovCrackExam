@@ -344,7 +344,7 @@ function renderResultsScreen(results) {
     document.getElementById('overall-accuracy').textContent = `${results.overallAccuracy}% Accuracy`;
 
     const container = document.getElementById('topic-results');
-    container.innerHTML = '';
+    container.innerHTML = '<p class="transparency-note"><em>Performance is based on the number of questions attempted in this diagnostic.</em></p>';
 
     // Sort topics by priority score descending
     const sortedTopics = Object.entries(results.topics).sort((a, b) => b[1].priorityScore - a[1].priorityScore);
@@ -356,17 +356,35 @@ function renderResultsScreen(results) {
     }
 
     sortedTopics.forEach(([topic, data], index) => {
-        const isHighest = index === 0 && data.priorityScore > 0;
+        const isHighest = highestPriorityScore > 0 && parseFloat(data.priorityScore) === highestPriorityScore;
+        
+        let perfLabel = 'Not Attempted';
+        let perfClass = 'badge-neutral';
+        if (data.attempted > 0) {
+            if (data.accuracy > 75) {
+                perfLabel = 'Stronger Area';
+                perfClass = 'badge-good';
+            } else if (data.accuracy > 50) {
+                perfLabel = 'Developing';
+                perfClass = 'badge-warn';
+            } else {
+                perfLabel = 'Needs Practice';
+                perfClass = 'badge-bad';
+            }
+        }
         
         const card = document.createElement('div');
         card.className = `topic-card ${isHighest ? 'high-priority' : 'low-priority'}`;
         
+        const highestBadge = isHighest ? `<span class="topic-priority-badge badge-high">Highest Priority</span>` : '';
+        
         card.innerHTML = `
             <div class="topic-header">
                 <span class="topic-title">${topic}</span>
-                <span class="topic-priority-badge ${isHighest ? 'badge-high' : 'badge-low'}">
-                    ${isHighest ? 'Highest Priority' : 'Stronger Area'}
-                </span>
+                <div class="badges-container">
+                    ${highestBadge}
+                    <span class="performance-badge ${perfClass}">${perfLabel}</span>
+                </div>
             </div>
             <div class="topic-stats">
                 <div class="stat-box">
