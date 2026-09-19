@@ -3,6 +3,18 @@
     "frequencyWeight": 1.0
   },
   "Letter-cluster Analogy / Series": {
-    "frequencyWeight": 1.0
+    "frequencyWeight": 0.55
+  },
+  "Syllogism": {
+    "frequencyWeight": 0.49
+  },
+  "Blood Relations": {
+    "frequencyWeight": 0.43
+  },
+  "Dictionary Order": {
+    "frequencyWeight": 0.25
+  },
+  "Mathematical Operations": {
+    "frequencyWeight": 0.16
   }
 }

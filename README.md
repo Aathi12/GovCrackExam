@@ -14,9 +14,13 @@ The current version is a **v1 pilot** containing exclusively independently verif
 
 **Included Subtopics:**
 - Coded Language 
-- Letter-cluster Analogy / Series 
+- Letter-cluster Analogy / Series
+- Syllogism
+- Blood Relations
+- Dictionary Order
+- Mathematical Operations
 
-*Note: If the bank contains fewer than 20 verified questions per topic, it is because only questions with complete text and verifiable answers were included.*
+*Note: The question bank contains 128 independently verified questions. Only questions with complete text and verifiable answers were included.*
 
 ## Question Bank Format
 The data is stored in `data/questions.json` and follows this schema:
@@ -40,7 +44,17 @@ The data is stored in `data/questions.json` and follows this schema:
 - **Weakness** = 1 - Accuracy
 - **Priority Score** = Weakness × Frequency Weight
 
-Frequency weights are stored in `data/frequency.json`. Currently, they are set to a neutral pilot weight of `1.0`.
+Frequency weights are stored in `data/frequency.json` and are derived directly from a corpus of previous exams.
+
+### Frequency Weight Methodology
+Frequency weights are normalized estimates derived from unique, deduplicated, text-verifiable Reasoning questions in the supplied SSC CGL corpus. They are intended as pilot prioritization weights and should not be interpreted as universal SSC CGL exam-frequency statistics.
+
+**Limitations:**
+- 205 source papers were identified from file headers.
+- Image-heavy and non-verbal reasoning material is heavily affected by OCR/extraction limitations and excluded.
+- Classification overlaps exist (e.g., Coded Blood Relations matching multiple categories).
+- Genuine cross-paper repeated questions were deduplicated for this weighting methodology.
+- Therefore, the weights are heuristic corpus-derived estimates rather than exact exam probabilities.
 
 ## How to Run Locally
 1. Clone or download this repository.

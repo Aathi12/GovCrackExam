@@ -51,6 +51,18 @@ async function initApp() {
         if (fRes.ok) frequencyData = await fRes.json();
         if (mRes.ok) metadata = await mRes.json();
 
+        // Populate dynamic topics list
+        const topicsList = document.getElementById('pilot-topics-list');
+        if (topicsList && questionsBank.length > 0) {
+            const uniqueTopics = [...new Set(questionsBank.map(q => q.subtopic))].sort();
+            topicsList.innerHTML = '';
+            uniqueTopics.forEach(t => {
+                const li = document.createElement('li');
+                li.textContent = t;
+                topicsList.appendChild(li);
+            });
+        }
+
         // Check local storage for history
         checkHistory();
 
@@ -145,26 +157,28 @@ function selectDiagnosticQuestions(count) {
         byTopic[q.subtopic].push(q);
     });
 
-    const topics = Object.keys(byTopic);
+    // Shuffle topics so we don't always bias alphabetical ones if topics > count
+    const topics = Object.keys(byTopic).sort(() => 0.5 - Math.random());
     let selected = [];
     
     // Distribute evenly
-    const perTopic = Math.max(1, Math.floor(count / topics.length));
+    const perTopic = Math.floor(count / topics.length);
     
-    topics.forEach(topic => {
-        // shuffle array
-        const shuffled = [...byTopic[topic]].sort(() => 0.5 - Math.random());
-        selected = selected.concat(shuffled.slice(0, perTopic));
-    });
+    if (perTopic > 0) {
+        topics.forEach(topic => {
+            const shuffled = [...byTopic[topic]].sort(() => 0.5 - Math.random());
+            selected = selected.concat(shuffled.slice(0, perTopic));
+        });
+    }
 
-    // Fill remaining if needed
+    // Fill remaining if needed (or if topics > count)
     if (selected.length < count) {
         const remaining = questionsBank.filter(q => !selected.includes(q)).sort(() => 0.5 - Math.random());
         selected = selected.concat(remaining.slice(0, count - selected.length));
     }
 
     // Shuffle final quiz
-    return selected.sort(() => 0.5 - Math.random());
+    return selected.slice(0, count).sort(() => 0.5 - Math.random());
 }
 
 function renderQuestion() {
