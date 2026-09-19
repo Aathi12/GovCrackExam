@@ -64,6 +64,10 @@ async function initApp() {
         
         document.getElementById('start-drill-btn').addEventListener('click', startDrill);
         document.getElementById('home-btn').addEventListener('click', showStartScreen);
+        
+        // New drill navigation buttons
+        document.getElementById('retake-drill-btn').addEventListener('click', startDrill);
+        document.getElementById('back-diagnostic-btn').addEventListener('click', startDiagnostic);
         document.getElementById('home-btn-drill').addEventListener('click', showStartScreen);
 
     } catch (error) {
@@ -434,14 +438,53 @@ function selectDrillQuestions(count, topics) {
 
 function calculateDrillResults() {
     let totalCorrect = 0;
+    const attempted = currentQuiz.length;
     currentQuiz.forEach(q => {
         if (userAnswers[q.qid] === q.correctOption) totalCorrect++;
     });
 
-    const accuracy = Math.round((totalCorrect / currentQuiz.length) * 100) || 0;
+    const drillAccuracy = attempted > 0 ? Math.round((totalCorrect / attempted) * 100) : 0;
     
-    document.getElementById('drill-score').textContent = `${totalCorrect} / ${currentQuiz.length} Correct`;
-    document.getElementById('drill-accuracy').textContent = `${accuracy}% Accuracy`;
+    document.getElementById('drill-topic-name').textContent = drillTopics.join(', ');
+    document.getElementById('drill-score').textContent = `${totalCorrect} / ${attempted} Correct`;
+    document.getElementById('drill-accuracy').textContent = `${drillAccuracy}% Accuracy`;
+    
+    // Diagnostic Comparison
+    const comparisonContainer = document.getElementById('drill-comparison');
+    const history = getSavedHistory();
+    
+    if (!history || !history.diagnosticResults || drillTopics.length === 0) {
+        comparisonContainer.innerHTML = '<div>Diagnostic comparison unavailable.</div>';
+        return;
+    }
+    
+    // Get diagnostic accuracy for the first drill topic (simplification for single topic drills)
+    const primaryTopic = drillTopics[0];
+    const diagnosticData = history.diagnosticResults.topics[primaryTopic];
+    
+    if (!diagnosticData || diagnosticData.attempted === 0) {
+        comparisonContainer.innerHTML = '<div>No diagnostic result available for this topic.</div>';
+        return;
+    }
+    
+    const diagnosticAccuracy = diagnosticData.accuracy;
+    const change = drillAccuracy - diagnosticAccuracy;
+    
+    let changeClass = 'change-neutral';
+    let sign = '';
+    
+    if (change > 0) {
+        changeClass = 'change-positive';
+        sign = '+';
+    } else if (change < 0) {
+        changeClass = 'change-negative';
+    }
+    
+    comparisonContainer.innerHTML = `
+        <div>Diagnostic Accuracy: ${diagnosticAccuracy}%</div>
+        <div>Drill Accuracy: ${drillAccuracy}%</div>
+        <div class="${changeClass}">Change: ${sign}${change} percentage points</div>
+    `;
 }
 
 // Run init

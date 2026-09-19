@@ -325,3 +325,30 @@ footer {
         gap: 10px;
     }
 }
+
+.drill-comparison {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
+.drill-comparison div {
+    margin-bottom: 5px;
+}
+
+.drill-comparison .change-positive {
+    color: #166534;
+    font-weight: bold;
+}
+
+.drill-comparison .change-negative {
+    color: #991b1b;
+    font-weight: bold;
+}
+
+.drill-comparison .change-neutral {
+    color: var(--text-main);
+    font-weight: bold;
+}

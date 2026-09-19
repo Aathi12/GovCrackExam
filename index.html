@@ -84,12 +84,21 @@
         
         <!-- Drill Results Screen -->
         <section id="drill-results-screen" class="screen">
-            <h2>Drill Complete</h2>
+            <h2 id="drill-topic-title" style="margin-bottom: 5px;">Drill Complete</h2>
+            <p id="drill-topic-name" style="text-align: center; color: var(--text-muted); margin-bottom: 20px; font-weight: 600;"></p>
+            
             <div class="overall-result card">
                 <h3 id="drill-score">0 / 0 Correct</h3>
                 <p id="drill-accuracy">0% Accuracy</p>
+                
+                <div id="drill-comparison" class="drill-comparison">
+                    <!-- Injected via JS -->
+                </div>
             </div>
-            <div class="actions" style="margin-top: 30px;">
+            
+            <div class="actions" style="margin-top: 30px; display: flex; flex-direction: column; gap: 10px;">
+                <button id="retake-drill-btn" class="primary-btn">Retake Drill</button>
+                <button id="back-diagnostic-btn" class="secondary-btn">Back to Diagnostic</button>
                 <button id="home-btn-drill" class="secondary-btn">Back to Home</button>
             </div>
         </section>
