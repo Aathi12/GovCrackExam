@@ -56,6 +56,14 @@ Frequency weights are normalized estimates derived from unique, deduplicated, te
 - Genuine cross-paper repeated questions were deduplicated for this weighting methodology.
 - Therefore, the weights are heuristic corpus-derived estimates rather than exact exam probabilities.
 
+## Soft Launch
+The application is currently in a public Soft Launch phase for real-user validation.
+- **Production URL**: [https://aathi12.github.io/GovCrackExam/](https://aathi12.github.io/GovCrackExam/) (Deployed via GitHub Pages)
+- **Feedback**: Users can report technical issues or incorrect questions by opening an issue on the [GitHub repository](https://github.com/Aathi12/GovCrackExam/issues).
+- **Scope**: The pilot contains 128 verified questions across 6 Reasoning topics.
+- **Data Limitations**: The questions are limited to text-verifiable PyQs, and the prioritization frequency weights are corpus-derived estimates rather than statistical guarantees.
+- **Future Validation**: User behavior, search visibility, and feedback will be evaluated during this soft launch before undertaking any major data expansion or introducing new features.
+
 ## How to Run Locally
 1. Clone or download this repository.
 2. Serve the directory using any local web server. For example, using Python:
