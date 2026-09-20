@@ -67,12 +67,39 @@ for(let i=0; i<55; i++) {
 history = JSON.parse(localStorage.getItem('govcrackexam-drill-v1'));
 assert(history.drills.length === 50, "Maximum 50 drill records.");
 
+
+// 20. Topic Practice creates history record
+mode = 'topicPractice';
+drillTopics = ['Blood Relations'];
+currentQuiz = allQuestions.filter(q => q.subtopic === 'Blood Relations').slice(0, 10);
+userAnswers = {};
+calculateTopicPracticeResults();
+history = JSON.parse(localStorage.getItem('govcrackexam-drill-v1'));
+assert(history.topicPractices && history.topicPractices.length === 1, "Topic Practice creates history record.");
+
+// 21. Multiple topic practices are preserved
+calculateTopicPracticeResults();
+history = JSON.parse(localStorage.getItem('govcrackexam-drill-v1'));
+assert(history.topicPractices.length === 2, "Multiple topic practices are preserved.");
+
+// 22. History is ordered newest first
+assert(history.topicPractices[0].timestamp >= history.topicPractices[1].timestamp, "Topic Practice History is ordered newest first.");
+
+// 23. Maximum 50 topic practice records
+for(let i=0; i<55; i++) {
+    mode = 'topicPractice';
+    calculateTopicPracticeResults();
+}
+history = JSON.parse(localStorage.getItem('govcrackexam-drill-v1'));
+assert(history.topicPractices.length === 50, "Maximum 50 topic practice records.");
+
 // 18. Reset requires confirmation
 // 19. Reset deletes only progress data
 let beforeReset = JSON.parse(localStorage.getItem('govcrackexam-drill-v1') || 'null');
 assert(beforeReset && beforeReset.diagnosticResults, "BEFORE RESET: diagnosticResults exists.");
 assert(beforeReset.diagnostics && beforeReset.diagnostics.length > 0, "BEFORE RESET: diagnostics contains history.");
 assert(beforeReset.drills && beforeReset.drills.length > 0, "BEFORE RESET: drills contains history.");
+assert(beforeReset.topicPractices && beforeReset.topicPractices.length > 0, "BEFORE RESET: topicPractices contains history.");
 
 resetProgress();
 
@@ -81,6 +108,7 @@ assert(afterReset !== null, "AFTER RESET: govcrackexam-drill-v1 key still exists
 assert(JSON.stringify(afterReset.diagnosticResults) === JSON.stringify(beforeReset.diagnosticResults), "AFTER RESET: diagnosticResults is unchanged.");
 assert(afterReset.diagnostics && afterReset.diagnostics.length === 0, "AFTER RESET: diagnostics is [].");
 assert(afterReset.drills && afterReset.drills.length === 0, "AFTER RESET: drills is [].");
+assert(afterReset.topicPractices && afterReset.topicPractices.length === 0, "AFTER RESET: topicPractices is [].");
 
 if (testsPassed) {
     console.log("All UI logic tests passed.");

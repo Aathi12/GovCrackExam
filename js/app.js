@@ -17,7 +17,8 @@ const screens = {
     quiz: document.getElementById('quiz-screen'),
     results: document.getElementById('results-screen'),
     drillResults: document.getElementById('drill-results-screen'),
-    progress: document.getElementById('progress-screen')
+    progress: document.getElementById('progress-screen'),
+    topicPracticeResults: document.getElementById('topic-practice-results-screen')
 };
 
 // Start Screen elements
@@ -40,6 +41,63 @@ const feedbackText = document.getElementById('feedback-text');
 const feedbackExplanation = document.getElementById('feedback-explanation');
 
 // Initialize App
+
+function startTopicPractice(topic) {
+    mode = 'topicPractice';
+    drillTopics = [topic];
+    
+    // Filter strictly by topic
+    let topicQuestions = questionsBank.filter(q => q.subtopic === topic);
+    
+    // Randomize and take up to 10
+    topicQuestions = topicQuestions.sort(() => 0.5 - Math.random());
+    currentQuiz = topicQuestions.slice(0, 10);
+    
+    if (currentQuiz.length === 0) {
+        alert("No questions found for this topic.");
+        return;
+    }
+    
+    quizModeIndicator.textContent = `Practice: ${topic}`;
+    currentQuestionIndex = 0;
+    userAnswers = {};
+    drillFeedback.classList.add('hidden');
+    switchScreen('quiz');
+    renderQuestion();
+}
+
+function calculateTopicPracticeResults() {
+    let totalCorrect = 0;
+    const attempted = currentQuiz.length;
+    currentQuiz.forEach(q => {
+        if (userAnswers[q.qid] === q.correctOption) totalCorrect++;
+    });
+
+    const accuracy = attempted > 0 ? Math.round((totalCorrect / attempted) * 100) : 0;
+    const topic = drillTopics[0];
+    
+    document.getElementById('topic-practice-name').textContent = topic;
+    document.getElementById('topic-practice-score').textContent = `${totalCorrect} / ${attempted} Correct`;
+    document.getElementById('topic-practice-accuracy').textContent = `${accuracy}% Accuracy`;
+    
+    // Save history
+    const history = getSavedHistory() || {};
+    if (!history.topicPractices) history.topicPractices = [];
+    
+    history.topicPractices.unshift({
+        timestamp: new Date().toISOString(),
+        topic: topic,
+        score: totalCorrect,
+        attempted: attempted,
+        accuracy: accuracy
+    });
+    
+    if (history.topicPractices.length > 50) {
+        history.topicPractices = history.topicPractices.slice(0, 50);
+    }
+    saveHistory(history);
+}
+
 async function initApp() {
     try {
         // Load JSON data
@@ -88,6 +146,25 @@ async function initApp() {
         document.getElementById('view-progress-btn').addEventListener('click', showProgressScreen);
         document.getElementById('home-btn-progress').addEventListener('click', showStartScreen);
         document.getElementById('reset-progress-btn').addEventListener('click', resetProgress);
+
+        // Topic practice navigation buttons
+        const retakeTopicBtn = document.getElementById('retake-topic-practice-btn');
+        if (retakeTopicBtn) retakeTopicBtn.addEventListener('click', () => startTopicPractice(drillTopics[0]));
+        const backTopicBtn = document.getElementById('back-topic-btn');
+        if (backTopicBtn) backTopicBtn.addEventListener('click', () => {
+            let topicSlug = drillTopics[0].toLowerCase().replace(/ /g, '-').replace(/\//g, '').replace(/--/g, '-');
+            window.location.href = topicSlug + '.html';
+        });
+        const homeTopicBtn = document.getElementById('home-btn-topic-practice');
+        if (homeTopicBtn) homeTopicBtn.addEventListener('click', showStartScreen);
+        
+        // Check URL params
+        const urlParams = new URLSearchParams(window.location.search);
+        const practiceTopic = urlParams.get('practice');
+        if (practiceTopic && questionsBank.length > 0) {
+            startTopicPractice(practiceTopic);
+        }
+
 
     } catch (error) {
         console.error("Error loading application data:", error);
@@ -206,7 +283,7 @@ function renderQuestion() {
         }
         
         // If drill mode and already answered, show feedback and disable
-        if (mode === 'drill' && userAnswers[q.qid]) {
+        if ((mode === 'drill' || mode === 'topicPractice') && userAnswers[q.qid]) {
             btn.disabled = true;
             if (optNum === q.correctOption) {
                 btn.classList.add('correct');
@@ -232,7 +309,7 @@ function renderQuestion() {
     }
 
     // Show drill feedback if applicable
-    if (mode === 'drill' && userAnswers[q.qid]) {
+    if ((mode === 'drill' || mode === 'topicPractice') && userAnswers[q.qid]) {
         showDrillFeedback(q);
     } else {
         drillFeedback.classList.add('hidden');
@@ -240,7 +317,7 @@ function renderQuestion() {
 }
 
 function selectOption(optNum) {
-    if (mode === 'drill') {
+    if (mode === 'drill' || mode === 'topicPractice') {
         // Immediate feedback
         userAnswers[currentQuiz[currentQuestionIndex].qid] = optNum;
         renderQuestion();
@@ -287,9 +364,12 @@ function submitQuiz() {
     if (mode === 'diagnostic') {
         calculateDiagnosticResults();
         switchScreen('results');
-    } else {
+    } else if (mode === 'drill') {
         calculateDrillResults();
         switchScreen('drillResults');
+    } else if (mode === 'topicPractice') {
+        calculateTopicPracticeResults();
+        switchScreen('topicPracticeResults');
     }
 }
 
@@ -574,6 +654,7 @@ function calculateDrillResults() {
 
     // Save drill history
     if (!history.drills) history.drills = [];
+        history.topicPractices = [];
     history.drills.unshift({
         timestamp: new Date().toISOString(),
         topic: primaryTopic,
@@ -599,6 +680,7 @@ function showProgressScreen() {
     const history = getSavedHistory() || {};
     const diags = history.diagnostics || [];
     const drills = history.drills || [];
+    const topicPractices = history.topicPractices || [];
     
     const content = document.getElementById('progress-content');
     
@@ -648,7 +730,7 @@ function showProgressScreen() {
         'Letter-cluster Analogy / Series', 'Mathematical Operations', 'Syllogism'
     ];
     
-    html += '<div class="progress-table-container"><table class="progress-table"><thead><tr><th>Topic</th><th>Latest</th><th>Best</th><th>Status</th><th>Drills</th></tr></thead><tbody>';
+    html += '<div class="progress-table-container"><table class="progress-table"><thead><tr><th>Topic</th><th>Latest</th><th>Best</th><th>Status</th><th>Drills</th><th>Topic Practice</th></tr></thead><tbody>';
     
     topics.forEach(t => {
         const allAccs = [];
@@ -659,6 +741,7 @@ function showProgressScreen() {
         topicDrills.forEach(td => allAccs.push(td.accuracy));
         
         let drillsCompleted = topicDrills.length;
+        let practicesCompleted = topicPractices.filter(d => d.topic === t).length;
         
         if (allAccs.length > 0) {
             const latest = allAccs[allAccs.length - 1];
@@ -682,11 +765,29 @@ function showProgressScreen() {
                 <td>${best}%</td>
                 <td>${statusHTML}</td>
                 <td>${drillsCompleted}</td>
+                <td>${practicesCompleted}</td>
             </tr>`;
         }
     });
     
     html += '</tbody></table></div>';
+    
+    
+    if (topicPractices.length === 0) {
+        html += '<p style="text-align: center; color: var(--text-muted); margin-bottom: 30px;">No topic practices completed yet.</p>';
+    } else {
+        html += '<h3>Recent Topic Practices</h3><div class="progress-table-container"><table class="progress-table"><thead><tr><th>Topic</th><th>Date</th><th>Score</th><th>Accuracy</th></tr></thead><tbody>';
+        topicPractices.slice(0, 5).forEach(d => {
+            const dateStr = new Date(d.timestamp).toLocaleString();
+            html += `<tr>
+                <td>${d.topic}</td>
+                <td>${dateStr}</td>
+                <td>${d.score}/${d.attempted}</td>
+                <td>${d.accuracy}%</td>
+            </tr>`;
+        });
+        html += '</tbody></table></div>';
+    }
     
     if (drills.length === 0) {
         html += '<p style="text-align: center; color: var(--text-muted); margin-bottom: 30px;">No drills completed yet.</p>';
@@ -726,6 +827,7 @@ function resetProgress() {
         const history = getSavedHistory() || {};
         history.diagnostics = [];
         history.drills = [];
+        history.topicPractices = [];
         saveHistory(history);
         checkHistory(); // Updates home screen history section
         showProgressScreen();
