@@ -3551,5 +3551,277 @@
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "f9d93d98-0677-419a-9a69-36bef1fcda73",
     "sourceChosenOption": 3
+  },
+  {
+    "question": "Select the option that is related to the third word in the same way as the second word is related to the first word. Depression : Mood :: Insomnia : ?",
+    "options": [
+      "Dreams",
+      "Night",
+      "Thinking",
+      "Sleep"
+    ],
+    "correctOption": 4,
+    "explanation": "Depression negatively affects a person's mood, just as insomnia negatively affects a person's sleep.",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "1e0ba137-521f-4fc4-af98-4a892e4aebac",
+    "sourceChosenOption": 4
+  },
+  {
+    "question": "Select the option that is related to the third word in the same way as the second word is related to the first word. Chisel : Sculptor :: Anvil : ?",
+    "options": [
+      "Carpenter",
+      "Surgeon",
+      "Butcher",
+      "Blacksmith"
+    ],
+    "correctOption": 4,
+    "explanation": "A chisel is a tool used by a sculptor to carve materials. Similarly, an anvil is a tool used by a blacksmith to shape metal.",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "74af88f9-d4af-4979-92d7-d83762447383",
+    "sourceChosenOption": 4
+  },
+  {
+    "question": "Select the option that is related to the third number in the same way as the second number is related to the first number. 16 : 144 :: 28 : ?",
+    "options": [
+      "263",
+      "420",
+      "364",
+      "544"
+    ],
+    "correctOption": 2,
+    "explanation": "The second number is the first number multiplied by (half of the first number plus 1). For 16: 16 * (8+1) = 144. For 28: 28 * (14+1) = 420.",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "9f55f625-f1f9-4f13-a91a-a0b1d8beebed",
+    "sourceChosenOption": 2
+  },
+  {
+    "question": "Select the option that is related to the third word in the same way as the second word is related to the first word. Awful : Nice :: Nomadic : ?",
+    "options": [
+      "Nocturnal",
+      "Careless",
+      "Homeless",
+      "Settled"
+    ],
+    "correctOption": 4,
+    "explanation": "\"Awful\" and \"Nice\" are opposite in meaning. The opposite of \"Nomadic\" (wandering) is \"Settled\".",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "bfc41368-3ea2-4c4b-a067-f684f476794e",
+    "sourceChosenOption": 4
+  },
+  {
+    "question": "Select the option that is related to the third number in the same way as the second number is related to the first number. 21 : 445 :: 24 : ?",
+    "options": [
+      "505",
+      "495",
+      "523",
+      "580"
+    ],
+    "correctOption": 4,
+    "explanation": "The second number is the square of the first number plus 4. 21^2 + 4 = 445. Thus, 24^2 + 4 = 576 + 4 = 580.",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "ed38af9b-7128-4fa1-8fc6-aa50add47854",
+    "sourceChosenOption": 4
+  },
+  {
+    "question": "Select the option that is related to the third word in the same way as the second word is related to the first word. Cartridge : Printer :: Motherboard : ?",
+    "options": [
+      "Monitor",
+      "Machine",
+      "Keyboard",
+      "Central Processing Unit"
+    ],
+    "correctOption": 4,
+    "explanation": "A cartridge is an essential component inserted into a printer. Similarly, a motherboard is an essential component of a Central Processing Unit (or computer).",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "aa862b41-ed47-4078-8b0a-deb814c4482d",
+    "sourceChosenOption": 4
+  },
+  {
+    "question": "Select the option that is related to the third number in the same way as the second number is related to the first number. 39 : 91 :: 51 : ?",
+    "options": [
+      "93",
+      "119",
+      "125",
+      "178"
+    ],
+    "correctOption": 2,
+    "explanation": "Both numbers are multiples of 13 in the ratio 3:7 (39 = 3*13, 91 = 7*13). Similarly, 51 is 3*17, so the next number is 7*17 = 119.",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "f4ee6ef9-e8b4-4c51-ac49-3bb4d12e998e",
+    "sourceChosenOption": 2
+  },
+  {
+    "question": "Select the option that is related to the third word in the same way as the second word is related to the first word. Skin : Touch :: Nose : ?",
+    "options": [
+      "Smell",
+      "Taste",
+      "Nose ring",
+      "Sweat"
+    ],
+    "correctOption": 1,
+    "explanation": "The skin is the primary sense organ for touch, just as the nose is the primary sense organ for smell.",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "b76e0e65-7a9c-4733-acff-b14401466965",
+    "sourceChosenOption": 1
+  },
+  {
+    "question": "Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number. 5 : 45 :: 3 : 3 :: 6 : ?",
+    "options": [
+      "90",
+      "106",
+      "110",
+      "96"
+    ],
+    "correctOption": 4,
+    "explanation": "The logic is n : n * (n-2)^2. For 5: 5 * 3^2 = 45. For 3: 3 * 1^2 = 3. For 6: 6 * 4^2 = 6 * 16 = 96.",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "e1fe07a3-c4ad-4b7f-b36e-5cbbbb7de664",
+    "sourceChosenOption": 4
+  },
+  {
+    "question": "Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number. 625 : 5 :: 2560 : 8 :: 5000 : ?",
+    "options": [
+      "9",
+      "12",
+      "10",
+      "15"
+    ],
+    "correctOption": 3,
+    "explanation": "The first number is 5 times the cube of the second number. 5 * 5^3 = 625; 5 * 8^3 = 2560. Thus, for 5000, 5000 / 5 = 1000, which is the cube of 10.",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "7920380b-1062-43e4-b1de-8c6a8d89e46c",
+    "sourceChosenOption": 3
+  },
+  {
+    "question": "Select the option that is related to the third word in the same way as the second word is related to the first word. Orthopaedic : Bone :: Cardiologist : ?",
+    "options": [
+      "Kidney",
+      "Heart",
+      "Lungs",
+      "Brain"
+    ],
+    "correctOption": 2,
+    "explanation": "An orthopaedic specialist focuses on the treatment of bones, whereas a cardiologist specialises in the treatment of the heart.",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "743193bf-4d2a-4e26-a7d7-7f2263b3c50d",
+    "sourceChosenOption": 2
+  },
+  {
+    "question": "Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number. 1029 : 7 :: 2187 : 9 :: 24 : ?",
+    "options": [
+      "3",
+      "2",
+      "6",
+      "4"
+    ],
+    "correctOption": 2,
+    "explanation": "The first number is 3 times the cube of the second number. 3 * 7^3 = 1029; 3 * 9^3 = 2187. Therefore, 24 = 3 * 2^3, making the answer 2.",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "c01fa17f-cc55-4e9a-8dd9-0d7f2c059aae",
+    "sourceChosenOption": 2
+  },
+  {
+    "question": "Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number. 98 : 7 :: 162 : 9 :: 242 : ?",
+    "options": [
+      "11",
+      "12",
+      "14",
+      "13"
+    ],
+    "correctOption": 1,
+    "explanation": "The first number is twice the square of the second number. 2 * 7^2 = 98; 2 * 9^2 = 162. For 242, 242 / 2 = 121, which is the square of 11.",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "00607f14-3bfd-4e06-9857-6afa82f9e094",
+    "sourceChosenOption": 1
+  },
+  {
+    "question": "Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number. 7 : 35 :: 21 : 399 :: 4 : ?",
+    "options": [
+      "24",
+      "20",
+      "8",
+      "12"
+    ],
+    "correctOption": 3,
+    "explanation": "The second number is obtained by multiplying the first number by itself minus 2. 7 * 5 = 35; 21 * 19 = 399. Thus, 4 * 2 = 8.",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "9f281fb4-706f-4862-b57f-fc92376fac1f",
+    "sourceChosenOption": 3
+  },
+  {
+    "question": "Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number. 7 : 47 :: 11 : 119 :: 3 : ?",
+    "options": [
+      "14",
+      "15",
+      "11",
+      "7"
+    ],
+    "correctOption": 4,
+    "explanation": "The second number is the square of the first number minus 2. 7^2 - 2 = 47; 11^2 - 2 = 119. For 3, 3^2 - 2 = 9 - 2 = 7.",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "de7fff23-15a7-42a6-bba7-1be4b25e86f6",
+    "sourceChosenOption": 4
+  },
+  {
+    "question": "Select the option that is related to the third word in the same way as the second word is related to the first word. Plant : Pot :: Fish : ?",
+    "options": [
+      "Mud",
+      "Sand",
+      "Stone",
+      "Aquarium"
+    ],
+    "correctOption": 4,
+    "explanation": "A plant is artificially kept and nurtured in a pot, just as a fish is artificially kept and nurtured in an aquarium.",
+    "subtopic": "Analogy (Word/Number)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "e599a553-1406-475f-bb69-1b2d7e54ce48",
+    "sourceChosenOption": 4
   }
 ]
