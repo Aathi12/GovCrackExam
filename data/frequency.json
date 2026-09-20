@@ -19,5 +19,8 @@
   },
   "Number/Figure Series": {
     "frequencyWeight": 0.78
+  },
+  "Classification (Odd One Out)": {
+    "frequencyWeight": 0.96
   }
 }

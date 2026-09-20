@@ -9,7 +9,8 @@ topics = [
     "letter-cluster-analogy-series.html",
     "mathematical-operations.html",
     "syllogism.html",
-    "number-figure-series.html"
+    "number-figure-series.html",
+    "classification-odd-one-out.html"
 ]
 
 all_passed = True
@@ -68,7 +69,7 @@ for t in topics:
         except json.JSONDecodeError:
             assert_cond(False, f"{t} JSON-LD fails to parse")
 
-assert_cond(len(titles) == 7, "All seven pages have unique titles")
+assert_cond(len(titles) == 8, "All eight pages have unique titles")
 
 # 10. Homepage links to all six topic pages
 with open('index.html', 'r', encoding='utf-8') as f:
