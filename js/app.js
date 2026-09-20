@@ -684,7 +684,7 @@ function showProgressScreen() {
     
     const content = document.getElementById('progress-content');
     
-    if (diags.length === 0) {
+    if (diags.length === 0 && drills.length === 0 && topicPractices.length === 0) {
         content.innerHTML = '<div class="empty-state" style="text-align: center; padding: 40px 20px;">' +
             '<h3 style="margin-bottom: 15px;">No progress yet</h3>' +
             '<p style="color: var(--text-muted);">Complete your first diagnostic to start tracking your progress.</p>' +
@@ -711,7 +711,7 @@ function showProgressScreen() {
             </div>
             <div class="progress-stat-card">
                 <h4>Diagnostic Accuracy</h4>
-                <p style="font-size: 0.9rem; margin-top: 5px;">Latest: ${diags[0].accuracy}%</p>
+                <p style="font-size: 0.9rem; margin-top: 5px;">Latest: ${diags.length > 0 ? diags[0].accuracy + '%' : 'N/A'}</p>
                 <p style="font-size: 0.9rem; color: var(--text-muted);">Best: ${bestDiag}%</p>
             </div>
             <div class="progress-stat-card">
@@ -743,16 +743,19 @@ function showProgressScreen() {
         let drillsCompleted = topicDrills.length;
         let practicesCompleted = topicPractices.filter(d => d.topic === t).length;
         
-        if (allAccs.length > 0) {
-            const latest = allAccs[allAccs.length - 1];
-            const best = Math.max(...allAccs);
+        if (allAccs.length > 0 || practicesCompleted > 0) {
+            const latestVal = allAccs.length > 0 ? allAccs[allAccs.length - 1] : null;
+            const bestVal = allAccs.length > 0 ? Math.max(...allAccs) : null;
+            
+            const latestDisplay = latestVal !== null ? latestVal + '%' : 'N/A';
+            const bestDisplay = bestVal !== null ? bestVal + '%' : 'N/A';
             
             let statusHTML = '<span class="change-neutral">No Change</span>';
             if (allAccs.length >= 2) {
                 const prev = allAccs[allAccs.length - 2];
-                if (latest > prev) {
+                if (latestVal > prev) {
                     statusHTML = '<span class="change-positive">Improved</span>';
-                } else if (latest < prev) {
+                } else if (latestVal < prev) {
                     statusHTML = '<span class="change-negative">Needs More Practice</span>';
                 }
             } else {
@@ -761,8 +764,8 @@ function showProgressScreen() {
             
             html += `<tr>
                 <td>${t}</td>
-                <td>${latest}%</td>
-                <td>${best}%</td>
+                <td>${latestDisplay}</td>
+                <td>${bestDisplay}</td>
                 <td>${statusHTML}</td>
                 <td>${drillsCompleted}</td>
                 <td>${practicesCompleted}</td>
