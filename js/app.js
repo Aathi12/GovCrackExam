@@ -44,6 +44,20 @@ const palette = document.getElementById('quiz-palette');
 const confirmModal = document.getElementById('submit-confirm-modal');
 const confirmContinueBtn = document.getElementById('confirm-continue-btn');
 const confirmSubmitBtn = document.getElementById('confirm-submit-btn');
+
+// Feedback Elements
+const reportIssueBtn = document.getElementById('report-issue-btn');
+const reportModal = document.getElementById('report-issue-modal');
+const reportQidDisplay = document.getElementById('report-qid-display');
+const issueType = document.getElementById('issue-type');
+const issueDetails = document.getElementById('issue-details');
+const reportCancelBtn = document.getElementById('report-cancel-btn');
+const reportSubmitBtn = document.getElementById('report-submit-btn');
+const feedbackCount = document.getElementById('feedback-count');
+const noFeedbackMsg = document.getElementById('no-feedback-msg');
+const exportFeedbackBtn = document.getElementById('export-feedback-btn');
+const clearFeedbackBtn = document.getElementById('clear-feedback-btn');
+
 const drillFeedback = document.getElementById('drill-feedback');
 const feedbackText = document.getElementById('feedback-text');
 const feedbackExplanation = document.getElementById('feedback-explanation');
@@ -158,6 +172,21 @@ async function initApp() {
             calculateFullPracticeResults();
             switchScreen('fullPracticeResults');
         });
+        
+        // Feedback Listeners
+        if (reportIssueBtn) reportIssueBtn.addEventListener('click', openReportModal);
+        if (reportCancelBtn) reportCancelBtn.addEventListener('click', () => reportModal.classList.add('hidden'));
+        if (reportSubmitBtn) reportSubmitBtn.addEventListener('click', submitReport);
+        if (exportFeedbackBtn) exportFeedbackBtn.addEventListener('click', exportFeedback);
+        if (clearFeedbackBtn) clearFeedbackBtn.addEventListener('click', clearStoredFeedback);
+        
+        // Close modal on escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && reportModal && !reportModal.classList.contains('hidden')) {
+                reportModal.classList.add('hidden');
+            }
+        });
+
         
         document.getElementById('start-drill-btn').addEventListener('click', startDrill);
         document.getElementById('home-btn').addEventListener('click', showStartScreen);
@@ -1185,4 +1214,89 @@ function renderAllAnswers(containerId) {
     });
     
     container.innerHTML = html;
+}
+
+
+// ==========================================
+// FEEDBACK LOGIC
+// ==========================================
+
+function getSavedFeedback() {
+    const raw = localStorage.getItem('govcrackexam-feedback-v1');
+    if (!raw) return [];
+    try {
+        return JSON.parse(raw);
+    } catch (e) {
+        return [];
+    }
+}
+
+function openReportModal() {
+    const q = currentQuiz[currentQuestionIndex];
+    if (!q) return;
+    const shortId = q.qid.substring(0, 8);
+    reportQidDisplay.textContent = 'Q-' + shortId;
+    issueType.value = 'Wrong answer';
+    issueDetails.value = '';
+    reportModal.classList.remove('hidden');
+}
+
+function submitReport() {
+    const q = currentQuiz[currentQuestionIndex];
+    if (!q) return;
+    
+    reportSubmitBtn.disabled = true;
+    reportSubmitBtn.textContent = 'Saving...';
+    
+    setTimeout(() => {
+        const feedbacks = getSavedFeedback();
+        
+        const newFeedback = {
+            id: 'fb-' + Math.random().toString(36).substr(2, 9),
+            timestamp: new Date().toISOString(),
+            questionId: q.qid,
+            mode: mode,
+            issueType: issueType.value,
+            details: issueDetails.value.trim()
+        };
+        
+        feedbacks.unshift(newFeedback);
+        
+        // Limit to 100
+        if (feedbacks.length > 100) {
+            feedbacks.pop();
+        }
+        
+        localStorage.setItem('govcrackexam-feedback-v1', JSON.stringify(feedbacks));
+        
+        alert("Thanks. Your feedback has been saved on this device.");
+        
+        reportSubmitBtn.disabled = false;
+        reportSubmitBtn.textContent = 'Submit Report';
+        reportModal.classList.add('hidden');
+    }, 300); // slight delay to prevent double-clicks
+}
+
+function exportFeedback() {
+    const feedbacks = getSavedFeedback();
+    if (feedbacks.length === 0) {
+        alert("No feedback to export.");
+        return;
+    }
+    
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(feedbacks, null, 2));
+    const dlAnchorElem = document.createElement('a');
+    dlAnchorElem.setAttribute("href", dataStr);
+    dlAnchorElem.setAttribute("download", "govcrackexam-feedback.json");
+    dlAnchorElem.click();
+}
+
+function clearStoredFeedback() {
+    const feedbacks = getSavedFeedback();
+    if (feedbacks.length === 0) return;
+    
+    if (confirm("Clear all saved question feedback from this browser?")) {
+        localStorage.removeItem('govcrackexam-feedback-v1');
+        showProgressScreen(); // Refresh the progress UI
+    }
 }
