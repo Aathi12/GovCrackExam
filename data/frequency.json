@@ -16,5 +16,8 @@
   },
   "Mathematical Operations": {
     "frequencyWeight": 0.16
+  },
+  "Number/Figure Series": {
+    "frequencyWeight": 0.78
   }
 }
