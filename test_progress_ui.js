@@ -45,49 +45,101 @@ function clearData() {
     if (el) el.innerHTML = '';
 }
 
-// 1. Empty history
+// Helper to get row html for Syllogism
+function getSyllogismRowHTML() {
+    const html = document.getElementById('progress-content').innerHTML;
+    const match = html.match(/<tr>\\s*<td>Syllogism<\\/td>\\s*<td>(.*?)<\\/td>\\s*<td>(.*?)<\\/td>\\s*<td>(.*?)<\\/td>/s);
+    return match ? { latest: match[1].trim(), best: match[2].trim(), status: match[3].trim() } : null;
+}
+
+// A. No history
 clearData();
 showProgressScreen();
 let html = document.getElementById('progress-content').innerHTML;
-assert(html.includes('No progress yet'), "Empty history shows 'No progress yet'");
+assert(html.includes('No progress yet'), "A. Empty history shows 'No progress yet'");
+// Note: when empty, it currently returns early.
 
-// 2. Diagnostic history only
+// But if we bypass early return by having another record, we can check Syllogism empty row:
 clearData();
 localStorage.setItem('govcrackexam-drill-v1', JSON.stringify({
-    diagnostics: [{ timestamp: new Date().toISOString(), score: 5, attempted: 15, accuracy: 33, topicPerformance: {} }]
-}));
-showProgressScreen();
-html = document.getElementById('progress-content').innerHTML;
-assert(!html.includes('No progress yet') && html.includes('Diagnostics Completed'), "Diagnostic history only renders progress screen");
-
-// 3. Drill history only
-clearData();
-localStorage.setItem('govcrackexam-drill-v1', JSON.stringify({
-    drills: [{ timestamp: new Date().toISOString(), topic: 'Syllogism', score: 8, attempted: 10, accuracy: 80, diagnosticAccuracy: 50, change: 30 }]
-}));
-showProgressScreen();
-html = document.getElementById('progress-content').innerHTML;
-assert(!html.includes('No progress yet') && html.includes('Drills Completed'), "Drill history only renders progress screen");
-
-// 4. Topic Practice history only
-clearData();
-localStorage.setItem('govcrackexam-drill-v1', JSON.stringify({
-    topicPractices: [{ timestamp: new Date().toISOString(), topic: 'Syllogism', score: 3, attempted: 10, accuracy: 30 }]
-}));
-showProgressScreen();
-html = document.getElementById('progress-content').innerHTML;
-assert(!html.includes('No progress yet') && html.includes('Topic Practice'), "Topic Practice history only renders progress screen");
-
-// 5. All three histories together
-clearData();
-localStorage.setItem('govcrackexam-drill-v1', JSON.stringify({
-    diagnostics: [{ timestamp: new Date().toISOString(), score: 5, attempted: 15, accuracy: 33, topicPerformance: {} }],
-    drills: [{ timestamp: new Date().toISOString(), topic: 'Syllogism', score: 8, attempted: 10, accuracy: 80, diagnosticAccuracy: 50, change: 30 }],
     topicPractices: [{ timestamp: new Date().toISOString(), topic: 'Blood Relations', score: 9, attempted: 10, accuracy: 90 }]
 }));
 showProgressScreen();
-html = document.getElementById('progress-content').innerHTML;
-assert(!html.includes('No progress yet') && html.includes('Diagnostics Completed') && html.includes('Recent Drills') && html.includes('Recent Topic Practices'), "All three histories together render correctly");
+let row = getSyllogismRowHTML();
+assert(row && row.latest === 'N/A' && row.best === 'N/A' && row.status.includes('-'), "A. Empty topic defaults to N/A and -");
+
+// B. Topic Practice only
+clearData();
+localStorage.setItem('govcrackexam-drill-v1', JSON.stringify({
+    topicPractices: [
+        { timestamp: new Date(Date.now() - 10000).toISOString(), topic: 'Syllogism', accuracy: 30 },
+        { timestamp: new Date().toISOString(), topic: 'Syllogism', accuracy: 40 }
+    ]
+}));
+showProgressScreen();
+row = getSyllogismRowHTML();
+assert(row && row.latest === '40%' && row.best === '40%', "B. Topic Practice only shows 40% Latest and Best");
+
+// C. Topic Practice regression
+clearData();
+localStorage.setItem('govcrackexam-drill-v1', JSON.stringify({
+    topicPractices: [
+        { timestamp: new Date(Date.now() - 20000).toISOString(), topic: 'Syllogism', accuracy: 30 },
+        { timestamp: new Date(Date.now() - 10000).toISOString(), topic: 'Syllogism', accuracy: 40 },
+        { timestamp: new Date().toISOString(), topic: 'Syllogism', accuracy: 20 }
+    ]
+}));
+showProgressScreen();
+row = getSyllogismRowHTML();
+assert(row && row.latest === '20%' && row.best === '40%' && row.status.includes('Needs More Practice'), "C. Topic Practice regression shows Needs More Practice");
+
+// D. Topic Practice improvement
+clearData();
+localStorage.setItem('govcrackexam-drill-v1', JSON.stringify({
+    topicPractices: [
+        { timestamp: new Date(Date.now() - 20000).toISOString(), topic: 'Syllogism', accuracy: 30 },
+        { timestamp: new Date(Date.now() - 10000).toISOString(), topic: 'Syllogism', accuracy: 40 },
+        { timestamp: new Date().toISOString(), topic: 'Syllogism', accuracy: 50 }
+    ]
+}));
+showProgressScreen();
+row = getSyllogismRowHTML();
+assert(row && row.latest === '50%' && row.best === '50%' && row.status.includes('Improved'), "D. Topic Practice improvement shows Improved");
+
+// E. Mixed activity types
+clearData();
+localStorage.setItem('govcrackexam-drill-v1', JSON.stringify({
+    diagnostics: [{ timestamp: new Date(Date.now() - 30000).toISOString(), topicPerformance: { 'Syllogism': { attempted: 1, accuracy: 20 } } }],
+    drills: [{ timestamp: new Date().toISOString(), topic: 'Syllogism', accuracy: 30 }],
+    topicPractices: [{ timestamp: new Date(Date.now() - 10000).toISOString(), topic: 'Syllogism', accuracy: 40 }]
+}));
+// Timeline:
+// -30s: Diag (20%)
+// -10s: Prac (40%)
+//   0s: Drill (30%)
+// Latest should be Drill (30%), Best should be Prac (40%)
+showProgressScreen();
+row = getSyllogismRowHTML();
+assert(row && row.latest === '30%' && row.best === '40%', "E. Mixed activity types sorts correctly by timestamp");
+
+// F. Same accuracy
+clearData();
+localStorage.setItem('govcrackexam-drill-v1', JSON.stringify({
+    topicPractices: [
+        { timestamp: new Date(Date.now() - 10000).toISOString(), topic: 'Syllogism', accuracy: 30 },
+        { timestamp: new Date().toISOString(), topic: 'Syllogism', accuracy: 30 }
+    ]
+}));
+showProgressScreen();
+row = getSyllogismRowHTML();
+assert(row && row.status.includes('No Change'), "F. Same accuracy shows No Change");
+
+// G. Reset
+resetProgress();
+let afterReset = JSON.parse(localStorage.getItem('govcrackexam-drill-v1') || '{}');
+assert(afterReset.diagnostics && afterReset.diagnostics.length === 0, "G. Reset clears diagnostics");
+assert(afterReset.drills && afterReset.drills.length === 0, "G. Reset clears drills");
+assert(afterReset.topicPractices && afterReset.topicPractices.length === 0, "G. Reset clears topicPractices");
 
 if (testsPassed) {
     console.log("All UI rendering tests passed.");

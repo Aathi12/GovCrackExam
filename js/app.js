@@ -733,44 +733,63 @@ function showProgressScreen() {
     html += '<div class="progress-table-container"><table class="progress-table"><thead><tr><th>Topic</th><th>Latest</th><th>Best</th><th>Status</th><th>Drills</th><th>Topic Practice</th></tr></thead><tbody>';
     
     topics.forEach(t => {
-        const allAccs = [];
-        const topicDiags = diags.map(d => d.topicPerformance[t]).filter(Boolean).reverse();
-        topicDiags.forEach(td => { if(td.attempted > 0) allAccs.push(td.accuracy); });
+        const records = [];
         
-        const topicDrills = drills.filter(d => d.topic === t).reverse();
-        topicDrills.forEach(td => allAccs.push(td.accuracy));
+        diags.forEach(d => {
+            const td = d.topicPerformance[t];
+            if (td && td.attempted > 0) {
+                records.push({ timestamp: new Date(d.timestamp).getTime(), accuracy: td.accuracy });
+            }
+        });
+        
+        const topicDrills = drills.filter(d => d.topic === t);
+        topicDrills.forEach(d => {
+            records.push({ timestamp: new Date(d.timestamp).getTime(), accuracy: d.accuracy });
+        });
+        
+        const topicPracs = topicPractices.filter(d => d.topic === t);
+        topicPracs.forEach(d => {
+            records.push({ timestamp: new Date(d.timestamp).getTime(), accuracy: d.accuracy });
+        });
         
         let drillsCompleted = topicDrills.length;
-        let practicesCompleted = topicPractices.filter(d => d.topic === t).length;
+        let practicesCompleted = topicPracs.length;
         
-        if (allAccs.length > 0 || practicesCompleted > 0) {
-            const latestVal = allAccs.length > 0 ? allAccs[allAccs.length - 1] : null;
-            const bestVal = allAccs.length > 0 ? Math.max(...allAccs) : null;
+        let latestDisplay = 'N/A';
+        let bestDisplay = 'N/A';
+        let statusHTML = '<span class="change-neutral">-</span>';
+        
+        if (records.length > 0) {
+            records.sort((a, b) => a.timestamp - b.timestamp);
             
-            const latestDisplay = latestVal !== null ? latestVal + '%' : 'N/A';
-            const bestDisplay = bestVal !== null ? bestVal + '%' : 'N/A';
+            const allAccs = records.map(r => r.accuracy);
             
-            let statusHTML = '<span class="change-neutral">No Change</span>';
+            const latestVal = allAccs[allAccs.length - 1];
+            const bestVal = Math.max(...allAccs);
+            
+            latestDisplay = latestVal + '%';
+            bestDisplay = bestVal + '%';
+            
             if (allAccs.length >= 2) {
                 const prev = allAccs[allAccs.length - 2];
                 if (latestVal > prev) {
                     statusHTML = '<span class="change-positive">Improved</span>';
                 } else if (latestVal < prev) {
                     statusHTML = '<span class="change-negative">Needs More Practice</span>';
+                } else {
+                    statusHTML = '<span class="change-neutral">No Change</span>';
                 }
-            } else {
-                statusHTML = '<span class="change-neutral">-</span>';
             }
-            
-            html += `<tr>
-                <td>${t}</td>
-                <td>${latestDisplay}</td>
-                <td>${bestDisplay}</td>
-                <td>${statusHTML}</td>
-                <td>${drillsCompleted}</td>
-                <td>${practicesCompleted}</td>
-            </tr>`;
         }
+        
+        html += `<tr>
+            <td>${t}</td>
+            <td>${latestDisplay}</td>
+            <td>${bestDisplay}</td>
+            <td>${statusHTML}</td>
+            <td>${drillsCompleted}</td>
+            <td>${practicesCompleted}</td>
+        </tr>`;
     });
     
     html += '</tbody></table></div>';
