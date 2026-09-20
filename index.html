@@ -36,6 +36,7 @@
                 <p><em>Note: The 128 questions in this 6-topic pilot bank have been independently verified from the supplied corpus. Frequency weights used for prioritization are corpus-derived estimates, not universal SSC CGL exam statistics.</em></p>
             </div>
             <button id="start-diagnostic-btn" class="primary-btn">Start Diagnostic Quiz</button>
+            <button id="view-progress-btn" class="secondary-btn" style="margin-top: 15px; display: block; width: 100%;">View Progress</button>
             
             <div id="history-section" style="display: none; margin-top: 30px;">
                 <h3>Previous Results Found</h3>
@@ -111,13 +112,27 @@
             <div class="actions" style="margin-top: 30px; display: flex; flex-direction: column; gap: 10px;">
                 <button id="retake-drill-btn" class="primary-btn">Retake Drill</button>
                 <button id="back-diagnostic-btn" class="secondary-btn">Back to Diagnostic</button>
-                <button id="home-btn-drill" class="secondary-btn">Back to Home</button>
+                <button id="home-btn-drill" class="secondary-btn" style="background-color: transparent; border: none; text-decoration: underline;">Back to Home</button>
             </div>
         </section>
 
+        <!-- Progress Screen -->
+        <section id="progress-screen" class="screen">
+            <h2>Your Progress</h2>
+            <div id="progress-content">
+                <!-- Injected via JS -->
+            </div>
+            <div class="actions" style="margin-top: 30px; display: flex; flex-direction: column; gap: 10px;">
+                <button id="reset-progress-btn" class="danger-btn">Reset Progress</button>
+                <button id="home-btn-progress" class="secondary-btn">Back to Home</button>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.8rem; color: var(--text-muted); text-align: center;">
+                Your progress is stored only in this browser using local storage. No account or server is required.
+            </p>
+        </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
             <p>GovCrackExam - Free Client-Side Tool. No Login Required.</p>
             <p style="margin-top: 10px; font-size: 0.9rem;"><a href="https://github.com/Aathi12/GovCrackExam/issues" target="_blank" rel="noopener noreferrer" style="color: #cbd5e1; text-decoration: underline;">Found a question issue? Send feedback</a></p>

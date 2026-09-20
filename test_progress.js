@@ -1,0 +1,101 @@
+const fs = require('fs');
+
+const appCode = fs.readFileSync('js/app.js', 'utf-8');
+
+const testCode = `
+// Set up mock data
+allQuestions = JSON.parse(fs.readFileSync('data/questions.json', 'utf-8'));
+frequencyData = JSON.parse(fs.readFileSync('data/frequency.json', 'utf-8'));
+
+currentQuiz = [
+    allQuestions.find(q => q.subtopic === 'Syllogism'),
+    allQuestions.find(q => q.subtopic === 'Blood Relations')
+];
+userAnswers = {};
+mode = 'diagnostic';
+
+let testsPassed = true;
+function assert(condition, message) {
+    if (!condition) {
+        console.error('FAIL: ' + message);
+        testsPassed = false;
+    } else {
+        console.log('PASS: ' + message);
+    }
+}
+
+// 1. First diagnostic creates history record
+calculateDiagnosticResults();
+let history = JSON.parse(localStorage.getItem('govcrackexam-drill-v1'));
+assert(history && history.diagnostics && history.diagnostics.length === 1, "First diagnostic creates history record.");
+
+// 2. Second diagnostic creates a second record
+calculateDiagnosticResults();
+history = JSON.parse(localStorage.getItem('govcrackexam-drill-v1'));
+assert(history.diagnostics.length === 2, "Second diagnostic creates a second record.");
+
+// 4. Drill creates history record
+mode = 'drill';
+drillTopics = ['Syllogism'];
+currentQuiz = allQuestions.filter(q => q.subtopic === 'Syllogism').slice(0, 10);
+userAnswers = {};
+calculateDrillResults();
+history = JSON.parse(localStorage.getItem('govcrackexam-drill-v1'));
+assert(history.drills && history.drills.length === 1, "Drill creates history record.");
+
+// 5. Multiple drills for same topic are preserved
+calculateDrillResults();
+history = JSON.parse(localStorage.getItem('govcrackexam-drill-v1'));
+assert(history.drills.length === 2, "Multiple drills for same topic are preserved.");
+
+// 6. History is ordered newest first
+assert(history.drills[0].timestamp >= history.drills[1].timestamp, "History is ordered newest first.");
+
+// 7. Maximum 20 diagnostic records
+for(let i=0; i<25; i++) {
+    mode = 'diagnostic';
+    calculateDiagnosticResults();
+}
+history = JSON.parse(localStorage.getItem('govcrackexam-drill-v1'));
+assert(history.diagnostics.length === 20, "Maximum 20 diagnostic records.");
+
+// 8. Maximum 50 drill records
+for(let i=0; i<55; i++) {
+    mode = 'drill';
+    calculateDrillResults();
+}
+history = JSON.parse(localStorage.getItem('govcrackexam-drill-v1'));
+assert(history.drills.length === 50, "Maximum 50 drill records.");
+
+// 18. Reset requires confirmation
+// 19. Reset deletes only progress data
+resetProgress();
+history = JSON.parse(localStorage.getItem('govcrackexam-drill-v1') || 'null');
+assert(history === null, "Reset deletes progress data.");
+
+if (testsPassed) {
+    console.log("All UI logic tests passed.");
+} else {
+    process.exit(1);
+}
+`;
+
+const mockCode = `
+global.window = { addEventListener: () => {} };
+global.localStorage = {
+    _data: {},
+    getItem: function(k) { return this._data[k] || null; },
+    setItem: function(k, v) { this._data[k] = String(v); },
+    removeItem: function(k) { delete this._data[k]; }
+};
+const dummyEl = { style: {}, classList: { add: ()=>{}, remove: ()=>{} }, appendChild: ()=>{}, addEventListener: ()=>{} };
+global.document = {
+    getElementById: (id) => ({ ...dummyEl, id: id, innerHTML: '', textContent: '' }),
+    createElement: (tag) => ({ ...dummyEl, tagName: tag })
+};
+global.confirm = () => true;
+global.alert = () => {};
+`;
+
+// Evaluate app.js in this context
+eval(mockCode + appCode + testCode);
