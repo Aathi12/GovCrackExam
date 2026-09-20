@@ -14,7 +14,7 @@ const dummyEl = {
     classList: { add: ()=>{}, remove: ()=>{}, contains: ()=>false }, 
     appendChild: ()=>{}, 
     addEventListener: ()=>{},
-    querySelectorAll: function() {
+    querySelector: function(){return {addEventListener:()=>{}};}, querySelectorAll: function() {
         return [{classList:{add:()=>{}, remove:()=>{}}}, {classList:{add:()=>{}, remove:()=>{}}}, {classList:{add:()=>{}, remove:()=>{}}}, {classList:{add:()=>{}, remove:()=>{}}}];
     },
     value: '',
