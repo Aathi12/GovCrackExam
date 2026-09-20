@@ -13,7 +13,7 @@ function assert(condition, message) {
 }
 
 // Exactly 179 questions
-assert(questions.length === 196, "Exactly 196 questions exist");
+assert(questions.length === 212, "Exactly 212 questions exist");
 
 // All IDs unique
 const ids = questions.map(q => q.qid);
@@ -38,10 +38,10 @@ const validExp = questions.every(q => typeof q.explanation === 'string' && q.exp
 assert(validExp, "Explanations exist and are non-empty strings");
 
 // Expected topics
-const expectedTopics = ["Blood Relations", "Coded Language", "Dictionary Order", "Letter-cluster Analogy / Series", "Mathematical Operations", "Syllogism", "Number/Figure Series"];
+const expectedTopics = ["Blood Relations", "Coded Language", "Dictionary Order", "Letter-cluster Analogy / Series", "Mathematical Operations", "Syllogism", "Number/Figure Series", "Classification (Odd One Out)"];
 const actualTopics = new Set(questions.map(q => q.subtopic));
-const topicsValid = [...actualTopics].every(t => expectedTopics.includes(t)) && actualTopics.size === 7;
-assert(topicsValid, "All seven expected topics are strictly represented");
+const topicsValid = [...actualTopics].every(t => expectedTopics.includes(t)) && actualTopics.size === 8;
+assert(topicsValid, "All eight expected topics are strictly represented");
 
 // No accidental empty question records
 const noEmptyText = questions.every(q => typeof q.question === 'string' && q.question.trim() !== '');

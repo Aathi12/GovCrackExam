@@ -3279,5 +3279,277 @@
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "c203562d-bf9e-4de0-beb7-1a0c4d2f16ed"
+  },
+  {
+    "question": "Three of the following four triads are alike in a certain way as they are formed by performing same mathematical operations among themselves and thus form a group. Which triad does NOT belong to that group?",
+    "options": [
+      "36 : 13 : 7",
+      "16 : 9 : 5",
+      "72 : 16 : 8",
+      "1 : 3 : 2"
+    ],
+    "correctOption": 3,
+    "explanation": "In all options except the third, the first number is the square of the difference between the second and third numbers: (13-7)^2=36, (9-5)^2=16, (3-2)^2=1. However, (16-8)^2=64, which is not 72.",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "aec69d19-e8fe-4712-99e7-3348e91ec0e9",
+    "sourceChosenOption": 3
+  },
+  {
+    "question": "Three of the following four letter-clusters are alike in a certain way and one is different. Pick the odd one out.",
+    "options": [
+      "KPH",
+      "GTD",
+      "DWA",
+      "EVC"
+    ],
+    "correctOption": 4,
+    "explanation": "In all options except the fourth, the first and second letters are opposite pairs, and the third letter is 3 positions before the first letter alphabetically. In option 4, the third letter (C) is 2 positions before the first letter (E).",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "3d8cb080-2c76-475b-a529-f84932704ac9",
+    "sourceChosenOption": 4
+  },
+  {
+    "question": "Three of the following four letter-clusters are alike in a certain way and one is different. Pick the odd one out.",
+    "options": [
+      "ONL",
+      "RQO",
+      "HGE",
+      "DCB"
+    ],
+    "correctOption": 4,
+    "explanation": "In all options except the fourth, the letters decrease alphabetically by 1, then by 2. Option 4 (DCB) decreases by 1, then by 1.",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "af25551c-6fad-4fc7-9d41-d87e65550365",
+    "sourceChosenOption": 4
+  },
+  {
+    "question": "The value of which of the following is different from the other options?",
+    "options": [
+      "sin 90\u00b0",
+      "sec 60\u00b0",
+      "cos 0\u00b0",
+      "tan 45\u00b0"
+    ],
+    "correctOption": 2,
+    "explanation": "The value of sin 90\u00b0, cos 0\u00b0, and tan 45\u00b0 is 1. The value of sec 60\u00b0 is 2.",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "d9f64eca-c948-4805-84dd-aa6bcad2d789",
+    "sourceChosenOption": 2
+  },
+  {
+    "question": "Three of the following four letter-clusters are alike in a certain way and one is different. Pick the odd one out.",
+    "options": [
+      "EHV",
+      "BEY",
+      "JMP",
+      "GJT"
+    ],
+    "correctOption": 3,
+    "explanation": "In all options except the third, the first and second letters have a difference of +3, and the first and third letters form an opposite pair (e.g. E-V, B-Y, G-T). Option 3 (JMP) does not follow the opposite pair rule for the first and third letters (J's opposite is Q, not P).",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "7a5cb939-3d7f-48cd-a2ec-e718ba0b0c5c",
+    "sourceChosenOption": 3
+  },
+  {
+    "question": "Three of the following four letter-clusters are alike in a certain way and one is different. Pick the odd one out.",
+    "options": [
+      "TWZC",
+      "NQTW",
+      "HIJK",
+      "DGJM"
+    ],
+    "correctOption": 3,
+    "explanation": "In all options except the third, the letters increase by 3 alphabetical positions sequentially. Option 3 increases by 1 position sequentially.",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "1fab3855-7d90-4af3-b9eb-1896285c2693",
+    "sourceChosenOption": 3
+  },
+  {
+    "question": "Three of the following four letter-clusters are alike in a certain way and one is different. Pick the odd one out.",
+    "options": [
+      "FJU",
+      "KNP",
+      "CGX",
+      "IMR"
+    ],
+    "correctOption": 2,
+    "explanation": "In all options except the second, the first and second letters have a difference of +4, and the first and third letters are opposite pairs. Option 2 has a difference of +3 between the first and second letters.",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "3f478fcd-8357-4509-9d38-e8b226f9e7a5",
+    "sourceChosenOption": 2
+  },
+  {
+    "question": "Three of the following four letter-clusters are alike in a certain way and one is different. Pick the odd one out.",
+    "options": [
+      "ADZV",
+      "MPNK",
+      "FIUR",
+      "TWGD"
+    ],
+    "correctOption": 1,
+    "explanation": "In all options except the first, the 1st and 3rd letters form an opposite pair, and the 2nd and 4th letters form an opposite pair. In Option 1, D and V are not opposite pairs.",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "021a9c97-0f10-4576-aa7d-c634af4b7073",
+    "sourceChosenOption": 1
+  },
+  {
+    "question": "Three of the following four letter-clusters are alike in a certain way and one is different. Pick the odd one out.",
+    "options": [
+      "EBV",
+      "GET",
+      "BYY",
+      "JGQ"
+    ],
+    "correctOption": 2,
+    "explanation": "In all options except the second, the first and third letters form an opposite pair, and the first letter is 3 alphabetical positions after the second letter. Option 2 (GET) has a difference of 2 positions between the first and second letters.",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "fdd5601b-47a5-4557-a8ee-0a1494f90dc4",
+    "sourceChosenOption": 2
+  },
+  {
+    "question": "Three of the following four letter-clusters are alike in a certain way and one is different. Pick the odd one out.",
+    "options": [
+      "HGF",
+      "RQP",
+      "UVW",
+      "LKJ"
+    ],
+    "correctOption": 3,
+    "explanation": "In all options except the third, the letters are in consecutive decreasing alphabetical order. Option 3 is in consecutive increasing order.",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "b0deeeb7-b930-4ce4-9bb8-f3103405d126",
+    "sourceChosenOption": 3
+  },
+  {
+    "question": "Three of the following four letter-clusters are alike in a certain way and one is different. Pick the odd one out.",
+    "options": [
+      "FDB",
+      "ZXV",
+      "JIG",
+      "LJH"
+    ],
+    "correctOption": 3,
+    "explanation": "In all options except the third, the letters decrease by 2 positions each time. Option 3 decreases by 1, then by 2.",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "be787f11-f8a8-4a00-9453-0e5d3b432733",
+    "sourceChosenOption": 3
+  },
+  {
+    "question": "Four letter-clusters have been given, out of which three are alike in some manner and one is different. Select the one that is different.",
+    "options": [
+      "AFK",
+      "LQV",
+      "PTX",
+      "DIN"
+    ],
+    "correctOption": 3,
+    "explanation": "In all options except the third, the letters increase by 5 alphabetical positions each time. Option 3 increases by 4 positions each time.",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "3bc73004-e6b4-4677-8321-7cb3c56ed894",
+    "sourceChosenOption": 3
+  },
+  {
+    "question": "Three of the following four options are alike in a certain way and thus form a group. Which is the option that does NOT belong to that group?",
+    "options": [
+      "2 - 2 - 4",
+      "1 - 3 - 3",
+      "2 - 4 - 8",
+      "3 - 2 - 5"
+    ],
+    "correctOption": 4,
+    "explanation": "In all options except the fourth, the third number is the product of the first two numbers. In option 4, the third number is the sum of the first two numbers.",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "1806e023-2ce7-420e-bc8c-af26dac2b4cc",
+    "sourceChosenOption": 4
+  },
+  {
+    "question": "Three of the following four are alike in a certain way and thus form a group. Which is the one that does NOT belong to that group?",
+    "options": [
+      "DHK",
+      "BFJ",
+      "EIM",
+      "IMQ"
+    ],
+    "correctOption": 1,
+    "explanation": "In all options except the first, the letters increase by 4 alphabetical positions sequentially. Option 1 increases by 4, then by 3.",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "1f8b9f49-99ee-4746-a161-c7b011afee65",
+    "sourceChosenOption": 1
+  },
+  {
+    "question": "Three of the following four are alike in a certain way and thus form a group. Which is the one that does NOT belong to that group?",
+    "options": [
+      "FKN",
+      "DIM",
+      "EJM",
+      "CHK"
+    ],
+    "correctOption": 2,
+    "explanation": "In all options except the second, the letters increase by 5 positions, then by 3 positions. Option 2 increases by 5, then by 4.",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "41c37683-27c6-46e0-afa5-bbfd6005b6cf",
+    "sourceChosenOption": 2
+  },
+  {
+    "question": "Four letter-clusters have been given out of which three are alike in some manner and one is different. Select the one that is different.",
+    "options": [
+      "GDI",
+      "XUZ",
+      "LKP",
+      "SPU"
+    ],
+    "correctOption": 3,
+    "explanation": "In all options except the third, the letters follow a -3, +5 positional pattern. Option 3 follows a -1, +5 pattern.",
+    "subtopic": "Classification (Odd One Out)",
+    "difficulty": "medium",
+    "sourceYear": 2024,
+    "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "f9d93d98-0677-419a-9a69-36bef1fcda73",
+    "sourceChosenOption": 3
   }
 ]

@@ -53,7 +53,7 @@ assert(currentQuiz.length === 20, "1. Exactly 20 questions selected");
 // 2 & 3 & 4. Validity of selected questions
 const ids = new Set();
 let validTopics = true;
-const allSubtopics = new Set(["Blood Relations", "Coded Language", "Dictionary Order", "Letter-cluster Analogy / Series", "Mathematical Operations", "Syllogism", "Number/Figure Series"]);
+const allSubtopics = new Set(["Blood Relations", "Coded Language", "Dictionary Order", "Letter-cluster Analogy / Series", "Mathematical Operations", "Syllogism", "Number/Figure Series", "Classification (Odd One Out)"]);
 
 currentQuiz.forEach(q => {
     ids.add(q.qid);
@@ -62,7 +62,7 @@ currentQuiz.forEach(q => {
 assert(ids.size === 20, "3. No duplicate question IDs occur within a test");
 let allExist = currentQuiz.every(q => allQuestions.find(aq => aq.qid === q.qid));
 assert(allExist, "2. All selected IDs exist in questions.json");
-assert(validTopics, "4. Only seven valid topics occur");
+assert(validTopics, "4. Only eight valid topics occur");
 assert(JSON.stringify(allQuestions) === originalQuestionsSnapshot, "5. Existing questions are not modified");
 
 // Setup mock userAnswers for scoring
