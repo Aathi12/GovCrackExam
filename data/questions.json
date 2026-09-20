@@ -2174,5 +2174,872 @@
     "correctOption": 4,
     "difficulty": 2,
     "explanation": "Interchanging \u00f7 and * gives 81 \u00f7 9 + 15 * 3 - 4 = 9 + 45 - 4 = 50."
+  },
+  {
+    "qid": "5c90b8f0-1c5f-4a0e-9b55-b4c4c2357778",
+    "question": "Four letter-clusters have been given, out of which three are alike in some manner and one is different. Select the letter-cluster that is different.",
+    "options": [
+      "FBXT",
+      "TPLH",
+      "CYUQ",
+      "NJFA"
+    ],
+    "correctOption": 4,
+    "sourceChosenOption": 4,
+    "subtopic": "Letter-cluster Analogy / Series",
+    "difficulty": 2,
+    "sourceYear": 2021,
+    "sourcePaper": "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-1-English.pdf",
+    "explanation": "In FBXT, TPLH, and CYUQ, each consecutive letter decreases by 4 positions in the alphabet (e.g., F-4=B, B-4=X, X-4=T). In NJFA, the last difference is F to A (-5), which breaks the pattern."
+  },
+  {
+    "qid": "7f13c6a4-2e98-4d51-8d2a-f8231db6e4a2",
+    "question": "Select the letter-cluster from among the given options that can replace the question mark (?) in the following series.\nPNNA, RPPE, TRRI, VTTO, ?",
+    "options": [
+      "YVVU",
+      "XWWU",
+      "YUUV",
+      "XVVU"
+    ],
+    "correctOption": 4,
+    "sourceChosenOption": 4,
+    "subtopic": "Letter-cluster Analogy / Series",
+    "difficulty": 2,
+    "sourceYear": 2021,
+    "sourcePaper": "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-1-English.pdf",
+    "explanation": "The first three letters shift by +2 (P->R->T->V->X, N->P->R->T->V, N->P->R->T->V). The last letter follows the sequence of vowels: A, E, I, O, U. So the next cluster is XVVU."
+  },
+  {
+    "qid": "8d3e9c2b-4f51-4a9c-b168-e5f8a0b5c1c8",
+    "question": "Select the letter-cluster from among the given options that can replace the question mark (?) in the following series.\nCMQR, BONV, AQKZ, ZSHD, ?",
+    "options": [
+      "ZUDH",
+      "ZVGH",
+      "YUEH",
+      "YVEI"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 3,
+    "subtopic": "Letter-cluster Analogy / Series",
+    "difficulty": 2,
+    "sourceYear": 2021,
+    "sourcePaper": "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-2-English.pdf",
+    "explanation": "Pattern for each position: 1st letter shifts -1 (C->B->A->Z->Y). 2nd letter shifts +2 (M->O->Q->S->U). 3rd letter shifts -3 (Q->N->K->H->E). 4th letter shifts +4 (R->V->Z->D->H). Result: YUEH."
+  },
+  {
+    "qid": "f1e2d3c4-b5a6-4a9c-b168-9f8e7d6c5b4a",
+    "question": "Select the letter-cluster from among the given options that can replace the question mark (?) in the following series.\nTHME, WKJB, ZNGY, CQDV, ?",
+    "options": [
+      "FTAR",
+      "FTBS",
+      "FUAS",
+      "FTAS"
+    ],
+    "correctOption": 4,
+    "sourceChosenOption": 4,
+    "subtopic": "Letter-cluster Analogy / Series",
+    "difficulty": 2,
+    "sourceYear": 2021,
+    "sourcePaper": "SSC-CGL-QUESTION-PAPER-16-Aug-2021-Shift-1-English.pdf",
+    "explanation": "Pattern: 1st letter +3 (T->W->Z->C->F), 2nd letter -3 (H->K->N->Q->T, wait H=8, K=11 is +3. H->K(+3)->N(+3)->Q(+3)->T(+3)), 3rd letter -3 (M=13->J=10->G=7->D=4->A=1), 4th letter -3 (E=5->B=2->Y=25->V=22->S=19). Result: FTAS."
+  },
+  {
+    "qid": "3a18a9be-4f51-4122-a9b0-9b48b9415c4d",
+    "question": "Introducing Rajat to a guest, Ajay said, \"He is the only son of my father's daughter-in law\". How is Ajay related to Rajat?",
+    "options": [
+      "Paternal grandfather",
+      "Maternal grandfather",
+      "Brother",
+      "Either father or uncle"
+    ],
+    "correctOption": 4,
+    "sourceChosenOption": 3,
+    "subtopic": "Blood Relations",
+    "difficulty": 2,
+    "sourceYear": 2021,
+    "sourcePaper": "SSC-CGL-QUESTION-PAPER-16-Aug-2021-Shift-2-English.pdf",
+    "explanation": "Ajay's father's daughter-in-law is either Ajay's wife or his brother's wife. Therefore, her only son Rajat is either Ajay's son or his nephew. Thus, Ajay is either the father or the uncle."
+  },
+  {
+    "qid": "729b8c0a-0988-436f-8547-73d8abec8dbf",
+    "question": "Pointing to Suresha, I said, \"She is the daughter of the brother of the son of my wife.\" How am I related to Suresha?",
+    "options": [
+      "Grandmother",
+      "Grand aunt",
+      "Grandfather",
+      "Grand uncle"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 3,
+    "subtopic": "Blood Relations",
+    "difficulty": 2,
+    "sourceYear": 2023,
+    "sourcePaper": "14-July-shift-2-2023.pdf",
+    "explanation": "The son of my wife is my son. The brother of my son is also my son. The daughter of my son is my granddaughter. Thus, I am the grandfather of Suresha."
+  },
+  {
+    "qid": "ccfb6645-5d9c-4ec1-a53f-c9417d4a2be2",
+    "question": "Looking at a picture of a woman Vineeta said, \"She is the wife of my father's brother's father.\" How is the woman in the picture related to Vineeta?",
+    "options": [
+      "Father's sister",
+      "Mother-in-law",
+      "Mother",
+      "Father's mother"
+    ],
+    "correctOption": 4,
+    "sourceChosenOption": 4,
+    "subtopic": "Blood Relations",
+    "difficulty": 2,
+    "sourceYear": 2023,
+    "sourcePaper": "17-July-shift-3-2023.pdf",
+    "explanation": "Vineeta's father's brother is her uncle. Her uncle's father is her grandfather. The wife of her grandfather is her grandmother (father's mother)."
+  },
+  {
+    "qid": "5c94a5bd-2615-4ba8-bb5e-7a2e8c25dbd0",
+    "question": "Looking at a picture of a girl Samuel said, \"She is the sister of my maternal uncle's son.\" How is the girl in the picture related to Samuel?",
+    "options": [
+      "Daughter-in-law",
+      "Brother's wife",
+      "Sister's daughter",
+      "Mother's brother's daughter"
+    ],
+    "correctOption": 4,
+    "sourceChosenOption": 4,
+    "subtopic": "Blood Relations",
+    "difficulty": 2,
+    "sourceYear": 2023,
+    "sourcePaper": "20-July-shift-3-2023.pdf",
+    "explanation": "Samuel's maternal uncle's son is his cousin. The sister of his cousin is also his cousin, who is the daughter of his maternal uncle (mother's brother's daughter)."
+  },
+  {
+    "qid": "382c40c8-7096-419b-ab00-cbcdfc97a7e3",
+    "question": "A# B means 'A is the father of B'\nA@ B means 'A is the brother of B'\nA & B means 'A is the son of B'\nIf H & I @ J # K @ L, then how is J related to L?",
+    "options": [
+      "Brother",
+      "Father",
+      "Son's son",
+      "Father's father"
+    ],
+    "correctOption": 2,
+    "sourceChosenOption": 2,
+    "subtopic": "Blood Relations",
+    "difficulty": 2,
+    "sourceYear": 2023,
+    "sourcePaper": "21-July-shift-1-2023.pdf",
+    "explanation": "J # K means J is the father of K. K @ L means K is the brother of L. Thus, J is the father of L."
+  },
+  {
+    "qid": "e6ef92be-e7c6-43d5-99bc-1ccdf26176a9",
+    "question": "A # B means 'A is the sister of B'.\nA @ B means 'A is the son of B'.\nA & B means 'A is the father of B'.\nA % B means 'A is the mother of B'.\nIf W @ Q % T & Y @ M % K, then how is W related to K?",
+    "options": [
+      "Father",
+      "Mother's brother",
+      "Father's brother",
+      "Brother"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 3,
+    "subtopic": "Blood Relations",
+    "difficulty": 2,
+    "sourceYear": 2022,
+    "sourcePaper": "12-Dec-shift-2.pdf",
+    "explanation": "W is the son of Q, and Q is the mother of T, making W the brother of T. T is the father of Y, and Y is the son of M, meaning T and M are Y's parents. M is the mother of K. Since T and M are parents, T is the father of K. As W is T's brother, W is K's father's brother."
+  },
+  {
+    "qid": "5d590497-2856-42b7-a06f-b258671b5631",
+    "question": "Statements:\nAll males are boys.\nSome teachers are boys.\nAll students are teachers.\n\nConclusions:\nI. Some boys are males.\nII. Some teachers are students.\nIII. All males are students.",
+    "options": [
+      "All conclusions follow",
+      "Only conclusions II and Ill follow",
+      "Only conclusions I and II follow",
+      "Only conclusions I and Ill follow"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 1,
+    "subtopic": "Syllogism",
+    "difficulty": 2,
+    "sourceYear": 2023,
+    "sourcePaper": "18-July-shift-4-2023.pdf",
+    "explanation": "Since all males are boys, some boys must be males (I is true). Since all students are teachers, some teachers must be students (II is true). There is no established direct relationship to conclude all males are students (III is false)."
+  },
+  {
+    "qid": "b478d10b-8d76-4d0f-8e99-4d6b67cb1a45",
+    "question": "Statements:\nAll cricketers are wealthy.\nSome wealthy are Indians.\nAll Indians are honest.\n\nConclusions:\nI. All Indians are cricketers.\nII. Some cricketers are honest.",
+    "options": [
+      "Only conclusion II follows.",
+      "Only conclusion I follows.",
+      "Neither conclusions I nor II follows.",
+      "Both conclusions I and II follow."
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 3,
+    "subtopic": "Syllogism",
+    "difficulty": 2,
+    "sourceYear": 2023,
+    "sourcePaper": "20-July-shift-4-2023.pdf",
+    "explanation": "Indians are a subset of wealthy people, and cricketers are also a subset of wealthy people, but they do not necessarily overlap (I is false). Consequently, cricketers being honest is also not guaranteed (II is false)."
+  },
+  {
+    "qid": "e6a2b53a-cf72-4d57-b087-35718a287a2a",
+    "question": "Statements:\nSome bags are purses.\nAll purses are wallets.\nAll wallets are sacks.\n\nConclusions:\n(I) All purses are sacks.\n(II) Some wallets are bags.",
+    "options": [
+      "Only conclusion (I) is follow",
+      "Neither conclusion (I) nor (II) is follow",
+      "Both conclusions (I) and (II) are follow",
+      "Only conclusion (II) is follow"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 3,
+    "subtopic": "Syllogism",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "10-September-Shift-2.pdf",
+    "explanation": "Since all purses are wallets and all wallets are sacks, all purses must be sacks (I is true). Since some bags are purses and all purses are wallets, some bags are wallets, meaning some wallets are bags (II is true)."
+  },
+  {
+    "qid": "f471e987-19db-48fb-b8dc-79b8849b2512",
+    "question": "Statements:\nNo bench is chair.\nAll sofas are benches.\nAll tables are sofas.\n\nConclusions:\nI. No table is a chair.\nII. Some sofas are chairs.\nIII. All tables are benches.",
+    "options": [
+      "Only conclusion II follows",
+      "Only conclusions I and II follow",
+      "Only conclusions I and III follow",
+      "Only conclusion I follows"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 3,
+    "subtopic": "Syllogism",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "10-September-Shift-2.pdf",
+    "explanation": "Tables are sofas, and sofas are benches, so all tables are benches (III is true). Since benches and chairs have no overlap, tables (which are benches) cannot be chairs (I is true). Sofas are benches, so they cannot be chairs (II is false)."
+  },
+  {
+    "qid": "9d9841f3-e578-4ea7-9092-2bdfbc531a89",
+    "question": "Statements:\nAll bottles are jugs.\nSome bottles are flasks.\nAll flasks are bins.\n\nConclusions:\nI. Some bottles are bins.\nII. Some jugs are bins.\nIII. Some flasks are jugs.",
+    "options": [
+      "All conclusions I, II and III follow",
+      "Only conclusions II and III follow",
+      "Either conclusion I or II follows",
+      "Only conclusions I and II follow"
+    ],
+    "correctOption": 1,
+    "sourceChosenOption": 1,
+    "subtopic": "Syllogism",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "11-September-Shift-1.pdf",
+    "explanation": "Some bottles are flasks and all flasks are bins, so some bottles are bins (I is true). Since some bottles are bins and all bottles are jugs, some jugs are bins (II is true). Since some bottles are flasks and all bottles are jugs, some flasks are jugs (III is true)."
+  },
+  {
+    "qid": "7f8a3791-c22e-4b6e-a342-990fc7b61d2a",
+    "question": "Statements:\nAll apples are mangoes.\nAll mangoes are lemons.\nAll lemons are kiwis.\n\nConclusions:\n(I) All apples are lemons.\n(II) All mangoes are kiwis.",
+    "options": [
+      "Neither conclusion I nor II follow.",
+      "Only conclusion II follows.",
+      "Both conclusions I and II follow.",
+      "Only conclusion I follows."
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 3,
+    "subtopic": "Syllogism",
+    "difficulty": 2,
+    "sourceYear": 2024,
+    "sourcePaper": "11-September-Shift-2.pdf",
+    "explanation": "Apples are mangoes which are lemons, so apples are lemons (I is true). Mangoes are lemons which are kiwis, so mangoes are kiwis (II is true)."
+  },
+  {
+    "qid": "a1d3725b-5b23-4581-9b63-ef5a9b891cd3",
+    "question": "Statements:\nAll pens are pages.\nSome pages are pins.\nSome pins are boards.\n\nConclusions:\n(I) Some pins are pens.\n(II) Some boards are pages.\n(III) Some pens are boards.",
+    "options": [
+      "None of the conclusions follow.",
+      "Either conclusion I or conclusion III follows.",
+      "Only conclusion I follows.",
+      "Only conclusion II follows."
+    ],
+    "correctOption": 1,
+    "sourceChosenOption": 1,
+    "subtopic": "Syllogism",
+    "difficulty": 2,
+    "sourceYear": 2024,
+    "sourcePaper": "11-September-Shift-2.pdf",
+    "explanation": "Pins overlap with pages, but there is no guaranteed overlap with pens (I is false). Boards overlap with pins, but there is no guaranteed overlap with pages (II is false) or pens (III is false)."
+  },
+  {
+    "qid": "b78b1f5d-d12c-47fc-8f74-88db09a962a3",
+    "question": "Statements:\nSome rats are mouse.\nNo mouse is a rodent.\nSome rats are kittens.\n\nConclusions:\nI. No rodent is a kitten.\nII. Some rats are rodent.\nIII. No kitten is a mouse.",
+    "options": [
+      "Only conclusion I follows",
+      "Neither conclusion follows",
+      "Only conclusion III follows",
+      "Only conclusion II follows"
+    ],
+    "correctOption": 2,
+    "sourceChosenOption": 2,
+    "subtopic": "Syllogism",
+    "difficulty": 2,
+    "sourceYear": 2024,
+    "sourcePaper": "11-September-Shift-3.pdf",
+    "explanation": "Rodents and kittens could overlap as there's no rule against it (I is false). Rats overlapping with mice doesn't guarantee they overlap with rodents, as mice and rodents are disjoint (II is false). Kittens and mice could overlap as well (III is false)."
+  },
+  {
+    "qid": "5d2f62bb-b141-47cc-937b-99933aeb30d4",
+    "question": "Statements:\nAll oranges are apples.\nSome oranges are bananas.\nAll bananas are fruits.\n\nConclusions:\nI. Some fruits are apples.\nII. Some apples are bananas.\nIII. Some oranges are fruits.",
+    "options": [
+      "Only conclusions I and III follow.",
+      "Only conclusions II and III follow.",
+      "All conclusions follow.",
+      "Only conclusions I and II follow."
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 2,
+    "subtopic": "Syllogism",
+    "difficulty": 2,
+    "sourceYear": 2022,
+    "sourcePaper": "12-Dec-shift-1.pdf",
+    "explanation": "Since some oranges are bananas and all bananas are fruits, some oranges are fruits (III is true). Since all oranges are apples and some oranges are fruits, some apples are fruits, meaning some fruits are apples (I is true). Since some oranges are bananas and all oranges are apples, some apples are bananas (II is true)."
+  },
+  {
+    "qid": "c6218e87-a2f2-4ed7-9bfa-f73c1789c6d5",
+    "question": "Statements:\nI. All S are B.\nII. Some B are C.\n\nConclusions:\nI. All S are C.\nII. No C is B.\nIII. All B are S.",
+    "options": [
+      "All conclusion follows",
+      "Only conclusion I follows",
+      "Neither conclusion follows",
+      "Only conclusion II follows"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 3,
+    "subtopic": "Syllogism",
+    "difficulty": 2,
+    "sourceYear": 2022,
+    "sourcePaper": "12-Dec-shift-2.pdf",
+    "explanation": "S being inside B and B overlapping with C does not guarantee S is inside C (I is false). Statement II says some B are C, which contradicts 'No C is B' (II is false). All S being B does not mean all B are S (III is false)."
+  },
+  {
+    "qid": "cl-q1",
+    "question": "In a certain code language, 'CROW' is coded as '64' and 'EAGLE' is coded as '125'. How will 'PARROT' be coded in that language?",
+    "options": [
+      "216",
+      "249",
+      "88",
+      "232"
+    ],
+    "correctOption": 1,
+    "sourceChosenOption": 1,
+    "subtopic": "Coded Language",
+    "difficulty": 2,
+    "sourceYear": 2021,
+    "sourcePaper": "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-3-English.pdf",
+    "explanation": "The code is the cube of the number of letters in the word. PARROT has 6 letters, and 6 cubed is 216."
+  },
+  {
+    "qid": "cl-q6",
+    "question": "In a certain code language, 'LOWER' is coded as '186' and 'MULISH' is coded as '320'. How will 'OPTIONAL' be coded in that language?",
+    "options": [
+      "456",
+      "564",
+      "546",
+      "465"
+    ],
+    "correctOption": 1,
+    "sourceChosenOption": 1,
+    "subtopic": "Coded Language",
+    "difficulty": 3,
+    "sourceYear": 2021,
+    "sourcePaper": "SSC-CGL-QUESTION-PAPER-23-Aug-2021-Shift-1-English.pdf",
+    "explanation": "Sum of the reverse alphabetical positions of the letters multiplied by the number of consonants in the word. For OPTIONAL: Sum of reverse letters = 114, number of consonants = 4. 114 * 4 = 456."
+  },
+  {
+    "qid": "cl-q11",
+    "question": "In a certain code language, 'BENT' is coded as '3198' and 'DEBT' is coded as '8316'. What is the code for 'N' in the given code language?",
+    "options": [
+      "1",
+      "9",
+      "3",
+      "8"
+    ],
+    "correctOption": 2,
+    "sourceChosenOption": 2,
+    "subtopic": "Coded Language",
+    "difficulty": 1,
+    "sourceYear": 2023,
+    "sourcePaper": "25-July-shift-3-2023.pdf",
+    "explanation": "Comparing 'BENT' and 'DEBT', the common letters are B, E, and T, and the common digits are 3, 1, and 8. The remaining letter in 'BENT' is N, which corresponds to the remaining digit 9."
+  },
+  {
+    "qid": "cl-q16",
+    "question": "In a certain code language, 'BIND' is coded as '9214' and 'DRIB' is coded as '4109'. What is the code for 'N' in the given code language?",
+    "options": [
+      "4",
+      "2",
+      "1",
+      "9"
+    ],
+    "correctOption": 2,
+    "sourceChosenOption": 2,
+    "subtopic": "Coded Language",
+    "difficulty": 1,
+    "sourceYear": 2023,
+    "sourcePaper": "26-July-shift-1-2023.pdf",
+    "explanation": "Comparing 'BIND' and 'DRIB', the common letters are B, I, and D, and the common digits are 9, 1, and 4. The remaining letter in 'BIND' is N, corresponding to the remaining digit 2."
+  },
+  {
+    "qid": "cl-q22",
+    "question": "In a certain code language, 'PEN' is coded as 9 and 'PAPER' is coded as 25. How will 'CHAPTER' be coded in the same language?",
+    "options": [
+      "36",
+      "49",
+      "24",
+      "42"
+    ],
+    "correctOption": 2,
+    "sourceChosenOption": 2,
+    "subtopic": "Coded Language",
+    "difficulty": 1,
+    "sourceYear": 2023,
+    "sourcePaper": "26-July-shift-4-2023.pdf",
+    "explanation": "The code is the square of the number of letters in the word. CHAPTER has 7 letters, and 7 squared is 49."
+  },
+  {
+    "qid": "cl-q24",
+    "question": "In a certain code language, 'DUST' is coded as 16 and 'EARTH' is coded as 25. How will 'MAN' be coded in the same language?",
+    "options": [
+      "12",
+      "9",
+      "6",
+      "36"
+    ],
+    "correctOption": 2,
+    "sourceChosenOption": 2,
+    "subtopic": "Coded Language",
+    "difficulty": 1,
+    "sourceYear": 2023,
+    "sourcePaper": "27-July-shift-1-2023.pdf",
+    "explanation": "The code is the square of the number of letters in the word. MAN has 3 letters, and 3 squared is 9."
+  },
+  {
+    "qid": "cl-q33",
+    "question": "In a certain code language, 'CRUST' is written as '201921183' and 'BLAME' is written as '5131122'. How will 'PLASTIC' be written in that language?",
+    "options": [
+      "18204165138",
+      "73110209325",
+      "71642578102",
+      "39201911216"
+    ],
+    "correctOption": 4,
+    "sourceChosenOption": 4,
+    "subtopic": "Coded Language",
+    "difficulty": 2,
+    "sourceYear": 2022,
+    "sourcePaper": "1-Dec-shift-3.pdf",
+    "explanation": "The code is formed by taking the numerical positions of the letters in the English alphabet and writing them in reverse order."
+  },
+  {
+    "qid": "50e26002-c9fa-45cd-acb2-29fc12d5d8a1",
+    "question": "Which two signs should be interchanged to make the given equation correct?\n60 x 4 + 9 \u00f7 3 - 8 = 34",
+    "options": [
+      "+ and -",
+      "\u00f7 and +",
+      "\u00f7 and -",
+      "\u00f7 and x"
+    ],
+    "correctOption": 4,
+    "sourceChosenOption": 4,
+    "subtopic": "Mathematical Operations",
+    "difficulty": 2,
+    "sourceYear": 2023,
+    "sourcePaper": "17-July-shift-1-2023.pdf",
+    "explanation": "If we interchange \u00f7 and x, the equation becomes 60 \u00f7 4 + 9 x 3 - 8. Following BODMAS, 15 + 27 - 8 = 42 - 8 = 34."
+  },
+  {
+    "qid": "b0f0fc74-323e-4b40-a192-3a5cbb08df1a",
+    "question": "Which two signs should be interchanged to make the given equation correct?\n10 - 4 + 13 \u00f7 15 x 3 = 71",
+    "options": [
+      "+ and x",
+      "- and +",
+      "\u00f7 and x",
+      "- and x"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 3,
+    "subtopic": "Mathematical Operations",
+    "difficulty": 2,
+    "sourceYear": 2023,
+    "sourcePaper": "18-July-shift-1-2023.pdf",
+    "explanation": "Interchanging \u00f7 and x gives 10 - 4 + 13 x 15 \u00f7 3. Solving this using BODMAS, we get 10 - 4 + 13 x 5 = 10 - 4 + 65 = 71."
+  },
+  {
+    "qid": "8d3d92fb-1e3d-4c3d-abfc-f8d29b0f16f3",
+    "question": "Which two numbers and two signs should be interchanged in the following equation to make it correct?\n14 + 16 - 14 x 9 \u00f7 4 = 61",
+    "options": [
+      "16 and 14, + and x",
+      "16 and 9, + and -",
+      "14 and 4, - and +",
+      "14 and 9, + and x"
+    ],
+    "correctOption": 2,
+    "sourceChosenOption": 2,
+    "subtopic": "Mathematical Operations",
+    "difficulty": 2,
+    "sourceYear": 2023,
+    "sourcePaper": "19-July-shift-3-2023.pdf",
+    "explanation": "By interchanging 16 and 9, and + and -, the equation becomes 14 - 9 + 14 x 16 \u00f7 4. Applying BODMAS gives 14 - 9 + 14 x 4 = 14 - 9 + 56 = 61."
+  },
+  {
+    "qid": "fb21b8b7-69e0-410a-b333-e1bb18b6e36d",
+    "question": "Which two signs should be interchanged to make the given equation correct?\n17 + 10 x 5 \u00f7 9 + 18 = 53",
+    "options": [
+      "\u00f7 and +",
+      "\u00f7 and x",
+      "\u00f7 and -",
+      "x and \u00f7"
+    ],
+    "correctOption": 4,
+    "sourceChosenOption": 4,
+    "subtopic": "Mathematical Operations",
+    "difficulty": 2,
+    "sourceYear": 2023,
+    "sourcePaper": "24-July-shift-3-2023.pdf",
+    "explanation": "Interchanging x and \u00f7 gives 17 + 10 \u00f7 5 x 9 + 18. Applying BODMAS, this simplifies to 17 + 2 x 9 + 18 = 17 + 18 + 18 = 53."
+  },
+  {
+    "qid": "8d3e9812-706a-4d74-9f4a-251f2b6e162d",
+    "question": "Which option represents the correct order of the given words as they would appear in an English dictionary?\n1. Greed\n2. Green\n3. Grown\n4. Grip\n5. Granite",
+    "options": [
+      "5, 2, 1, 4, 3",
+      "5, 4, 1, 2, 3",
+      "5, 1, 2, 4, 3",
+      "5, 1, 4, 3, 2"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 3,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2023,
+    "sourcePaper": "17-July-shift-4-2023.pdf",
+    "explanation": "Alphabetical order of the words: Granite, Greed, Green, Grip, Grown. So the correct sequence is 5, 1, 2, 4, 3."
+  },
+  {
+    "qid": "c62b9a14-3a91-4c6e-b15a-4f5164d1f23a",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Variance\n2. Violence\n3. Vanquish\n4. Vampire\n5. Valiant\n6. Victorious",
+    "options": [
+      "4, 5, 3, 1, 2, 6",
+      "5, 3, 4, 1, 6, 2",
+      "5, 4, 3, 1, 6, 2",
+      "4, 3, 5, 2, 1, 6"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 0,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2023,
+    "sourcePaper": "19-July-shift-1-2023.pdf",
+    "explanation": "Alphabetical order: Valiant (5), Vampire (4), Vanquish (3), Variance (1), Victorious (6), Violence (2). The order is 5, 4, 3, 1, 6, 2."
+  },
+  {
+    "qid": "5a4d1b82-9f1c-4b52-a3c6-931d8f7e2a91",
+    "question": "Arrange the following words in the correct order as per the English Dictionary.\n1. Pandemonium\n2. Pandemic\n3. Pandering\n4. Pandanus\n5. Pandarus",
+    "options": [
+      "4, 5, 3, 1, 2",
+      "4, 5, 1, 2, 3",
+      "4, 5, 1, 3, 2",
+      "4, 5, 2, 1, 3"
+    ],
+    "correctOption": 4,
+    "sourceChosenOption": 4,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2023,
+    "sourcePaper": "26-July-shift-2-2023.pdf",
+    "explanation": "Alphabetical order: Pandanus (4), Pandarus (5), Pandemic (2), Pandemonium (1), Pandering (3). Sequence is 4, 5, 2, 1, 3."
+  },
+  {
+    "qid": "e1f9a2b5-7c8d-4a12-b5e8-45d619bfa7d2",
+    "question": "After arranging the given words according to dictionary order, which word will come at \u2018Third\u2019 position?\n1. Overwork\n2. Overwrought\n3. Overwhelming\n4. Overweight\n5. Overweening",
+    "options": [
+      "Overwhelming",
+      "Overwrought",
+      "Overweight",
+      "Overweening"
+    ],
+    "correctOption": 1,
+    "sourceChosenOption": 1,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "13-Dec-shift-1.pdf",
+    "explanation": "Dictionary order: Overweening (5), Overweight (4), Overwhelming (3), Overwork (1), Overwrought (2). The third word is Overwhelming."
+  },
+  {
+    "qid": "9d4f6c12-3b8a-4d9f-a1e4-8c729f1b5e3a",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Thresh\n2. Threadbare\n3. Thrice\n4. Threw\n5. Threat",
+    "options": [
+      "2, 4, 5, 1, 3",
+      "2, 5, 1, 4, 3",
+      "2, 5, 4, 1, 3",
+      "2, 1, 5, 4, 3"
+    ],
+    "correctOption": 2,
+    "sourceChosenOption": 2,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "13-Dec-shift-2.pdf",
+    "explanation": "Alphabetical order: Threadbare (2), Threat (5), Thresh (1), Threw (4), Thrice (3). The correct sequence is 2, 5, 1, 4, 3."
+  },
+  {
+    "qid": "1b9f4a5c-7e3d-4c8f-a9b2-6d1e3f8a4c2b",
+    "question": "After arranging the given words according to dictionary order, which word will come at \u2018Third\u2019 position?\n1. Unaffected\n2. Unarmed\n3. Unasked\n4. Unattached\n5. Unauthorized",
+    "options": [
+      "Unauthorized",
+      "Unarmed",
+      "Unasked",
+      "Unattached"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 3,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2022,
+    "sourcePaper": "13-Dec-shift-4.pdf",
+    "explanation": "The words are already in dictionary order: Unaffected, Unarmed, Unasked, Unattached, Unauthorized. The third word is Unasked."
+  },
+  {
+    "qid": "c3e5d8f9-1a4b-4c2d-a6b8-9e7f1d5c3b4a",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Laudanum\n2. Lattice\n3. Laudation\n4. Latterly\n5. Laudable",
+    "options": [
+      "2, 4, 5, 3, 1",
+      "2, 4, 1, 5, 3",
+      "4, 2, 3, 1, 5",
+      "4, 2, 5, 1, 3"
+    ],
+    "correctOption": 4,
+    "sourceChosenOption": 4,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "2-Dec-shift-1.pdf",
+    "explanation": "Alphabetical order: Latterly (4), Lattice (2), Laudable (5), Laudanum (1), Laudation (3). Sequence is 4, 2, 5, 1, 3."
+  },
+  {
+    "qid": "7f8e9a2b-3c4d-4e5f-b6a1-0d2c3e4f5a6b",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Fustian\n2. Funerary\n3. Fusion\n4. Funicular\n5. Fuscous\n6. Fundament\n7. Fuselage",
+    "options": [
+      "6, 2, 5, 7, 3, 4, 1",
+      "6, 2, 5, 7, 4, 1, 3",
+      "6, 2, 4, 5, 7, 3, 1",
+      "6, 2, 5, 4, 7, 3, 1"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 3,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "2-Dec-shift-2.pdf",
+    "explanation": "Alphabetical order: Fundament (6), Funerary (2), Funicular (4), Fuscous (5), Fuselage (7), Fusion (3), Fustian (1). The sequence is 6, 2, 4, 5, 7, 3, 1."
+  },
+  {
+    "qid": "a1b2c3d4-e5f6-4a5b-c6d7-e8f9a0b1c2d3",
+    "question": "After arranging the given words according to dictionary order, which word will come at \u2018Third\u2019 position?\n1. Sickle\n2. Sickly\n3. Sick\n4. Sicken\n5. Sickness",
+    "options": [
+      "Sick",
+      "Sickle",
+      "Sicken",
+      "Sickly"
+    ],
+    "correctOption": 2,
+    "sourceChosenOption": 2,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "2-Dec-shift-3.pdf",
+    "explanation": "Dictionary order: Sick (3), Sicken (4), Sickle (1), Sickly (2), Sickness (5). The third word is Sickle."
+  },
+  {
+    "qid": "d4e5f6a7-b8c9-4d0e-a1b2-c3d4e5f6a7b8",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Kinglet\n2. Kingship\n3. Kingdom\n4. Kinsfolk\n5. Kingly",
+    "options": [
+      "1, 3, 2, 5, 4",
+      "3, 1, 2, 5, 4",
+      "1, 3, 5, 2, 4",
+      "3, 1, 5, 2, 4"
+    ],
+    "correctOption": 4,
+    "sourceChosenOption": 4,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "2-Dec-shift-4.pdf",
+    "explanation": "Alphabetical order: Kingdom (3), Kinglet (1), Kingly (5), Kingship (2), Kinsfolk (4). Sequence is 3, 1, 5, 2, 4."
+  },
+  {
+    "qid": "f7a8b9c0-d1e2-4f3a-b4c5-d6e7f8a9b0c1",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Expensive\n2. Expedition\n3. Experience\n4. Expel\n5. Expenditure",
+    "options": [
+      "2, 4, 5, 1, 3",
+      "2, 4, 5, 3, 1",
+      "5, 2, 1, 4, 3",
+      "4, 2, 5, 1, 3"
+    ],
+    "correctOption": 1,
+    "sourceChosenOption": 1,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "3-Dec-shift-1.pdf",
+    "explanation": "Alphabetical order: Expedition (2), Expel (4), Expenditure (5), Expensive (1), Experience (3). Sequence is 2, 4, 5, 1, 3."
+  },
+  {
+    "qid": "c1d2e3f4-a5b6-4c7d-e8f9-a0b1c2d3e4f5",
+    "question": "After arranging the given words according to dictionary order, which word will come at \u2018Fifth\u2019 position?\n1. Version\n2. Versus\n3. Versicolour\n4. Verse\n5. Verso",
+    "options": [
+      "Verso",
+      "Versus",
+      "Version",
+      "Verse"
+    ],
+    "correctOption": 2,
+    "sourceChosenOption": 2,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "3-Dec-shift-2.pdf",
+    "explanation": "Dictionary order: Verse (4), Versicolour (3), Version (1), Verso (5), Versus (2). The fifth word is Versus."
+  },
+  {
+    "qid": "b0c1d2e3-f4a5-4b6c-7d8e-9f0a1b2c3d4e",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Pardoner\n2. Parenthetical\n3. Parental\n4. Pardon\n5. Parenthesis",
+    "options": [
+      "1, 4, 3, 2, 5",
+      "4, 1, 3, 2, 5",
+      "4, 1, 3, 5, 2",
+      "1, 4, 3, 5, 2"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 3,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "3-Dec-shift-3.pdf",
+    "explanation": "Alphabetical order: Pardon (4), Pardoner (1), Parental (3), Parenthesis (5), Parenthetical (2). Sequence is 4, 1, 3, 5, 2."
+  },
+  {
+    "qid": "a9b0c1d2-e3f4-4a5b-6c7d-8e9f0a1b2c3d",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Lesage\n2. Laudatory\n3. Laureate\n4. Latitude\n5. Legacy\n6. Laudanum\n7. Launder",
+    "options": [
+      "4, 6, 7, 3, 2, 1, 5",
+      "4, 6, 7, 2, 3, 1, 5",
+      "4, 6, 2, 7, 3, 5, 1",
+      "4, 6, 2, 3, 7, 1, 5"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 3,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "3-Dec-shift-4.pdf",
+    "explanation": "Alphabetical order: Latitude (4), Laudanum (6), Laudatory (2), Launder (7), Laureate (3), Legacy (5), Lesage (1). Sequence is 4, 6, 2, 7, 3, 5, 1."
+  },
+  {
+    "qid": "8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Sennet\n2. Sennight\n3. Sennit\n4. Seniority\n5. Senna",
+    "options": [
+      "4, 5, 1, 2, 3",
+      "5, 4, 2, 1, 3",
+      "4, 5, 2, 1, 3",
+      "4, 5, 1, 3, 2"
+    ],
+    "correctOption": 1,
+    "sourceChosenOption": 1,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "5-Dec-shift-1.pdf",
+    "explanation": "Alphabetical order: Seniority (4), Senna (5), Sennet (1), Sennight (2), Sennit (3). Sequence is 4, 5, 1, 2, 3."
+  },
+  {
+    "qid": "7d8e9f0a-1b2c-4d3e-5f6a-7b8c9d0e1f2a",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Accusable\n2. Acerbity\n3. Accursed\n4. Acetify\n5. Accuser",
+    "options": [
+      "3, 1, 5, 4, 2",
+      "1, 3, 5, 2, 4",
+      "3, 1, 5, 2, 4",
+      "1, 3, 5, 4, 2"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 1,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "5-Dec-shift-2.pdf",
+    "explanation": "Alphabetical order: Accursed (3), Accusable (1), Accuser (5), Acerbity (2), Acetify (4). Sequence is 3, 1, 5, 2, 4."
+  },
+  {
+    "qid": "6c7d8e9f-0a1b-4c2d-3e4f-5a6b7c8d9e0f",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Humility\n2. Humbug\n3. Humanoid\n4. Humidity\n5. Humoresque\n6. Humanity\n7. Humectants",
+    "options": [
+      "6, 3, 2, 7, 4, 1, 5",
+      "6, 3, 2, 7, 1, 4, 5",
+      "6, 3, 7, 2, 1, 4, 5",
+      "6, 3, 7, 2, 4, 1, 5"
+    ],
+    "correctOption": 1,
+    "sourceChosenOption": 1,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "5-Dec-shift-3.pdf",
+    "explanation": "Alphabetical order: Humanity (6), Humanoid (3), Humbug (2), Humectants (7), Humidity (4), Humility (1), Humoresque (5). Sequence is 6, 3, 2, 7, 4, 1, 5."
+  },
+  {
+    "qid": "5b6c7d8e-9f0a-4b1c-2d3e-4f5a6b7c8d9e",
+    "question": "After arranging the given words according to dictionary order, which word will come at \u2018Third\u2019 position?\n1. Theory\n2. Theorem\n3. Theology\n4. Theologue\n5. Theogonic",
+    "options": [
+      "Theologue",
+      "Theorem",
+      "Theology",
+      "Theogonic"
+    ],
+    "correctOption": 3,
+    "sourceChosenOption": 3,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "5-Dec-shift-4.pdf",
+    "explanation": "Dictionary order: Theogonic (5), Theologue (4), Theology (3), Theorem (2), Theory (1). The third word is Theology."
+  },
+  {
+    "qid": "4a5b6c7d-8e9f-40a1-b2c3-d4e5f6a7b8c9",
+    "question": "After arranging the given words according to dictionary order, which word will come at \u2018Third\u2019 position?\n1. Series\n2. Serious\n3. Serein\n4. Serial\n5. Serried",
+    "options": [
+      "Series",
+      "Serein",
+      "Serial",
+      "Serious"
+    ],
+    "correctOption": 1,
+    "sourceChosenOption": 1,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "6-Dec-shift-1.pdf",
+    "explanation": "Dictionary order: Serein (3), Serial (4), Series (1), Serious (2), Serried (5). The third word is Series."
+  },
+  {
+    "qid": "394a5b6c-7d8e-49f0-a1b2-c3d4e5f6a7b8",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Miscellaneous\n2. Miscalculate\n3. Mischance\n4. Miscall\n5. Miscasting",
+    "options": [
+      "2, 4, 1, 5, 3",
+      "2, 4, 5, 1, 3",
+      "4, 2, 5, 3, 1",
+      "4, 2, 5, 1, 3"
+    ],
+    "correctOption": 2,
+    "sourceChosenOption": 2,
+    "subtopic": "Dictionary Order",
+    "difficulty": 2,
+    "sourceYear": 2020,
+    "sourcePaper": "6-Dec-shift-2.pdf",
+    "explanation": "Alphabetical order: Miscalculate (2), Miscall (4), Miscasting (5), Miscellaneous (1), Mischance (3). Sequence is 2, 4, 5, 1, 3."
   }
 ]
