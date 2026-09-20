@@ -252,15 +252,14 @@ function showDrillFeedback(q) {
     
     if (isCorrect) {
         drillFeedback.classList.add('correct');
-        feedbackText.textContent = "Correct!";
-        feedbackText.style.color = "#166534";
     } else {
         drillFeedback.classList.add('wrong');
-        feedbackText.textContent = `Incorrect. The correct answer was option ${q.correctOption}.`;
-        feedbackText.style.color = "#991b1b";
     }
     
-    feedbackExplanation.textContent = q.explanation || "No explanation available.";
+    feedbackText.innerHTML = `Your Answer: Option ${userAnswers[q.qid]}<br>Correct Answer: Option ${q.correctOption}`;
+    feedbackText.style.color = "inherit";
+    
+    feedbackExplanation.innerHTML = `<div class="explanation-card"><strong>Explanation:</strong><br>${q.explanation || "Explanation requires review"}</div>`;
 }
 
 function goNext() {
@@ -410,6 +409,40 @@ function renderResultsScreen(results) {
             </div>
         `;
         container.appendChild(card);
+    });
+
+    const reviewContainer = document.getElementById('diagnostic-review');
+    reviewContainer.innerHTML = '<h3>Review Answers</h3>';
+    
+    currentQuiz.forEach((q, index) => {
+        const userAnswer = userAnswers[q.qid];
+        const isCorrect = userAnswer === q.correctOption;
+        
+        const reviewCard = document.createElement('div');
+        reviewCard.className = 'review-item';
+        
+        let answerHTML = '';
+        if (userAnswer) {
+            answerHTML = `<div class="review-answers">
+                <div>Your Answer: Option ${userAnswer} <span class="${isCorrect ? 'review-correct' : 'review-incorrect'}">${isCorrect ? '(Correct)' : '(Incorrect)'}</span></div>
+                <div>Correct Answer: Option ${q.correctOption}</div>
+            </div>`;
+        } else {
+            answerHTML = `<div class="review-answers">
+                <div>Your Answer: Not Attempted</div>
+                <div>Correct Answer: Option ${q.correctOption}</div>
+            </div>`;
+        }
+        
+        reviewCard.innerHTML = `
+            <div class="review-question">Q${index + 1}. ${q.question}</div>
+            ${answerHTML}
+            <div class="explanation-card">
+                <strong>Explanation:</strong><br>
+                ${q.explanation || "Explanation requires review"}
+            </div>
+        `;
+        reviewContainer.appendChild(reviewCard);
     });
 }
 

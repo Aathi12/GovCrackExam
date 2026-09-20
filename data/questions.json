@@ -2241,7 +2241,7 @@
     "difficulty": 2,
     "sourceYear": 2021,
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-16-Aug-2021-Shift-1-English.pdf",
-    "explanation": "Pattern: 1st letter +3 (T->W->Z->C->F), 2nd letter -3 (H->K->N->Q->T, wait H=8, K=11 is +3. H->K(+3)->N(+3)->Q(+3)->T(+3)), 3rd letter -3 (M=13->J=10->G=7->D=4->A=1), 4th letter -3 (E=5->B=2->Y=25->V=22->S=19). Result: FTAS."
+    "explanation": "Pattern: 1st letter shifts +3 (T->W->Z->C->F). 2nd letter shifts +3 (H->K->N->Q->T). 3rd letter shifts -3 (M->J->G->D->A). 4th letter shifts -3 (E->B->Y->V->S). Result: FTAS."
   },
   {
     "qid": "3a18a9be-4f51-4122-a9b0-9b48b9415c4d",
