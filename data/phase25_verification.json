@@ -1,0 +1,94 @@
+{
+  "topic": "Number/Figure Series",
+  "source": "SSC_CGL_ALL_PAPERS.txt",
+  "verifiedCount": 17,
+  "rejectedCount": 0,
+  "unableToVerifyCount": 0,
+  "candidates": [
+    {
+      "sourceReference": "Select the number from among the given options that can replace the question mark (?) in the following series. 24, 35, 51, 73, 102, ?",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Select the number from among the given options that can replace the question mark (?) in the following series. 5, 13, 22, 34, 51, 75, 108, 152, ?",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Select the number from among the given options that can replace the question mark (?) in the following series. 37, 52, 74, 104, 143, ?",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Select the number from among the given options that can replace the question mark (?) in the following series. 24, 48, 51, 204, 209, ?",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Select the number from among the given options that can replace the question mark (?) in the following series. 11, 13, 19, 49, 109, 239, ?",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Which of the following numbers will replace the question mark (?) in the given series? 8, 15, 26, ? , 56, 75",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Which number should replace the question mark (?) in the following number series? 39, 42, 48, 57, 69, ?, 102",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Which of the following numbers will replace the question mark (?) in the given series? 33, 80, 108, ?, 183, 230, 258",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Which of the following numbers will replace the question mark (?) in the given series? 27, 38, ?, 68, 87, 110",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Which of the following numbers will replace the question mark (?) in the given series? 3, 8, 15, 26, 39, ?",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Which of the following numbers will replace the question mark (?) in the given series? 32, ? , 44, 56, 72, 92",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Which of the following numbers will replace the question mark (?) in the given series? 8, 14, ? , 44, 68, 98, 134",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Which of the following numbers will replace the question mark (?) in the given series? 2, 10, 40, 120, 240, ?",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Which of the following numbers will replace the question mark (?) in the given series? 214, 207, 193, ? , 144, 109",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Select the number from among the given options that can replace the question mark (?) in the following series. 2, 6, 9, 27, 30, 90, ?",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Which of the following numbers will replace the question mark (?) in the given series? 232, 221, 199, ? , 122, 67",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    },
+    {
+      "sourceReference": "Which of the following numbers will replace the question mark (?) in the given series? 11, 36, ?, 121, 185, 266",
+      "status": "verified",
+      "reason": "Independent answer verification matched source"
+    }
+  ]
+}

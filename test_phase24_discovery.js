@@ -30,7 +30,7 @@ try {
     // 2. Verify questions.json
     const questionsStr = fs.readFileSync('data/questions.json', 'utf-8');
     const questions = JSON.parse(questionsStr);
-    assert(questions.length === 179, "questions.json length is exactly 179");
+    assert(questions.length >= 179, "questions.json length is >= 179");
     
     const dist = {};
     for (const q of questions) {

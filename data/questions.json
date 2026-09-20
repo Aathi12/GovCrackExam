@@ -3041,5 +3041,243 @@
     "sourceYear": 2020,
     "sourcePaper": "6-Dec-shift-2.pdf",
     "explanation": "Alphabetical order: Miscalculate (2), Miscall (4), Miscasting (5), Miscellaneous (1), Mischance (3). Sequence is 2, 4, 5, 1, 3."
+  },
+  {
+    "question": "Select the number from among the given options that can replace the question mark (?) in the following series. 24, 35, 51, 73, 102, ?",
+    "options": [
+      "139",
+      "151",
+      "131",
+      "149"
+    ],
+    "correctOption": 1,
+    "explanation": "The differences between consecutive terms are 11, 16, 22, 29. The differences of these differences (second differences) are 5, 6, 7. The next second difference is 8, making the next first difference 29 + 8 = 37. Thus, the next term is 102 + 37 = 139.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "9e5b7349-47ad-49ae-b1bb-843c5284ed9d"
+  },
+  {
+    "question": "Select the number from among the given options that can replace the question mark (?) in the following series. 5, 13, 22, 34, 51, 75, 108, 152, ?",
+    "options": [
+      "230",
+      "203",
+      "209",
+      "290"
+    ],
+    "correctOption": 3,
+    "explanation": "The first differences are 8, 9, 12, 17, 24, 33, 44. The second differences are 1, 3, 5, 7, 9, 11 (consecutive odd numbers). The next second difference is 13, making the next first difference 44 + 13 = 57. The next term is 152 + 57 = 209.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "f764ca73-0a76-4d32-b7e1-f3792cdaa5c5"
+  },
+  {
+    "question": "Select the number from among the given options that can replace the question mark (?) in the following series. 37, 52, 74, 104, 143, ?",
+    "options": [
+      "168",
+      "176",
+      "202",
+      "192"
+    ],
+    "correctOption": 4,
+    "explanation": "The first differences are 15, 22, 30, 39. The second differences are 7, 8, 9. The next second difference is 10, making the next first difference 39 + 10 = 49. The next term is 143 + 49 = 192.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "1284af0e-84ad-478c-a590-301f26ed7399"
+  },
+  {
+    "question": "Select the number from among the given options that can replace the question mark (?) in the following series. 24, 48, 51, 204, 209, ?",
+    "options": [
+      "1047",
+      "215",
+      "1254",
+      "416"
+    ],
+    "correctOption": 3,
+    "explanation": "The pattern alternates between multiplication and addition: \u00d72, +3, \u00d74, +5. The next operation is \u00d76. Therefore, 209 \u00d7 6 = 1254.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "6554556b-3d2d-43f2-9b3b-c8358ca05d47"
+  },
+  {
+    "question": "Select the number from among the given options that can replace the question mark (?) in the following series. 11, 13, 19, 49, 109, 239, ?",
+    "options": [
+      "449",
+      "394",
+      "349",
+      "494"
+    ],
+    "correctOption": 1,
+    "explanation": "The differences are 2, 6, 30, 60, 130. These follow the pattern n\u00b3 \u00b1 n: 1\u00b3+1=2, 2\u00b3-2=6, 3\u00b3+3=30, 4\u00b3-4=60, 5\u00b3+5=130. The next difference is 6\u00b3-6 = 216-6 = 210. Therefore, 239 + 210 = 449.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "cbb4fd6c-51fc-4368-b1b7-85f1871a2dda"
+  },
+  {
+    "question": "Which of the following numbers will replace the question mark (?) in the given series? 8, 15, 26, ? , 56, 75",
+    "options": [
+      "39",
+      "41",
+      "35",
+      "43"
+    ],
+    "correctOption": 1,
+    "explanation": "The differences between consecutive terms are consecutive prime numbers starting from 7: 7, 11, 13, 17, 19. So, 26 + 13 = 39. Checking the next: 39 + 17 = 56.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "2b728c5d-8f94-491b-a0c6-833410ad6823"
+  },
+  {
+    "question": "Which number should replace the question mark (?) in the following number series? 39, 42, 48, 57, 69, ?, 102",
+    "options": [
+      "87",
+      "79",
+      "81",
+      "84"
+    ],
+    "correctOption": 4,
+    "explanation": "The differences are multiples of 3: 3, 6, 9, 12. The next difference is 15. Therefore, 69 + 15 = 84. Checking the next: 84 + 18 = 102.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "0c07fdd9-79c4-4c48-8cf4-b4ffa4dd8ecd"
+  },
+  {
+    "question": "Which of the following numbers will replace the question mark (?) in the given series? 33, 80, 108, ?, 183, 230, 258",
+    "options": [
+      "160",
+      "155",
+      "143",
+      "138"
+    ],
+    "correctOption": 2,
+    "explanation": "The differences between terms alternate between 47 and 28. (80 - 33 = 47), (108 - 80 = 28). The next difference is 47, so 108 + 47 = 155. Checking the next: 155 + 28 = 183.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "e42928ea-21c3-4404-a67a-9445d5c17f32"
+  },
+  {
+    "question": "Which of the following numbers will replace the question mark (?) in the given series? 27, 38, ?, 68, 87, 110",
+    "options": [
+      "47",
+      "50",
+      "51",
+      "53"
+    ],
+    "correctOption": 3,
+    "explanation": "The differences between consecutive terms are prime numbers starting from 11: 11, 13, 17, 19, 23. Thus, 38 + 13 = 51. Checking the next: 51 + 17 = 68.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "54110091-6d47-4663-ae14-b364c9043ddc"
+  },
+  {
+    "question": "Which of the following numbers will replace the question mark (?) in the given series? 3, 8, 15, 26, 39, ?",
+    "options": [
+      "61",
+      "49",
+      "52",
+      "56"
+    ],
+    "correctOption": 4,
+    "explanation": "The differences are prime numbers: 5, 7, 11, 13. The next prime number is 17. Therefore, 39 + 17 = 56.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "44ae86fc-7b45-4330-bb6c-aa4de5fc1c63"
+  },
+  {
+    "question": "Which of the following numbers will replace the question mark (?) in the given series? 32, ? , 44, 56, 72, 92",
+    "options": [
+      "34",
+      "36",
+      "38",
+      "40"
+    ],
+    "correctOption": 2,
+    "explanation": "The differences increase by 4 each time. Testing the backwards pattern from 92: differences are 20, 16, 12, 8, 4. So 32 + 4 = 36. Checking the next: 36 + 8 = 44.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "433ab35c-d0db-403d-81db-5b3ce427e3a2"
+  },
+  {
+    "question": "Which of the following numbers will replace the question mark (?) in the given series? 8, 14, ? , 44, 68, 98, 134",
+    "options": [
+      "20",
+      "28",
+      "36",
+      "26"
+    ],
+    "correctOption": 4,
+    "explanation": "The differences are multiples of 6: 6, 12, 18, 24, 30, 36. So 14 + 12 = 26. Checking the next: 26 + 18 = 44.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "0ec9bf0c-eaa8-4c6a-8fc7-e6e6d12559de"
+  },
+  {
+    "question": "Which of the following numbers will replace the question mark (?) in the given series? 2, 10, 40, 120, 240, ?",
+    "options": [
+      "480",
+      "300",
+      "360",
+      "240"
+    ],
+    "correctOption": 4,
+    "explanation": "The pattern involves multiplying by decreasing integers: \u00d75, \u00d74, \u00d73, \u00d72. The next operation is \u00d71. Therefore, 240 \u00d7 1 = 240.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "93edc871-0340-4f0d-bee4-48d584427d65"
+  },
+  {
+    "question": "Which of the following numbers will replace the question mark (?) in the given series? 214, 207, 193, ? , 144, 109",
+    "options": [
+      "172",
+      "117",
+      "175",
+      "170"
+    ],
+    "correctOption": 1,
+    "explanation": "The sequence decreases by multiples of 7: -7, -14, -21, -28, -35. Therefore, 193 - 21 = 172. Checking the next: 172 - 28 = 144.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "3a4fae49-0a7a-4b1c-b942-4b4044c0af57"
+  },
+  {
+    "question": "Select the number from among the given options that can replace the question mark (?) in the following series. 2, 6, 9, 27, 30, 90, ?",
+    "options": [
+      "85",
+      "88",
+      "90",
+      "93"
+    ],
+    "correctOption": 4,
+    "explanation": "The pattern alternates between multiplying by 3 and adding 3: \u00d73, +3, \u00d73, +3, \u00d73. The next operation is +3. Therefore, 90 + 3 = 93.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "f00eaa7d-b26b-41aa-800b-f92b01c7f001"
+  },
+  {
+    "question": "Which of the following numbers will replace the question mark (?) in the given series? 232, 221, 199, ? , 122, 67",
+    "options": [
+      "155",
+      "165",
+      "177",
+      "166"
+    ],
+    "correctOption": 4,
+    "explanation": "The sequence decreases by multiples of 11: -11, -22, -33, -44, -55. Therefore, 199 - 33 = 166. Checking the next: 166 - 44 = 122.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "765adfb5-7efc-4ba9-a59c-86f0b7cb9b22"
+  },
+  {
+    "question": "Which of the following numbers will replace the question mark (?) in the given series? 11, 36, ?, 121, 185, 266",
+    "options": [
+      "68",
+      "72",
+      "70",
+      "63"
+    ],
+    "correctOption": 2,
+    "explanation": "The differences between consecutive terms are squares of consecutive integers: 5\u00b2=25, 6\u00b2=36, 7\u00b2=49, 8\u00b2=64, 9\u00b2=81. So, 11 + 25 = 36. Then 36 + 36 = 72. Checking the next: 72 + 49 = 121.",
+    "subtopic": "Number/Figure Series",
+    "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
+    "qid": "c203562d-bf9e-4de0-beb7-1a0c4d2f16ed"
   }
 ]
