@@ -723,7 +723,10 @@ function showProgressScreen() {
 
 function resetProgress() {
     if(confirm("Reset all progress history? This cannot be undone.")) {
-        localStorage.removeItem(STORAGE_KEY);
+        const history = getSavedHistory() || {};
+        history.diagnostics = [];
+        history.drills = [];
+        saveHistory(history);
         checkHistory(); // Updates home screen history section
         showProgressScreen();
     }

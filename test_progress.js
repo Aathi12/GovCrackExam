@@ -69,9 +69,18 @@ assert(history.drills.length === 50, "Maximum 50 drill records.");
 
 // 18. Reset requires confirmation
 // 19. Reset deletes only progress data
+let beforeReset = JSON.parse(localStorage.getItem('govcrackexam-drill-v1') || 'null');
+assert(beforeReset && beforeReset.diagnosticResults, "BEFORE RESET: diagnosticResults exists.");
+assert(beforeReset.diagnostics && beforeReset.diagnostics.length > 0, "BEFORE RESET: diagnostics contains history.");
+assert(beforeReset.drills && beforeReset.drills.length > 0, "BEFORE RESET: drills contains history.");
+
 resetProgress();
-history = JSON.parse(localStorage.getItem('govcrackexam-drill-v1') || 'null');
-assert(history === null, "Reset deletes progress data.");
+
+let afterReset = JSON.parse(localStorage.getItem('govcrackexam-drill-v1') || 'null');
+assert(afterReset !== null, "AFTER RESET: govcrackexam-drill-v1 key still exists.");
+assert(JSON.stringify(afterReset.diagnosticResults) === JSON.stringify(beforeReset.diagnosticResults), "AFTER RESET: diagnosticResults is unchanged.");
+assert(afterReset.diagnostics && afterReset.diagnostics.length === 0, "AFTER RESET: diagnostics is [].");
+assert(afterReset.drills && afterReset.drills.length === 0, "AFTER RESET: drills is [].");
 
 if (testsPassed) {
     console.log("All UI logic tests passed.");
