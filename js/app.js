@@ -7,7 +7,8 @@ let metadata = {};
 
 let currentQuiz = [];
 let currentQuestionIndex = 0;
-let userAnswers = {}; // key: question ID, value: selected option (1-4)
+let userAnswers = {};
+let markedQuestions = new Set(); // key: question ID, value: selected option (1-4)
 let mode = 'diagnostic'; // 'diagnostic' or 'drill'
 let drillTopics = []; // Topics selected for drill
 
@@ -37,6 +38,12 @@ const optionsContainer = document.getElementById('options-container');
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
 const submitBtn = document.getElementById('submit-btn');
+const markReviewBtn = document.getElementById('mark-review-btn');
+const paletteContainer = document.getElementById('quiz-palette-container');
+const palette = document.getElementById('quiz-palette');
+const confirmModal = document.getElementById('submit-confirm-modal');
+const confirmContinueBtn = document.getElementById('confirm-continue-btn');
+const confirmSubmitBtn = document.getElementById('confirm-submit-btn');
 const drillFeedback = document.getElementById('drill-feedback');
 const feedbackText = document.getElementById('feedback-text');
 const feedbackExplanation = document.getElementById('feedback-explanation');
@@ -44,6 +51,7 @@ const feedbackExplanation = document.getElementById('feedback-explanation');
 // Initialize App
 
 function startTopicPractice(topic) {
+    markedQuestions = new Set();
     mode = 'topicPractice';
     drillTopics = [topic];
     
@@ -141,7 +149,15 @@ async function initApp() {
         clearHistoryBtn.addEventListener('click', clearHistory);
         prevBtn.addEventListener('click', goPrevious);
         nextBtn.addEventListener('click', goNext);
-        submitBtn.addEventListener('click', submitQuiz);
+                submitBtn.addEventListener('click', submitQuiz);
+        
+        if(markReviewBtn) markReviewBtn.addEventListener('click', toggleMarkReview);
+        if(confirmContinueBtn) confirmContinueBtn.addEventListener('click', () => confirmModal.classList.add('hidden'));
+        if(confirmSubmitBtn) confirmSubmitBtn.addEventListener('click', () => {
+            confirmModal.classList.add('hidden');
+            calculateFullPracticeResults();
+            switchScreen('fullPracticeResults');
+        });
         
         document.getElementById('start-drill-btn').addEventListener('click', startDrill);
         document.getElementById('home-btn').addEventListener('click', showStartScreen);
@@ -221,6 +237,7 @@ function showStartScreen() {
 
 // Quiz Logic
 function startDiagnostic() {
+    markedQuestions = new Set();
     if (questionsBank.length === 0) {
         alert("No verified questions available in the question bank.");
         return;
@@ -279,6 +296,25 @@ function renderQuestion() {
     quizProgress.textContent = `Question ${currentQuestionIndex + 1} / ${currentQuiz.length}`;
     questionText.textContent = q.question;
     
+    
+    // Mode specific UI
+    if (mode === 'fullPractice') {
+        if(paletteContainer) paletteContainer.classList.remove('hidden');
+        if(markReviewBtn) markReviewBtn.classList.remove('hidden');
+        renderPalette();
+        
+        if (markedQuestions.has(q.qid)) {
+            if(markReviewBtn) markReviewBtn.textContent = 'Unmark Review';
+            if(markReviewBtn) markReviewBtn.classList.add('marked');
+        } else {
+            if(markReviewBtn) markReviewBtn.textContent = 'Mark for Review';
+            if(markReviewBtn) markReviewBtn.classList.remove('marked');
+        }
+    } else {
+        if(paletteContainer) paletteContainer.classList.add('hidden');
+        if(markReviewBtn) markReviewBtn.classList.add('hidden');
+    }
+
     optionsContainer.innerHTML = '';
     
     q.options.forEach((optText, index) => {
@@ -333,6 +369,7 @@ function selectOption(optNum) {
     } else {
         // Just select visually
         userAnswers[currentQuiz[currentQuestionIndex].qid] = optNum;
+        if (mode === 'fullPractice') renderPalette();
         const btns = optionsContainer.querySelectorAll('.option');
         btns.forEach(b => b.classList.remove('selected'));
         btns[optNum - 1].classList.add('selected');
@@ -355,6 +392,46 @@ function showDrillFeedback(q) {
     feedbackExplanation.innerHTML = `<div class="explanation-card"><strong>Explanation:</strong><br>${q.explanation || "Explanation requires review"}</div>`;
 }
 
+
+function toggleMarkReview() {
+    const q = currentQuiz[currentQuestionIndex];
+    if (markedQuestions.has(q.qid)) {
+        markedQuestions.delete(q.qid);
+    } else {
+        markedQuestions.add(q.qid);
+    }
+    renderQuestion();
+}
+
+function renderPalette() {
+    if (!palette) return;
+    palette.innerHTML = '';
+    currentQuiz.forEach((q, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'palette-btn';
+        btn.textContent = idx + 1;
+        
+        if (idx === currentQuestionIndex) {
+            btn.classList.add('current');
+        }
+        
+        if (userAnswers[q.qid]) {
+            btn.classList.add('answered');
+        }
+        
+        if (markedQuestions.has(q.qid)) {
+            btn.classList.add('marked');
+        }
+        
+        btn.addEventListener('click', () => {
+            currentQuestionIndex = idx;
+            renderQuestion();
+        });
+        
+        palette.appendChild(btn);
+    });
+}
+
 function goNext() {
     if (currentQuestionIndex < currentQuiz.length - 1) {
         currentQuestionIndex++;
@@ -370,6 +447,26 @@ function goPrevious() {
 }
 
 function submitQuiz() {
+    if (mode === 'fullPractice') {
+        const answered = Object.keys(userAnswers).length;
+        const unanswered = currentQuiz.length - answered;
+        const marked = markedQuestions.size;
+        
+        if (document.getElementById('confirm-answered')) document.getElementById('confirm-answered').textContent = answered;
+        if (document.getElementById('confirm-total')) document.getElementById('confirm-total').textContent = currentQuiz.length;
+        if (document.getElementById('confirm-unanswered')) document.getElementById('confirm-unanswered').textContent = unanswered;
+        if (document.getElementById('confirm-marked')) document.getElementById('confirm-marked').textContent = marked;
+        
+        if (confirmModal) confirmModal.classList.remove('hidden');
+        return;
+    }
+
+    if (Object.keys(userAnswers).length < currentQuiz.length) {
+        if (typeof confirm === 'function' && !confirm('You have unanswered questions. Are you sure you want to submit?')) {
+            return;
+        }
+    }
+
     if (mode === 'diagnostic') {
         calculateDiagnosticResults();
         switchScreen('results');
@@ -379,9 +476,6 @@ function submitQuiz() {
     } else if (mode === 'topicPractice') {
         calculateTopicPracticeResults();
         switchScreen('topicPracticeResults');
-    } else if (mode === 'fullPractice') {
-        calculateFullPracticeResults();
-        switchScreen('fullPracticeResults');
     }
 }
 
@@ -571,6 +665,7 @@ function showResultsScreen() {
 
 // Drill Logic
 function startDrill() {
+    markedQuestions = new Set();
     const history = getSavedHistory();
     if (!history || !history.diagnosticResults) return;
 
@@ -941,6 +1036,7 @@ function escapeHTML(str) {
 
 
 function startFullPractice() {
+    markedQuestions = new Set();
     mode = 'fullPractice';
     userAnswers = {};
     currentQuestionIndex = 0;

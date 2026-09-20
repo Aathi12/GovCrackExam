@@ -580,3 +580,90 @@ button:focus, a:focus {
     outline: 2px solid var(--primary-color);
     outline-offset: 1px;
 }
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.modal.hidden {
+    display: none;
+}
+.modal-content {
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Palette Styles */
+.quiz-palette-container {
+    background-color: var(--bg-card);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.quiz-palette-container.hidden {
+    display: none;
+}
+.quiz-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.palette-btn {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+.palette-btn:hover {
+    border-color: var(--primary-color);
+}
+.palette-btn.answered {
+    background-color: var(--correct-bg);
+    border-color: var(--correct-border);
+    color: #166534;
+}
+.palette-btn.current {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(15, 76, 129, 0.2);
+}
+.palette-btn.marked {
+    background-color: #fef08a;
+    border-color: #eab308;
+    color: #854d0e;
+}
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .palette-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+    .quiz-controls > div {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+    }
+    .quiz-controls > div > button {
+        flex: 1;
+        margin: 0 !important;
+    }
+}
