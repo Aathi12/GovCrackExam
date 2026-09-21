@@ -22,5 +22,8 @@
   },
   "Classification (Odd One Out)": {
     "frequencyWeight": 0.96
+  },
+  "Analogy (Word/Number)": {
+    "frequencyWeight": 0.94
   }
 }

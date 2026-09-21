@@ -920,7 +920,7 @@ function showProgressScreen() {
     // Topic performance logic
     const topics = [
         'Blood Relations', 'Coded Language', 'Dictionary Order', 
-        'Letter-cluster Analogy / Series', 'Mathematical Operations', 'Syllogism', 'Number/Figure Series', 'Classification (Odd One Out)'
+        'Letter-cluster Analogy / Series', 'Mathematical Operations', 'Syllogism', 'Number/Figure Series', 'Classification (Odd One Out)', 'Analogy (Word/Number)'
     ];
     
     html += '<div class="progress-table-container"><table class="progress-table"><thead><tr><th>Topic</th><th>Latest</th><th>Best</th><th>Status</th><th>Drills</th><th>Topic Practice</th></tr></thead><tbody>';
