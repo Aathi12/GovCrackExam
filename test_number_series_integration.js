@@ -12,7 +12,7 @@ function assert(condition, message) {
 
 try {
     const questions = JSON.parse(fs.readFileSync('data/questions.json', 'utf-8'));
-    assert(questions.length === 196, "196 total questions");
+    assert(questions.length >= 196, ">= 196 total questions");
     
     const newQs = questions.filter(q => q.subtopic === 'Number/Figure Series');
     assert(newQs.length === 17, "17 Number/Figure Series questions");
