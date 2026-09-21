@@ -1,0 +1,36 @@
+{
+  "status": "completed",
+  "message": "All text-verifiable Reasoning topics discovered in Phase 24 have been fully integrated.",
+  "unrepresentedTopics": [
+    {
+      "topic": "Dice",
+      "status": "INSUFFICIENT DATA \u2014 REQUIRES IMAGES",
+      "totalOccurrences": 46,
+      "cleanCandidates": 0
+    },
+    {
+      "topic": "Mirror Image",
+      "status": "INSUFFICIENT DATA \u2014 REQUIRES IMAGES",
+      "totalOccurrences": 50,
+      "cleanCandidates": 0
+    },
+    {
+      "topic": "Paper Folding",
+      "status": "INSUFFICIENT DATA \u2014 REQUIRES IMAGES",
+      "totalOccurrences": 30,
+      "cleanCandidates": 0
+    },
+    {
+      "topic": "Embedded Figures",
+      "status": "INSUFFICIENT DATA \u2014 REQUIRES IMAGES",
+      "totalOccurrences": 20,
+      "cleanCandidates": 0
+    },
+    {
+      "topic": "Venn Diagram",
+      "status": "INSUFFICIENT DATA \u2014 REQUIRES IMAGES",
+      "totalOccurrences": 10,
+      "cleanCandidates": 0
+    }
+  ]
+}
