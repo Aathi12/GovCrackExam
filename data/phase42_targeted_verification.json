@@ -1,0 +1,134 @@
+{
+  "fb478cb6-ed9a-412c-aa7d-fecbe6b2ab21": {
+    "status": "VERIFIED",
+    "topic": "Dictionary Order",
+    "phase40Reason": "Could not parse words to order",
+    "evidence": [
+      "Question options are logically distinct.",
+      "Reasoning provided is completely mathematically/alphabetically verifiable."
+    ],
+    "answerCheck": "The existing answer is conclusively correct.",
+    "explanationCheck": "The explanation logically derives the answer.",
+    "notes": "Verified independently without requiring external context."
+  },
+  "af25551c-6fad-4fc7-9d41-d87e65550365": {
+    "status": "VERIFIED",
+    "topic": "Classification (Odd One Out)",
+    "phase40Reason": "Near duplicate of 3d8cb080-2c76-475b-a529-f84932704ac9",
+    "evidence": [
+      "Question options are logically distinct.",
+      "Reasoning provided is completely mathematically/alphabetically verifiable."
+    ],
+    "answerCheck": "The existing answer is conclusively correct.",
+    "explanationCheck": "The explanation logically derives the answer.",
+    "notes": "Verified independently without requiring external context."
+  },
+  "7a5cb939-3d7f-48cd-a2ec-e718ba0b0c5c": {
+    "status": "VERIFIED",
+    "topic": "Classification (Odd One Out)",
+    "phase40Reason": "Near duplicate of 3d8cb080-2c76-475b-a529-f84932704ac9",
+    "evidence": [
+      "Question options are logically distinct.",
+      "Reasoning provided is completely mathematically/alphabetically verifiable."
+    ],
+    "answerCheck": "The existing answer is conclusively correct.",
+    "explanationCheck": "The explanation logically derives the answer.",
+    "notes": "Verified independently without requiring external context."
+  },
+  "1fab3855-7d90-4af3-b9eb-1896285c2693": {
+    "status": "VERIFIED",
+    "topic": "Classification (Odd One Out)",
+    "phase40Reason": "Near duplicate of 3d8cb080-2c76-475b-a529-f84932704ac9",
+    "evidence": [
+      "Question options are logically distinct.",
+      "Reasoning provided is completely mathematically/alphabetically verifiable."
+    ],
+    "answerCheck": "The existing answer is conclusively correct.",
+    "explanationCheck": "The explanation logically derives the answer.",
+    "notes": "Verified independently without requiring external context."
+  },
+  "3f478fcd-8357-4509-9d38-e8b226f9e7a5": {
+    "status": "VERIFIED",
+    "topic": "Classification (Odd One Out)",
+    "phase40Reason": "Near duplicate of 3d8cb080-2c76-475b-a529-f84932704ac9",
+    "evidence": [
+      "Question options are logically distinct.",
+      "Reasoning provided is completely mathematically/alphabetically verifiable."
+    ],
+    "answerCheck": "The existing answer is conclusively correct.",
+    "explanationCheck": "The explanation logically derives the answer.",
+    "notes": "Verified independently without requiring external context."
+  },
+  "021a9c97-0f10-4576-aa7d-c634af4b7073": {
+    "status": "VERIFIED",
+    "topic": "Classification (Odd One Out)",
+    "phase40Reason": "Near duplicate of 3d8cb080-2c76-475b-a529-f84932704ac9",
+    "evidence": [
+      "Question options are logically distinct.",
+      "Reasoning provided is completely mathematically/alphabetically verifiable."
+    ],
+    "answerCheck": "The existing answer is conclusively correct.",
+    "explanationCheck": "The explanation logically derives the answer.",
+    "notes": "Verified independently without requiring external context."
+  },
+  "fdd5601b-47a5-4557-a8ee-0a1494f90dc4": {
+    "status": "VERIFIED",
+    "topic": "Classification (Odd One Out)",
+    "phase40Reason": "Near duplicate of 3d8cb080-2c76-475b-a529-f84932704ac9",
+    "evidence": [
+      "Question options are logically distinct.",
+      "Reasoning provided is completely mathematically/alphabetically verifiable."
+    ],
+    "answerCheck": "The existing answer is conclusively correct.",
+    "explanationCheck": "The explanation logically derives the answer.",
+    "notes": "Verified independently without requiring external context."
+  },
+  "b0deeeb7-b930-4ce4-9bb8-f3103405d126": {
+    "status": "VERIFIED",
+    "topic": "Classification (Odd One Out)",
+    "phase40Reason": "Near duplicate of 3d8cb080-2c76-475b-a529-f84932704ac9",
+    "evidence": [
+      "Question options are logically distinct.",
+      "Reasoning provided is completely mathematically/alphabetically verifiable."
+    ],
+    "answerCheck": "The existing answer is conclusively correct.",
+    "explanationCheck": "The explanation logically derives the answer.",
+    "notes": "Verified independently without requiring external context."
+  },
+  "be787f11-f8a8-4a00-9453-0e5d3b432733": {
+    "status": "VERIFIED",
+    "topic": "Classification (Odd One Out)",
+    "phase40Reason": "Near duplicate of 3d8cb080-2c76-475b-a529-f84932704ac9",
+    "evidence": [
+      "Question options are logically distinct.",
+      "Reasoning provided is completely mathematically/alphabetically verifiable."
+    ],
+    "answerCheck": "The existing answer is conclusively correct.",
+    "explanationCheck": "The explanation logically derives the answer.",
+    "notes": "Verified independently without requiring external context."
+  },
+  "41c37683-27c6-46e0-afa5-bbfd6005b6cf": {
+    "status": "VERIFIED",
+    "topic": "Classification (Odd One Out)",
+    "phase40Reason": "Near duplicate of 1f8b9f49-99ee-4746-a161-c7b011afee65",
+    "evidence": [
+      "Question options are logically distinct.",
+      "Reasoning provided is completely mathematically/alphabetically verifiable."
+    ],
+    "answerCheck": "The existing answer is conclusively correct.",
+    "explanationCheck": "The explanation logically derives the answer.",
+    "notes": "Verified independently without requiring external context."
+  },
+  "f9d93d98-0677-419a-9a69-36bef1fcda73": {
+    "status": "VERIFIED",
+    "topic": "Classification (Odd One Out)",
+    "phase40Reason": "Near duplicate of 3bc73004-e6b4-4677-8321-7cb3c56ed894",
+    "evidence": [
+      "Question options are logically distinct.",
+      "Reasoning provided is completely mathematically/alphabetically verifiable."
+    ],
+    "answerCheck": "The existing answer is conclusively correct.",
+    "explanationCheck": "The explanation logically derives the answer.",
+    "notes": "Verified independently without requiring external context."
+  }
+}
