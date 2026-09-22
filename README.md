@@ -19,8 +19,11 @@ The current version is a **v1 pilot** containing exclusively independently verif
 - Blood Relations
 - Dictionary Order
 - Mathematical Operations
+- Number/Figure Series
+- Classification (Odd One Out)
+- Analogy (Word/Number)
 
-*Note: The question bank contains 128 independently verified questions. Only questions with complete text and verifiable answers were included.*
+*Note: The question bank contains 221 independently verified questions. Only questions with complete text and verifiable answers were included.*
 
 ## Question Bank Format
 The data is stored in `data/questions.json` and follows this schema:
@@ -32,7 +35,7 @@ The data is stored in `data/questions.json` and follows this schema:
   "correctOption": 2,
   "sourceChosenOption": 3,
   "subtopic": "Coded Language",
-  "difficulty": 2,
+  "difficulty": "Medium",
   "sourceYear": 2019,
   "sourcePaper": "3-march-shift-1-2019.pdf",
   "explanation": "Short explanation of why option 2 is correct."
