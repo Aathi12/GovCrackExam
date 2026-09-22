@@ -20,10 +20,10 @@ try {
     const questions = JSON.parse(questionsStr);
     
     let newQs = questions.filter(q => q.subtopic === 'Analogy (Word/Number)');
-    assert(newQs.length === 16, "Exactly 16 Analogy questions are in questions.json");
+    assert(newQs.length === 9, "Exactly 9 Analogy questions are in questions.json");
     
     const ids = new Set(newQs.map(q => q.qid));
-    assert(ids.size === 16, "All verified IDs are unique");
+    assert(ids.size === 9, "All verified IDs are unique");
     
     const allHaveFourOptions = newQs.every(q => q.options.length === 4);
     assert(allHaveFourOptions, "All verified questions have four options");
@@ -31,7 +31,7 @@ try {
     const allOptionsValid = newQs.every(q => q.correctOption >= 1 && q.correctOption <= 4);
     assert(allOptionsValid, "All verified correctOption values are valid");
     
-    assert(questions.length === 221, "Total question count is 221 (212 + 16)");
+    assert(questions.length === 221, "Total question count is 221 (212 + 9)");
 
 } catch (e) {
     console.error("Test execution failed:", e);

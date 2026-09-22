@@ -43,7 +43,7 @@ Target ID: c54f6b73-d805-4ed6-80b7-efd8e32756ed | Repeated miss (5 inc, 0 acc)
 ### I. MIXED REALISTIC HISTORY
 - Unique Selected: 17
 - Repeat Rate: 83.0%
-- Unseen Coverage: 5.6%
+- Unseen Coverage: 5.8%
 - Recent Miss Selections: 50
 - Mastered Selections: 0
 
@@ -59,7 +59,7 @@ Key findings:
 - High priority effectively isolates recent/repeated mistakes without duplicating questions inside a single session.
 - Unseen questions correctly hold mid-tier priority to ensure gradual coverage of the full topic pool.
 
-Question bank: 228 unchanged
+Question bank: 221 unchanged
 Topics: 9 unchanged
 Frequency weights: unchanged
 Difficulty: unchanged

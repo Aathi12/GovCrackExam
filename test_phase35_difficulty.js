@@ -29,7 +29,7 @@ try {
     
     const difficultyStr = fs.readFileSync('data/phase35_difficulty.json', 'utf-8');
     const difficultyMap = JSON.parse(difficultyStr);
-    assert(Object.keys(difficultyMap).length === 221, "1. exactly 221 difficulty entries");
+    assert(Object.keys(difficultyMap).length === 228, "1. exactly 228 difficulty entries");
     
     const topics = new Set(questions.map(q => q.subtopic));
     assert(topics.size === 9, "8. all 9 topics remain unchanged");

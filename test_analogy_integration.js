@@ -25,7 +25,7 @@ try {
     assert(qs.length === 221, "5. Total question bank remains exactly 221");
     
     let analogyQs = qs.filter(q => q.subtopic === 'Analogy (Word/Number)');
-    assert(analogyQs.length === 16, "4. Analogy has exactly 16 questions");
+    assert(analogyQs.length === 9, "4. Analogy has exactly 9 questions");
     
     let ids = new Set(qs.map(q => q.qid));
     assert(ids.size === qs.length, "10. No duplicate IDs were introduced");

@@ -300,13 +300,7 @@ async function initApp() {
 // History Management
 function getSavedHistory() {
     const saved = localStorage.getItem(STORAGE_KEY);
-    if (!saved) return null;
-    try {
-        return JSON.parse(saved);
-    } catch (e) {
-        console.error('Corrupted history storage', e);
-        return null;
-    }
+    return saved ? JSON.parse(saved) : null;
 }
 
 function saveHistory(data) {
@@ -2061,3 +2055,185 @@ window.openQuestionReviewModal = function(qid) {
     
     modal.classList.remove('hidden');
 };
+
+`
+// Mocks
+let domElements = {};
+document = {
+    getElementById: (id) => {
+        if (!domElements[id]) {
+            domElements[id] = {
+                id,
+                classList: {
+                    add: () => {},
+                    remove: () => {},
+                    contains: () => false
+                },
+                style: {},
+                textContent: '',
+                innerHTML: '',
+                appendChild: () => {},
+                addEventListener: () => {},
+                value: '',
+                disabled: false,
+                onclick: null
+            };
+        }
+        return domElements[id];
+    },
+    createElement: (tag) => {
+        return {
+            tagName: tag,
+            classList: { add: () => {}, remove: () => {} },
+            style: {},
+            textContent: '',
+            appendChild: () => {},
+            addEventListener: () => {},
+            onclick: null
+        };
+    }
+};
+window = {
+    location: { search: '' },
+    open: () => {}
+};
+let localStore = {};
+localStorage = {
+    getItem: (key) => localStore[key] || null,
+    setItem: (key, val) => { localStore[key] = val; },
+    removeItem: (key) => { delete localStore[key]; }
+};
+
+let testsPassed = true;
+function assert(condition, message) {
+    if (!condition) {
+        console.error('FAIL: ' + message);
+        testsPassed = false;
+    } else {
+        console.log('PASS: ' + message);
+    }
+}
+
+// Data loading mock
+fetch = async (url) => {
+    if (url === 'data/questions.json') return { json: async () => JSON.parse(require('fs').readFileSync('data/questions.json', 'utf8')) };
+    if (url === 'data/frequency.json') return { json: async () => JSON.parse(require('fs').readFileSync('data/frequency.json', 'utf8')) };
+    return { json: async () => ({}) };
+};
+
+// Override initialization to make it synchronous for testing
+async function runTests() {
+    await initApp();
+    
+    // SCENARIO A: Brand new learner
+    assert(Object.keys(localStore).length === 0, "Scenario A: Empty localStorage starts correctly");
+    startDiagnostic();
+    assert(mode === 'diagnostic', "Diagnostic started");
+    assert(currentQuiz.length === 20, "Diagnostic has 20 questions");
+    
+    for (let i = 0; i < 20; i++) {
+        selectOption(1);
+        if (i < 19) nextQuestion();
+    }
+    submitTest();
+    
+    let history = JSON.parse(localStore['govcrackexam-drill-v1']);
+    assert(history.diagnostics.length === 1, "Diagnostic saved to history");
+    
+    // SCENARIO B & C: Weak-topic learner & Improving learner
+    // Force a weak topic manually to test drill
+    history.topicPerformance = { 'Syllogism': { attempts: 10, correct: 2, accuracy: 20 } };
+    localStore['govcrackexam-drill-v1'] = JSON.stringify(history);
+    
+    startDrill();
+    assert(mode === 'drill', "Drill started");
+    assert(currentDrillTopic === 'Syllogism', "Drill selected weak topic");
+    assert(currentQuiz.length === 10, "Drill has 10 questions");
+    
+    // Answer all drill questions correctly
+    for (let i = 0; i < 10; i++) {
+        const correctOpt = currentQuiz[i].correctOption;
+        selectOption(correctOpt);
+        if (i < 9) nextQuestion();
+    }
+    submitTest();
+    
+    history = JSON.parse(localStore['govcrackexam-drill-v1']);
+    assert(history.drills.length === 1, "Drill saved to history");
+    assert(history.topicPerformance['Syllogism'].correct === 12, "Topic performance improved");
+    assert(history.topicPerformance['Syllogism'].attempts === 20, "Topic attempts increased");
+    assert(history.topicPerformance['Syllogism'].accuracy === 60, "Topic accuracy updated correctly");
+    
+    // SCENARIO D: Full Practice
+    startFullPractice();
+    assert(mode === 'fullPractice', "Full practice started");
+    assert(currentQuiz.length === 20, "Full practice has 20 questions");
+    // Verify question palette
+    toggleMarkReview();
+    assert(markedQuestions.has(currentQuiz[0].qid), "Question marked for review");
+    selectOption(2);
+    nextQuestion();
+    assert(userAnswers[currentQuiz[0].qid] === 2, "Answer stored but history not updated yet");
+    
+    for (let i = 1; i < 20; i++) {
+        selectOption(1);
+        if (i < 19) nextQuestion();
+    }
+    submitTest();
+    
+    history = JSON.parse(localStore['govcrackexam-drill-v1']);
+    assert(history.fullPractices.length === 1, "Full practice saved to history");
+    
+    // SCENARIO E: Returning Learner
+    const tempStore = JSON.parse(localStore['govcrackexam-drill-v1']);
+    // Reset app state
+    userAnswers = {};
+    history = null;
+    localStore['govcrackexam-drill-v1'] = JSON.stringify(tempStore);
+    // Fake reload
+    showProgressScreen();
+    // Verify it doesn't crash
+    assert(true, "Progress screen loaded from returning user data");
+    
+    // SCENARIO F: Topic Practice
+    startTopicPractice('Dictionary Order');
+    assert(mode === 'topicPractice', "Topic practice started");
+    assert(currentQuiz.length <= 10, "Topic practice has max 10 questions");
+    assert(currentQuiz.every(q => q.subtopic === 'Dictionary Order'), "Topic practice filters correctly");
+    
+    // SCENARIO G: Feedback Workflow
+    document.getElementById('issue-type').value = 'Wrong answer';
+    document.getElementById('issue-details').value = 'Test issue';
+    // Mock the global current quiz state to have a question
+    currentQuestionIndex = 0;
+    submitReport();
+    let feedbacks = JSON.parse(localStore['govcrackexam-feedback'] || '[]');
+    assert(feedbacks.length === 1, "Feedback saved locally");
+    
+    // SCENARIO H: Reset Workflow
+    resetProgress();
+    assert(localStore['govcrackexam-drill-v1'] === undefined, "History cleared");
+    assert(localStore['govcrackexam-feedback'] !== undefined, "Feedback preserved after reset");
+    
+    // SCENARIO K: Edge Storage
+    // Corrupt storage
+    localStore['govcrackexam-drill-v1'] = '{bad-json}';
+    let noCrash = true;
+    try {
+        const h = getSavedHistory();
+        assert(h.diagnostics.length === 0, "Corrupt storage falls back to clean state");
+    } catch (e) {
+        noCrash = false;
+    }
+    assert(noCrash, "App handles corrupt storage gracefully");
+
+    if (testsPassed) {
+        console.log("All Phase 45 E2E Scenarios passed.");
+        process.exit(0);
+    } else {
+        process.exit(1);
+    }
+}
+
+runTests();
+`
