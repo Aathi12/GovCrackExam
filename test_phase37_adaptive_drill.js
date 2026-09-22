@@ -29,7 +29,7 @@ try {
     
     const questionsStr = fs.readFileSync('data/questions.json', 'utf-8');
     const questions = JSON.parse(questionsStr);
-    assert(questions.length === 228, "20. 228-question bank remains unchanged");
+    assert(questions.length === 221, "20. 221-question bank remains unchanged");
     assert(questions[0].difficulty !== undefined, "Difficulty metadata preserved");
     
     const freqStr = fs.readFileSync('data/frequency.json', 'utf-8');

@@ -22,7 +22,7 @@ try {
     
     const qsCode = fs.readFileSync('data/questions.json', 'utf-8');
     const qs = JSON.parse(qsCode);
-    assert(qs.length === 228, "5. Total question bank remains exactly 228");
+    assert(qs.length === 221, "5. Total question bank remains exactly 221");
     
     let analogyQs = qs.filter(q => q.subtopic === 'Analogy (Word/Number)');
     assert(analogyQs.length === 16, "4. Analogy has exactly 16 questions");

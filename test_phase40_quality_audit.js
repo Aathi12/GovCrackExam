@@ -17,7 +17,7 @@ try {
     const questionsStr = fs.readFileSync('data/questions.json', 'utf8');
     const questions = JSON.parse(questionsStr);
     
-    assert(Object.keys(audit).length === 228, "Exactly 228 audited IDs");
+    assert(Object.keys(audit).length === 221, "Exactly 221 audited IDs");
     
     let allIdsMatch = true;
     let validStatuses = true;

@@ -14,7 +14,7 @@ function assert(condition, message) {
 try {
     const questionsStr = fs.readFileSync('data/questions.json', 'utf-8');
     const questions = JSON.parse(questionsStr);
-    assert(questions.length === 228, "1. Existing question bank remains exactly 228");
+    assert(questions.length === 221, "1. Existing question bank remains exactly 221");
     
     const topics = new Set(questions.map(q => q.subtopic));
     assert(topics.size === 9, "2. Existing 9 topics remain unchanged");

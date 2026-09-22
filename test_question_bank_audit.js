@@ -13,7 +13,7 @@ function assert(condition, message) {
 }
 
 // Exactly 179 questions
-assert(questions.length === 228, "Exactly 228 questions exist");
+assert(questions.length === 221, "Exactly 221 questions exist");
 
 // All IDs unique
 const ids = questions.map(q => q.qid);

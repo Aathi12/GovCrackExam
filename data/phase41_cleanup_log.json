@@ -1,0 +1,100 @@
+{
+  "removed": [
+    {
+      "questionId": "1e0ba137-521f-4fc4-af98-4a892e4aebac",
+      "topic": "Analogy (Word/Number)",
+      "classification": "INVALID",
+      "reason": "EXACT_DUPLICATE",
+      "canonicalId": "19880b45-da36-4638-8906-bd865d0d76be"
+    },
+    {
+      "questionId": "74af88f9-d4af-4979-92d7-d83762447383",
+      "topic": "Analogy (Word/Number)",
+      "classification": "INVALID",
+      "reason": "EXACT_DUPLICATE",
+      "canonicalId": "257f7582-2eef-4d9a-811b-c5fc953408bd"
+    },
+    {
+      "questionId": "9f55f625-f1f9-4f13-a91a-a0b1d8beebed",
+      "topic": "Analogy (Word/Number)",
+      "classification": "INVALID",
+      "reason": "EXACT_DUPLICATE",
+      "canonicalId": "68ec518e-35d7-4b57-ada7-4cfca7df4f61"
+    },
+    {
+      "questionId": "bfc41368-3ea2-4c4b-a067-f684f476794e",
+      "topic": "Analogy (Word/Number)",
+      "classification": "INVALID",
+      "reason": "EXACT_DUPLICATE",
+      "canonicalId": "9691a391-cb55-4434-8909-dab6a6904037"
+    },
+    {
+      "questionId": "ed38af9b-7128-4fa1-8fc6-aa50add47854",
+      "topic": "Analogy (Word/Number)",
+      "classification": "INVALID",
+      "reason": "EXACT_DUPLICATE",
+      "canonicalId": "66c62ecb-e391-4b50-b53c-5841def92ba7"
+    },
+    {
+      "questionId": "aa862b41-ed47-4078-8b0a-deb814c4482d",
+      "topic": "Analogy (Word/Number)",
+      "classification": "INVALID",
+      "reason": "EXACT_DUPLICATE",
+      "canonicalId": "4f3fa519-eed7-4580-9a16-ea0ff1f14289"
+    },
+    {
+      "questionId": "f4ee6ef9-e8b4-4c51-ac49-3bb4d12e998e",
+      "topic": "Analogy (Word/Number)",
+      "classification": "INVALID",
+      "reason": "EXACT_DUPLICATE",
+      "canonicalId": "5eb8505f-a21a-4a8f-a5a8-7e2395206b65"
+    }
+  ],
+  "quarantined": [],
+  "retainedAfterReview": [
+    {
+      "questionId": "fb478cb6-ed9a-412c-aa7d-fecbe6b2ab21",
+      "reason": "LEGITIMATE_SIMILARITY: Question structure is similar but options/reasoning are unique."
+    },
+    {
+      "questionId": "af25551c-6fad-4fc7-9d41-d87e65550365",
+      "reason": "LEGITIMATE_SIMILARITY: Question structure is similar but options/reasoning are unique."
+    },
+    {
+      "questionId": "7a5cb939-3d7f-48cd-a2ec-e718ba0b0c5c",
+      "reason": "LEGITIMATE_SIMILARITY: Question structure is similar but options/reasoning are unique."
+    },
+    {
+      "questionId": "1fab3855-7d90-4af3-b9eb-1896285c2693",
+      "reason": "LEGITIMATE_SIMILARITY: Question structure is similar but options/reasoning are unique."
+    },
+    {
+      "questionId": "3f478fcd-8357-4509-9d38-e8b226f9e7a5",
+      "reason": "LEGITIMATE_SIMILARITY: Question structure is similar but options/reasoning are unique."
+    },
+    {
+      "questionId": "021a9c97-0f10-4576-aa7d-c634af4b7073",
+      "reason": "LEGITIMATE_SIMILARITY: Question structure is similar but options/reasoning are unique."
+    },
+    {
+      "questionId": "fdd5601b-47a5-4557-a8ee-0a1494f90dc4",
+      "reason": "LEGITIMATE_SIMILARITY: Question structure is similar but options/reasoning are unique."
+    },
+    {
+      "questionId": "b0deeeb7-b930-4ce4-9bb8-f3103405d126",
+      "reason": "LEGITIMATE_SIMILARITY: Question structure is similar but options/reasoning are unique."
+    },
+    {
+      "questionId": "be787f11-f8a8-4a00-9453-0e5d3b432733",
+      "reason": "LEGITIMATE_SIMILARITY: Question structure is similar but options/reasoning are unique."
+    },
+    {
+      "questionId": "41c37683-27c6-46e0-afa5-bbfd6005b6cf",
+      "reason": "LEGITIMATE_SIMILARITY: Question structure is similar but options/reasoning are unique."
+    },
+    {
+      "questionId": "f9d93d98-0677-419a-9a69-36bef1fcda73",
+      "reason": "LEGITIMATE_SIMILARITY: Question structure is similar but options/reasoning are unique."
+    }
+  ]
+}
