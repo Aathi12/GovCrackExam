@@ -831,13 +831,62 @@ function startDrill() {
 }
 
 function selectDrillQuestions(count, topics) {
-    const history = getSavedHistory();
-    const previouslySeen = new Set();
-    // In a real app we might track all seen questions. For this pilot, 
-    // we'll just try to pick questions from the weak topics.
+    const history = getSavedHistory() || {};
+    const qh = history.questionHistory || {};
+    const toggle = document.getElementById('adaptive-drill-toggle');
+    const isAdaptive = toggle ? toggle.checked : true;
     
     let pool = questionsBank.filter(q => topics.includes(q.subtopic));
-    pool = pool.sort(() => 0.5 - Math.random());
+    
+    if (isAdaptive) {
+        pool.forEach(q => {
+            const h = qh[q.qid];
+            let score = 0;
+            
+            if (!h || h.attempts === 0) {
+                // A. Unseen bonus (very high to ensure fresh coverage)
+                score = 120;
+            } else {
+                // B. Low personal accuracy (0 to 100)
+                const historyWeakness = 100 - h.accuracy;
+                
+                // C. Frequently incorrect (capped at 50)
+                const repeatMissBonus = Math.min(h.incorrect * 10, 50);
+                
+                // D. Recent incorrect
+                const recentMissBonus = (h.lastResult === 'incorrect') ? 30 : 0;
+                
+                // E. Difficulty adjustment (gently prioritize Easy base, defer Hard if equally missed)
+                let diffAdj = 0;
+                if (q.difficulty === 'Easy') diffAdj = 10;
+                if (q.difficulty === 'Hard') diffAdj = -10;
+                
+                // F. Mastered / Recent correct penalty
+                let masteredPenalty = 0;
+                let recentCorrectPenalty = 0;
+                if (h.attempts >= 3 && h.accuracy >= 80 && h.currentStreak >= 2) {
+                    masteredPenalty = -100;
+                } else if (h.lastResult === 'correct') {
+                    recentCorrectPenalty = -40;
+                }
+                
+                score = historyWeakness + repeatMissBonus + recentMissBonus + diffAdj + masteredPenalty + recentCorrectPenalty;
+            }
+            
+            // Add tiny random noise (0 to 5) to break exact ties unpredictably
+            q._adaptiveScore = score + (Math.random() * 5);
+        });
+        
+        // Sort descending
+        pool = pool.sort((a, b) => b._adaptiveScore - a._adaptiveScore);
+    } else {
+        // Legacy purely random fallback
+        pool = pool.sort(() => 0.5 - Math.random());
+    }
+    
+    // Store metadata for results screen
+    window.currentDrillIsAdaptive = isAdaptive;
+    
     return pool.slice(0, count);
 }
 
@@ -905,6 +954,15 @@ function calculateDrillResults() {
         <div>Drill Accuracy: ${drillAccuracy}%</div>
         <div class="${changeClass}">Change: ${sign}${change} percentage points</div>
     `;
+    
+    if (window.currentDrillIsAdaptive) {
+        comparisonContainer.innerHTML += `
+        <div style="margin-top: 15px; padding: 10px; background: rgba(59, 130, 246, 0.1); border-left: 3px solid var(--primary-color); border-radius: 4px; font-size: 0.85rem; text-align: left;">
+            <strong>Adaptive Drill</strong><br>
+            Topic prioritized: ${primaryTopic}<br>
+            Questions selected based on your recorded practice history and difficulty. All calculations are local to this browser.
+        </div>`;
+    }
 
     // Save drill history
     if (!history.drills) history.drills = [];
@@ -917,7 +975,8 @@ function calculateDrillResults() {
         diagnosticAccuracy: diagnosticAccuracy,
         change: change,
         difficultyPerformance: difficultyPerformance,
-        topicDiff: topicDiff
+        topicDiff: topicDiff,
+        adaptive: window.currentDrillIsAdaptive || false
     });
     
     if (history.drills.length > 50) {
@@ -999,6 +1058,38 @@ function showProgressScreen() {
     }
     if (typeof renderFeedbackReviewSection === 'function') {
         renderFeedbackReviewSection(feedbacks);
+    }
+    
+    if (typeof renderQuestionReview === 'function') renderQuestionReview();
+    
+    let adaptiveCount = 0;
+    let adaptiveQuestions = 0;
+    drills.forEach(d => {
+        if (d.adaptive) {
+            adaptiveCount++;
+            adaptiveQuestions += d.attempted || 10;
+        }
+    });
+    
+    if (adaptiveCount > 0) {
+        let adapHtml = `
+        <div class="card" style="margin-bottom: 20px;">
+            <h3 style="margin-bottom:10px;">Adaptive Drill Summary</h3>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                <div style="flex:1; min-width: 100px; text-align:center; padding: 15px; border: 1px solid var(--border-color); border-radius: 6px; background: rgba(255,255,255,0.02);">
+                    <div style="font-weight:bold; color: var(--primary-color); margin-bottom:5px;">${adaptiveCount}</div>
+                    <div style="font-size:0.9rem;">Drills Completed</div>
+                </div>
+                <div style="flex:1; min-width: 100px; text-align:center; padding: 15px; border: 1px solid var(--border-color); border-radius: 6px; background: rgba(255,255,255,0.02);">
+                    <div style="font-weight:bold; color: var(--primary-color); margin-bottom:5px;">${adaptiveQuestions}</div>
+                    <div style="font-size:0.9rem;">Adaptive Questions</div>
+                </div>
+            </div>
+        </div>`;
+        const content = document.getElementById('progress-content');
+        if (content) {
+            content.innerHTML = adapHtml + content.innerHTML;
+        }
     }
     switchScreen('progress');
         return;
@@ -1351,6 +1442,38 @@ function showProgressScreen() {
     }
     if (typeof renderFeedbackReviewSection === 'function') {
         renderFeedbackReviewSection(feedbacks);
+    }
+    
+    if (typeof renderQuestionReview === 'function') renderQuestionReview();
+    
+    let adaptiveCount = 0;
+    let adaptiveQuestions = 0;
+    drills.forEach(d => {
+        if (d.adaptive) {
+            adaptiveCount++;
+            adaptiveQuestions += d.attempted || 10;
+        }
+    });
+    
+    if (adaptiveCount > 0) {
+        let adapHtml = `
+        <div class="card" style="margin-bottom: 20px;">
+            <h3 style="margin-bottom:10px;">Adaptive Drill Summary</h3>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                <div style="flex:1; min-width: 100px; text-align:center; padding: 15px; border: 1px solid var(--border-color); border-radius: 6px; background: rgba(255,255,255,0.02);">
+                    <div style="font-weight:bold; color: var(--primary-color); margin-bottom:5px;">${adaptiveCount}</div>
+                    <div style="font-size:0.9rem;">Drills Completed</div>
+                </div>
+                <div style="flex:1; min-width: 100px; text-align:center; padding: 15px; border: 1px solid var(--border-color); border-radius: 6px; background: rgba(255,255,255,0.02);">
+                    <div style="font-weight:bold; color: var(--primary-color); margin-bottom:5px;">${adaptiveQuestions}</div>
+                    <div style="font-size:0.9rem;">Adaptive Questions</div>
+                </div>
+            </div>
+        </div>`;
+        const content = document.getElementById('progress-content');
+        if (content) {
+            content.innerHTML = adapHtml + content.innerHTML;
+        }
     }
     switchScreen('progress');
 }
