@@ -14,7 +14,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-1-English.pdf",
     "correctOption": 3,
     "explanation": "12 * (12/2 - 1) = 60; 16 * (16/2 - 1) = 112",
-    "difficulty": 2
+    "difficulty": "Medium"
   },
   {
     "qid": "19880b45-da36-4638-8906-bd865d0d76be",
@@ -31,7 +31,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-1-English.pdf",
     "correctOption": 4,
     "explanation": "Depression affects Mood, Insomnia affects Sleep",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "257f7582-2eef-4d9a-811b-c5fc953408bd",
@@ -48,7 +48,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-2-English.pdf",
     "correctOption": 4,
     "explanation": "A Sculptor uses a Chisel, a Blacksmith uses an Anvil",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "68ec518e-35d7-4b57-ada7-4cfca7df4f61",
@@ -65,7 +65,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-16-Aug-2021-Shift-1-English.pdf",
     "correctOption": 2,
     "explanation": "16 * (16/2 + 1) = 144; 28 * (28/2 + 1) = 420",
-    "difficulty": 2
+    "difficulty": "Medium"
   },
   {
     "qid": "e6a2e062-60dd-4717-b992-a0d370c205c3",
@@ -82,7 +82,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-16-Aug-2021-Shift-2-English.pdf",
     "correctOption": 1,
     "explanation": "15 * (15/2 + 1.5) = 135; 16 * (16/2 + 1.5) = 152",
-    "difficulty": 3
+    "difficulty": "Medium"
   },
   {
     "qid": "68ef6a28-3534-407c-b927-5ff43b489b0a",
@@ -99,7 +99,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-16-Aug-2021-Shift-2-English.pdf",
     "correctOption": 2,
     "explanation": "A group of chickens is a flock, a group of bears is a sleuth",
-    "difficulty": 2
+    "difficulty": "Medium"
   },
   {
     "qid": "9691a391-cb55-4434-8909-dab6a6904037",
@@ -116,7 +116,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-16-Aug-2021-Shift-3-English.pdf",
     "correctOption": 4,
     "explanation": "Awful is an antonym to Nice, Nomadic is an antonym to Settled",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "66c62ecb-e391-4b50-b53c-5841def92ba7",
@@ -133,7 +133,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-16-Aug-2021-Shift-3-English.pdf",
     "correctOption": 4,
     "explanation": "21^2 + 4 = 445; 24^2 + 4 = 580",
-    "difficulty": 2
+    "difficulty": "Medium"
   },
   {
     "qid": "4f3fa519-eed7-4580-9a16-ea0ff1f14289",
@@ -150,7 +150,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-17-Aug-2021-Shift-1-English.pdf",
     "correctOption": 4,
     "explanation": "Cartridge is a component of a Printer, Motherboard is a core component of a Central Processing Unit",
-    "difficulty": 2
+    "difficulty": "Medium"
   },
   {
     "qid": "8ea53a69-acaa-4e4e-bd65-0f92ca80a4dd",
@@ -167,7 +167,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-23-Aug-2021-Shift-1-English.pdf",
     "correctOption": 3,
     "explanation": "Toothpaste is used on Teeth, Broom is used on the Floor",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "5eb8505f-a21a-4a8f-a5a8-7e2395206b65",
@@ -184,7 +184,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-23-Aug-2021-Shift-1-English.pdf",
     "correctOption": 2,
     "explanation": "39 = 13 * 3, 91 = 13 * 7; 51 = 17 * 3, ? = 17 * 7 = 119",
-    "difficulty": 2
+    "difficulty": "Medium"
   },
   {
     "qid": "492d6158-a2fa-4976-ad3e-0bf082fc4ab6",
@@ -201,7 +201,7 @@
     "sourcePaper": "14-July-shift-1-2023.pdf",
     "correctOption": 1,
     "explanation": "Skin is the sense organ for Touch, Nose is the sense organ for Smell",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "2217679e-0bee-4d95-b541-6da4c373ec1e",
@@ -218,7 +218,7 @@
     "sourcePaper": "14-July-shift-1-2023.pdf",
     "correctOption": 2,
     "explanation": "7183 - 3850 = 3333; 6957 - 3333 = 3624",
-    "difficulty": 2
+    "difficulty": "Medium"
   },
   {
     "qid": "0e8c7743-14c6-4cc2-a449-a235c7812d86",
@@ -235,7 +235,7 @@
     "sourcePaper": "14-July-shift-2-2023.pdf",
     "correctOption": 2,
     "explanation": "An Orthopaedic treats Bones, a Cardiologist treats the Heart",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "343920bc-ec6d-49b0-a343-f33ab23c2efa",
@@ -252,7 +252,7 @@
     "sourcePaper": "25-July-shift-3-2023.pdf",
     "correctOption": 4,
     "explanation": "A Plant is housed in a Pot, a Fish is housed in an Aquarium",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "dffff306-c099-4061-895b-8564cd904e5d",
@@ -269,7 +269,7 @@
     "sourcePaper": "25-July-shift-3-2023.pdf",
     "correctOption": 1,
     "explanation": "A Cow produces Milk, a Sheep produces Wool",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "967a634b-e2f2-43bc-a6a6-b1eab5343c0a",
@@ -286,7 +286,7 @@
     "sourcePaper": "25-July-shift-4-2023.pdf",
     "correctOption": 3,
     "explanation": "16 * (16/2 + 1) = 144; 22 * (22/2 + 1) = 264",
-    "difficulty": 2
+    "difficulty": "Medium"
   },
   {
     "qid": "2ef9bb5d-6064-4644-8d95-728fa4007a83",
@@ -303,7 +303,7 @@
     "sourcePaper": "26-July-shift-1-2023.pdf",
     "correctOption": 3,
     "explanation": "n * (n * 5) + 2; 9 * 45 + 2 = 407",
-    "difficulty": 3
+    "difficulty": "Medium"
   },
   {
     "qid": "651e052c-49e4-456d-aae4-324f47a20331",
@@ -320,7 +320,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-1-English.pdf",
     "correctOption": 4,
     "explanation": "Consonants take their positional values. Vowels take their reverse positional values multiplied by 2 (A=26*2=52, E=22*2=44, I=18*2=36, O=12*2=24, U=6*2=12). PLASTIC: P(16), L(12), A(52), S(19), T(20), I(36), C(3) -> 1612521920363.",
-    "difficulty": 3
+    "difficulty": "Hard"
   },
   {
     "qid": "8f2704e2-7743-41c1-8688-b17fbe18541f",
@@ -337,7 +337,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-1-English.pdf",
     "correctOption": 1,
     "explanation": "Alternate letters are shifted by +6 and replaced by their reverse letters. +6, Reverse, -6, Reverse, +6, Reverse. For INERTIA: I(+6)=O, N(rev)=M, E(-6)=Y, R(rev)=I, T(+6)=Z, I(rev)=R, A(-6)=U. Result: OMYIZRU.",
-    "difficulty": 3
+    "difficulty": "Hard"
   },
   {
     "qid": "fceb1b77-fd6d-4389-8856-abadacdf4abf",
@@ -354,7 +354,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-2-English.pdf",
     "correctOption": 2,
     "explanation": "Sum of the reverse alphabetical values of the letters multiplied by the number of vowels in the word. PROFANE: Reverse sum is 114. It has 3 vowels (O, A, E). 114 * 3 = 342.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "27bbf3c7-2ad2-4724-824d-9126ba6c3d37",
@@ -371,7 +371,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-2-English.pdf",
     "correctOption": 4,
     "explanation": "The pattern is +1, +1, +1, 0, -1, -1, -1 for the respective letters. CORDIAL -> C(+1)=D, O(+1)=P, R(+1)=S, D(0)=D, I(-1)=H, A(-1)=Z, L(-1)=K -> DPSDHZK.",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "7d88f6a8-56f1-466e-afde-133b3458f0ec",
@@ -388,7 +388,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-16-Aug-2021-Shift-1-English.pdf",
     "correctOption": 2,
     "explanation": "The word is reversed. Then the 1st, 3rd, and 5th letters are shifted by +5, while the 2nd and 4th letters are replaced by their opposite alphabet letters. MAGIC -> reversed C I G A M. C(+5)=H, I(opp)=R, G(+5)=L, A(opp)=Z, M(+5)=R. Result: HRLZR.",
-    "difficulty": 3
+    "difficulty": "Hard"
   },
   {
     "qid": "84566e1e-d74c-4284-b103-cb87b01d9582",
@@ -405,7 +405,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-16-Aug-2021-Shift-1-English.pdf",
     "correctOption": 2,
     "explanation": "The code is the sum of the reverse positional values of the letters plus the number of letters in the word. COURSE reverse sum = 81. Length = 6. 81 + 6 = 87.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "5c9733e8-e084-4a33-9aeb-f2ed5efc7a30",
@@ -422,7 +422,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-16-Aug-2021-Shift-2-English.pdf",
     "correctOption": 4,
     "explanation": "Sum of positional values of the letters multiplied by the number of vowels in the word. CAPITAL sum = 62. It has 3 vowels (A, I, A). 62 * 3 = 186.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "a8743534-6232-4be9-9f8d-0aeaa8a88c5b",
@@ -439,7 +439,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-16-Aug-2021-Shift-3-English.pdf",
     "correctOption": 1,
     "explanation": "First and last letters are shifted by +2. The middle letter is replaced by the letters that are -2 and +2 from its position (e.g. N -> L, P). BUT -> B(+2)=D, U(-2,+2)=SW, T(+2)=V -> D-SW-V.",
-    "difficulty": 2
+    "difficulty": "Medium"
   },
   {
     "qid": "c20818fc-7899-4bc3-a04e-150ae64faf26",
@@ -456,7 +456,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-17-Aug-2021-Shift-1-English.pdf",
     "correctOption": 2,
     "explanation": "The word is split into two equal halves. Each half is reversed and each letter is shifted by +1. PRAYER -> PRA & YER. PRA reversed -> ARP -> (+1) BSQ. YER reversed -> REY -> (+1) SFZ. Result: BSQSFZ.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "d53e4611-4191-444c-9205-b251724a3de1",
@@ -473,7 +473,7 @@
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-23-Aug-2021-Shift-1-English.pdf",
     "correctOption": 1,
     "explanation": "Letters are shifted by +3, +2, +3, +2, +3 respectively. KIRAN -> K(+3)=N, I(+2)=K, R(+3)=U, A(+2)=C, N(+3)=Q -> NKUCQ.",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "78bab273-c392-45f3-b9a8-148f855da598",
@@ -490,7 +490,7 @@
     "sourcePaper": "14-July-shift-1-2023.pdf",
     "correctOption": 4,
     "explanation": "Sum of positional values of the letters multiplied by 2. CRY: 3 + 18 + 25 = 46. 46 * 2 = 92.",
-    "difficulty": 1
+    "difficulty": "Hard"
   },
   {
     "qid": "e4673e06-d87e-4e06-bfd3-6f4f7dcd43f8",
@@ -507,7 +507,7 @@
     "sourcePaper": "14-July-shift-1-2023.pdf",
     "correctOption": 2,
     "explanation": "The entire word is reversed, then the middle letter is shifted by +3. FRAME reversed -> EMARF. Middle letter A(+3)=D. Result: EMDRF.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "296fad94-61fc-4d69-8134-52eae183e0b6",
@@ -524,7 +524,7 @@
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 2,
     "explanation": "The code is the direct sum of the positional values of the letters. ZEBRA: 26 + 5 + 2 + 18 + 1 = 52.",
-    "difficulty": 1
+    "difficulty": "Hard"
   },
   {
     "qid": "ab6cd0bd-ef83-470b-a1bf-e5a6431ca8f0",
@@ -541,7 +541,7 @@
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 2,
     "explanation": "Direct letter substitution based on the given examples. A=8, K=7, E=4. Thus MAKE must end with 874. Only 5874 matches.",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "d67b25c5-09d8-451f-ae53-5cd021a1d2a9",
@@ -558,7 +558,7 @@
     "sourcePaper": "25-July-shift-2-2023.pdf",
     "correctOption": 3,
     "explanation": "The code is the sum of the reverse alphabetical values of the letters. QTS reverse is J(10), G(7), H(8). 10 + 7 + 8 = 25.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "f3d7f758-1a5e-43b2-809e-c5d2f9207871",
@@ -575,7 +575,7 @@
     "sourcePaper": "25-July-shift-2-2023.pdf",
     "correctOption": 3,
     "explanation": "Vowels are shifted by +2 while consonants remain unchanged. UNIVERSITY -> U(+2)=W, I(+2)=K, E(+2)=G, I(+2)=K. Result: WNKVGRSKTY.",
-    "difficulty": 1
+    "difficulty": "Hard"
   },
   {
     "qid": "f94997df-6033-430e-b54f-785cc036ae80",
@@ -592,7 +592,7 @@
     "sourcePaper": "25-July-shift-3-2023.pdf",
     "correctOption": 1,
     "explanation": "The word is reversed, and then the letters are shifted by -3, -2, -3, -2, -3, -2 respectively. KINDLE reversed -> ELDNIK. E(-3)=B, L(-2)=J, D(-3)=A, N(-2)=L, I(-3)=F, K(-2)=I -> BJALFI.",
-    "difficulty": 3
+    "difficulty": "Hard"
   },
   {
     "qid": "c54f6b73-d805-4ed6-80b7-efd8e32756ed",
@@ -609,7 +609,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 4,
     "explanation": "The correct alphabetical order is Fraud (5), Freedom (2), Freeze (1), Fringe (6), Frozen (4), Fryer (3).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "f9e39eaf-0750-43dd-9105-0da91d7af70a",
@@ -626,7 +626,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 1,
     "explanation": "The correct alphabetical order is Palindrome (2), Parking (5), Pathetic (4), Probability (3), Protest (1).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "10e13924-f3cf-429b-abf5-885d0da98c2e",
@@ -643,7 +643,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 1,
     "explanation": "The correct alphabetical order is Solitary (2), Solution (3), Solvent (5), Sophisticate (4), Sorting (1).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "10419834-2054-472a-a44a-23dfd34af3b3",
@@ -660,7 +660,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 1,
     "explanation": "The correct alphabetical order is Umbilical (1), Umbrella (4), Unaltered (3), Unanimous (5), Urgent (2).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "8f1fdba1-69f7-4edc-a938-ce093c31f7af",
@@ -677,7 +677,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 1,
     "explanation": "The correct alphabetical order is Success (1), Succumb (3), Suction (4), Surprise (6), Surreal (2), Surrogate (5).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "8424f0de-1405-49c8-b160-df122076de60",
@@ -694,7 +694,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 2,
     "explanation": "The correct alphabetical order is Interaction (3), Interjection (4), Internship (2), Interruption (6), Intervene (5), Introduce (1).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "d3c31019-59f6-42ae-8708-05c70673b85c",
@@ -711,7 +711,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 1,
     "explanation": "The correct alphabetical order is Sensational (1), Sensitize (2), Sentence (5), Sentiment (3), September (4).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "fcb5aa5d-e52b-4fe2-b3c2-c46c3512dee0",
@@ -728,7 +728,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 4,
     "explanation": "The correct alphabetical order is Warcraft (3), Wardenship (6), Wardrobe (5), Warehouse (2), Warranty (4), Warriors (1).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "8ddd62d0-6c4f-4e7c-be61-d4c21c3930da",
@@ -745,7 +745,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 1,
     "explanation": "The correct alphabetical order is Shirking (3), Spawn (6), Spider (5), Strident (1), Student (2), Stuffy (4).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "8fb70ed5-f0a2-48ba-9a28-53120fccf210",
@@ -762,7 +762,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 4,
     "explanation": "The correct alphabetical order is Monitor (5), Monopoly (3), Monorail (1), Monsoon (6), Monster (4), Monument (2).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "c3f2a032-9dc1-4dd7-9949-f7e581516fe7",
@@ -779,7 +779,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 4,
     "explanation": "The correct alphabetical order is Carnival (5), Carousel (4), Carriage (6), Carrier (2), Carrying (3), Cartoon (1).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "fb478cb6-ed9a-412c-aa7d-fecbe6b2ab21",
@@ -796,7 +796,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 1,
     "explanation": "The correct alphabetical order is Typicalness (4), Typifications (3), Typographical (1), Typologically (2), Tyrannosaurus (5).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "fcd2db91-872e-4ba4-9598-7e41ceb44530",
@@ -813,7 +813,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 2,
     "explanation": "The correct alphabetical order is Cancer (6), Candidly (2), Cannibal (5), Canopy (4), Canteen (3), Canvas (1).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "1c798623-af3e-424c-bcb2-aedd4235d115",
@@ -830,7 +830,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 4,
     "explanation": "The correct alphabetical order is Cinnamon (4), Circuit (2), Circular (5), Circulate (1), Citizen (6), Citrus (3).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "7f9ada2f-d372-4eca-bb90-26d7e7efd84d",
@@ -847,7 +847,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 3,
     "explanation": "The correct alphabetical order is Accepted (5), Accessary (6), Accident (2), Acclaimed (4), Accompany (1), Accuracy (3).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "68238837-5edd-47ef-9b9c-e22ee168495c",
@@ -864,7 +864,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 4,
     "explanation": "The correct alphabetical order is Strange (6), Stranger (3), Strategy (1), Strength (2), Stretch (4), Struggle (5).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "2eb1b9bd-6f68-421b-94e2-e27ebc293eb0",
@@ -881,7 +881,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 2,
     "explanation": "The correct alphabetical order is Dedicated (4), Defiance (2), Diabolical (6), Differentiate (5), Dither (1), Dramatic (3).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "6e7589a9-0c18-49ae-9cd9-41685015528c",
@@ -898,7 +898,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 4,
     "explanation": "The correct alphabetical order is Diagram (6), Dialect (4), Dialogue (2), Diameter (5), Diamond (1), Dictator (3).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "c33c8c05-46ae-4ff7-91ae-cda582c28604",
@@ -915,7 +915,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 3,
     "explanation": "The correct alphabetical order is Apparel (5), Apparition (4), Appear (1), Approach (2), Approximate (3).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "99caf7ba-3482-4c7c-8e5f-7c94a198c77a",
@@ -932,7 +932,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 1,
     "explanation": "The alphabetical order is Pope (4), Poppy (5), Populace (3), Popular (1), Population (2). The word at the fifth position is Population.",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "470a5e43-7241-451b-acea-15a4c5693941",
@@ -949,7 +949,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 1,
     "explanation": "The alphabetical order is Unsafe (3), Unsay (5), Unseam (2), Unseen (1), Unsound (4). The word at the fourth position is Unseen.",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "3750c55f-51ab-4f72-8631-1590a3b91bc2",
@@ -966,7 +966,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 3,
     "explanation": "The correct alphabetical order is Individual (3), Inundate (1), Invective (5), Inveterate (4), Invidious (2), Invincible (6), Inviolable (7).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "c915ce61-b2e2-4695-8b5f-d150084e2160",
@@ -983,7 +983,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 1,
     "explanation": "The alphabetical order is Aquarial (3), Aquarium (1), Aquatic (2), Aquatint (4), Aquavit (5). The word at the third position is Aquatic.",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "85c44d19-ed81-4ca1-a4b5-2310fda0ce2b",
@@ -1000,7 +1000,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 2,
     "explanation": "The alphabetical order is Overlain (4), Overland (5), Overload (1), Overlook (3), Overplay (2). The word at the fifth position is Overplay.",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "4d309842-eb35-4b51-bfa6-96e8f1965c93",
@@ -1017,7 +1017,7 @@
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "correctOption": 1,
     "explanation": "The correct alphabetical order is Ambience (3), Ambiguous (2), Ambivalent (6), Ameliorate (7), Amorphous (5), Amphibian (1), Amplify (4).",
-    "difficulty": 1
+    "difficulty": "Medium"
   },
   {
     "qid": "172f6e06-1429-4f3b-a005-c21db199d9a6",
@@ -1034,7 +1034,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 2,
     "explanation": "Polygons -> Angles -> Diagonals. Cones -> Cubes -> Decagons. No diagonal is a cube. Thus, some diagonals are polygons (I) and no polygon is a cone (III).",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "2fe51fb9-4988-416a-a426-a26161701e33",
@@ -1051,7 +1051,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 1,
     "explanation": "Choreographers -> Directors -> Actors. No Actor is Producer. Thus, all three conclusions logically follow.",
-    "difficulty": 1
+    "difficulty": "Hard"
   },
   {
     "qid": "ab53f01d-5051-48d5-bc4b-426452b55545",
@@ -1068,7 +1068,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 3,
     "explanation": "Since all offices are stalls, some stalls are offices. The negative relationships involving stalls and banks are not absolute.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "32786a79-c8dd-47c4-a716-9fb84e5db2cd",
@@ -1085,7 +1085,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 4,
     "explanation": "Since no pen drive is a keyboard, all pen drives are indeed not keyboards.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "617e8fe0-4c97-416e-a1a3-bc04d49d7693",
@@ -1102,7 +1102,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 3,
     "explanation": "Since some girls are dancers and all dancers are talented, it implies that some girls are talented.",
-    "difficulty": 1
+    "difficulty": "Hard"
   },
   {
     "qid": "87ad538d-67d8-4dec-ad78-1fd9d78aa1fc",
@@ -1119,7 +1119,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 4,
     "explanation": "Since all envelopes are copies, some copies are envelopes. Since some cards are envelopes, some cards are also copies.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "fe0d6517-3de3-4e0d-9dde-6d1104e7eadf",
@@ -1136,7 +1136,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 2,
     "explanation": "Professors who are doctors are also engineers (since all professors are engineers), thus some doctors are engineers.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "e5ccbd98-c97f-44d0-b926-5651b8c80f02",
@@ -1153,7 +1153,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 1,
     "explanation": "Only conclusion III follows directly because 'Some trays are plates' means 'Some plates are trays'.",
-    "difficulty": 1
+    "difficulty": "Hard"
   },
   {
     "qid": "a5796d59-c92b-4130-99de-6bc93cea3ad6",
@@ -1170,7 +1170,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 3,
     "explanation": "None of the direct connections establish absolute certainty, and since either-or option for I and IV isn't explicitly combined independently in a suitable manner matching typical conventions here, the answer is None follows.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "0bfa9f75-f192-40f2-a968-f4f7b6904a95",
@@ -1187,7 +1187,7 @@
     "sourcePaper": "Unknown",
     "correctOption": 1,
     "explanation": "Rice and pulses are subsets of grains, which is a subset of edibles. Hence all conclusions naturally follow.",
-    "difficulty": 1
+    "difficulty": "Hard"
   },
   {
     "qid": "4a6b6b5d-ade9-4814-a737-deacd88681a8",
@@ -1204,7 +1204,7 @@
     "sourcePaper": "20-July-shift-4-2023.pdf",
     "correctOption": 1,
     "explanation": "I and III make an either-or complementary pair since there is no definite relationship between books and pens.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "01da1b9e-2803-4d49-9a34-577b0300ab84",
@@ -1221,7 +1221,7 @@
     "sourcePaper": "20-July-shift-4-2023.pdf",
     "correctOption": 3,
     "explanation": "Since some teachers are scientists, and scientists -> doctors -> engineers, it is true that some doctors and engineers are teachers. Furthermore, all scientists are doctors means some doctors are scientists.",
-    "difficulty": 1
+    "difficulty": "Hard"
   },
   {
     "qid": "2298d11f-3dda-46bf-b6f9-3cbdc82acdf3",
@@ -1238,7 +1238,7 @@
     "sourcePaper": "20-July-shift-4-2023.pdf",
     "correctOption": 2,
     "explanation": "Rainbows are drawings, so colours that are rainbows are drawings (I is true). Also, some drawings are rainbows (III is true). II does not follow.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "615f6816-bc83-4913-b825-7eebff420757",
@@ -1255,7 +1255,7 @@
     "sourcePaper": "20-July-shift-4-2023.pdf",
     "correctOption": 2,
     "explanation": "All jams are desserts implies some desserts are jams (II). Since some fruits are jams, those are desserts (III). I does not follow.",
-    "difficulty": 1
+    "difficulty": "Hard"
   },
   {
     "qid": "3e47e74d-a2f7-4d93-b2e3-8373cfd16f84",
@@ -1272,7 +1272,7 @@
     "sourcePaper": "20-July-shift-4-2023.pdf",
     "correctOption": 3,
     "explanation": "Suns are satellites, and some moons are suns -> some moons are satellites (I is true). All stars are moons -> some moons are stars (III is true). II does not follow.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "c5a98873-cd41-4de7-8fcd-93ef7b40a63e",
@@ -1289,7 +1289,7 @@
     "sourcePaper": "20-July-shift-4-2023.pdf",
     "correctOption": 1,
     "explanation": "No spanner is iron, meaning tools (which are spanners) are not irons (I false). Utensils that are spanners are not irons, making III true. II is not guaranteed.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "62c43b4b-216e-4aac-a78d-c1470485ed50",
@@ -1306,7 +1306,7 @@
     "sourcePaper": "20-July-shift-4-2023.pdf",
     "correctOption": 2,
     "explanation": "Since all cancers and TB are diseases, and diseases are curable, both are curable (I and III). No relation is given between cancer and TB (II false).",
-    "difficulty": 1
+    "difficulty": "Hard"
   },
   {
     "qid": "37b5014b-1ac6-496c-ae04-08b5eef23864",
@@ -1323,7 +1323,7 @@
     "sourcePaper": "20-July-shift-4-2023.pdf",
     "correctOption": 1,
     "explanation": "Earring has no negative relation strictly covering ring. And no relation given between toe and ring. So neither follows.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "fd9d9f58-8f30-4c63-ae08-c71d811383d7",
@@ -1340,7 +1340,7 @@
     "sourcePaper": "20-July-shift-4-2023.pdf",
     "correctOption": 4,
     "explanation": "Since some lines are bands and all bands are flashes, some flashes are lines, which means II is false. No relation confirms I.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "6c6a8fb6-e72e-4e30-9917-cdc6713c9a37",
@@ -1357,7 +1357,7 @@
     "sourcePaper": "20-July-shift-4-2023.pdf",
     "correctOption": 1,
     "explanation": "Given the chain Card -> Box -> Torch -> Shoe, only the forward progression (IV) is true.",
-    "difficulty": 1
+    "difficulty": "Hard"
   },
   {
     "qid": "d607f7e6-028c-4c6e-bfdc-075f40a68416",
@@ -1374,7 +1374,7 @@
     "sourcePaper": "20-July-shift-4-2023.pdf",
     "correctOption": 2,
     "explanation": "Since some doctors are labours and all labours are athletes, some doctors are athletes, meaning II is true.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "c17eb5eb-cbdd-4c86-8920-d911e4de3082",
@@ -1391,7 +1391,7 @@
     "sourcePaper": "20-July-shift-4-2023.pdf",
     "correctOption": 3,
     "explanation": "Since some animals are pets and pets are white, some animals are white (II). Also, since some dogs are animals, some animals are dogs (III).",
-    "difficulty": 1
+    "difficulty": "Hard"
   },
   {
     "qid": "3c085ae5-5b52-4606-a8ec-40b2a35f896e",
@@ -1408,7 +1408,7 @@
     "sourcePaper": "20-July-shift-4-2023.pdf",
     "correctOption": 2,
     "explanation": "Since there are only positive statements, no negative conclusion can be drawn with absolute certainty. Both could be false if J, B, and D were co-extensive sets.",
-    "difficulty": 2
+    "difficulty": "Hard"
   },
   {
     "qid": "b83c0a7d-89de-4fec-a127-8e1b7b90074c",
@@ -1425,7 +1425,7 @@
     "sourcePaper": "20-July-shift-4-2023.pdf",
     "correctOption": 3,
     "explanation": "Some stones can be bats (Possibility is true). No bat is glass because bats are cubes and cubes are not glass (II is true). Stones could be glass if they are not cubes, so IV is not necessarily true.",
-    "difficulty": 3
+    "difficulty": "Hard"
   },
   {
     "qid": "6990a0da-f35f-45de-bf5d-7cd11f330b81",
@@ -1441,7 +1441,7 @@
     "sourceYear": 2021,
     "sourcePaper": "Unknown",
     "correctOption": 4,
-    "difficulty": 1,
+    "difficulty": "Hard",
     "explanation": "N is the son of B and D is married to B, making D the mother. T is the daughter of D, meaning N and T are siblings. Since N is male, N is the brother of T."
   },
   {
@@ -1458,7 +1458,7 @@
     "sourceYear": 2021,
     "sourcePaper": "Unknown",
     "correctOption": 3,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "Option 3 'X2M8Y' translates to X is the wife of M, and M is the father of Y. This means X is the mother of Y."
   },
   {
@@ -1475,7 +1475,7 @@
     "sourceYear": 2021,
     "sourcePaper": "Unknown",
     "correctOption": 3,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "M is the mother of R and K. G is the father of K. So, M is the wife of G. N is the parent of G, and N is the wife of T, making T the paternal grandfather of K and father-in-law of M, not the paternal grandfather of M."
   },
   {
@@ -1492,7 +1492,7 @@
     "sourceYear": 2021,
     "sourcePaper": "Unknown",
     "correctOption": 4,
-    "difficulty": 1,
+    "difficulty": "Medium",
     "explanation": "S is the father of P, and T is the mother of S's brother R, making T the mother of S. Thus, T is the grandmother of P. Since P is male, P is the grandson of T."
   },
   {
@@ -1509,7 +1509,7 @@
     "sourceYear": 2021,
     "sourcePaper": "Unknown",
     "correctOption": 2,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "R is the father of S, and S is the son of T. So R and T are the parents of S. T is the daughter of N. Therefore, S is the son of T, making S the grandson of N."
   },
   {
@@ -1526,7 +1526,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 3,
-    "difficulty": 1,
+    "difficulty": "Medium",
     "explanation": "The boy's father is the father of Reema's daughter. This means the boy and Reema's daughter have the same father, making the boy the brother of Reema's daughter."
   },
   {
@@ -1543,7 +1543,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 2,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "R is the brother of S, and S is the mother of K. Therefore, R is K's mother's brother (maternal uncle)."
   },
   {
@@ -1560,7 +1560,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 3,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "The daughter of Rocky's daughter-in-law is Rocky's granddaughter. The father of his granddaughter is Rocky's son. Since Rocky is a man pointing to his son, Rocky is the father of that man."
   },
   {
@@ -1577,7 +1577,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 1,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "N is the husband of D, and D is the mother of Z, making N the father of Z. Z is the father of B. Therefore, N is the paternal grandfather of B."
   },
   {
@@ -1594,7 +1594,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 2,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "C and D are sisters, and D is the daughter of E, so C is also the daughter of E. B is the husband of C. Thus, B is the son-in-law of E."
   },
   {
@@ -1611,7 +1611,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 2,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "P - Q + R means P is the sister of Q, and Q is the father of R. Thus, P is the sister of R's father, which makes P the paternal aunt of R."
   },
   {
@@ -1628,7 +1628,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 2,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "I is the father of T, making A (who is the father of I) the paternal grandfather of T, not the maternal grandfather."
   },
   {
@@ -1645,7 +1645,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 4,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "Q is the sister of T, and T is the father of Y (and thus K). Therefore, Q is the father's sister of K."
   },
   {
@@ -1662,7 +1662,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 4,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "H is the mother of I, and I is the husband of J. Therefore, H is the mother-in-law of J."
   },
   {
@@ -1679,7 +1679,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 3,
-    "difficulty": 1,
+    "difficulty": "Hard",
     "explanation": "Q is the father of L, and L is the sister of R. Therefore, Q is the father of R."
   },
   {
@@ -1696,7 +1696,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 1,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "P is the mother of Q, who is the brother of R, so P is the mother of R. R is the wife of S, who is the father of T, meaning R is the mother of T. Thus, P is the mother of T's mother."
   },
   {
@@ -1713,7 +1713,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 4,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "2 is the wife of 4, and 4 is the father of 3, meaning 2 is the mother of 3. 5 is the brother of 2, making 5 the mother's brother of 3."
   },
   {
@@ -1730,7 +1730,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 3,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "P is the son of Q, and Q is the mother of R. Since R is the wife of T, R is female. Thus, P is the brother of R."
   },
   {
@@ -1747,7 +1747,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 1,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "P is the son of Q, and Q is the wife of R, making R the father of P. R is the father of S, so P and S are brothers. S is the husband of T. Thus, P is the husband's brother to T."
   },
   {
@@ -1764,7 +1764,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 2,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "M is the wife of N, and N is the father of P. P is the sister of Q. Thus, N is the father of Q, making M the mother of Q."
   },
   {
@@ -1781,7 +1781,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 2,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "P \u00f7 Q \u00d7 R translates to P is the mother of Q, and Q is the father of R, making P the paternal grandmother of R."
   },
   {
@@ -1798,7 +1798,7 @@
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 4,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "G is the husband of H, and H is the mother of I, so G is the father of I. I is the husband of J. Thus, G is the father-in-law of J."
   },
   {
@@ -1815,7 +1815,7 @@
     "sourceYear": 2021,
     "sourcePaper": "Unknown",
     "correctOption": 1,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "Interchanging 36 and 14 gives 14 \u00d7 81 \u00f7 9 \u2013 (88 \u00f7 4) + 36 + (22 + 7) = 14 \u00d7 9 - 22 + 36 + 29 = 126 - 22 + 65 = 169."
   },
   {
@@ -1832,7 +1832,7 @@
     "sourceYear": 2021,
     "sourcePaper": "Unknown",
     "correctOption": 1,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging \u2013 and + gives 588 \u00f7 28 \u00d7 32 - 72 + 160 = 21 \u00d7 32 - 72 + 160 = 672 - 72 + 160 = 760."
   },
   {
@@ -1849,7 +1849,7 @@
     "sourceYear": 2021,
     "sourcePaper": "Unknown",
     "correctOption": 1,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging + and \u00f7 gives 294 \u00f7 14 \u00d7 4 + 16 - 67 = 21 \u00d7 4 + 16 - 67 = 84 + 16 - 67 = 33."
   },
   {
@@ -1866,7 +1866,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 3,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging \u2212 and \u00f7 gives 3 \u00d7 12 \u00f7 6 - 2 + 12 = 36 \u00f7 6 - 2 + 12 = 6 - 2 + 12 = 16."
   },
   {
@@ -1883,7 +1883,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 4,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging + and \u2013 gives 13 \u00d7 6 - 24 \u00f7 6 + 17 = 78 - 4 + 17 = 91."
   },
   {
@@ -1900,7 +1900,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 3,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "Interchanging 4 and 9, and \u00f7 and \u00d7 gives 9 + 2 \u00d7 7 + 8 \u00f7 4 = 9 + 14 + 2 = 25."
   },
   {
@@ -1917,7 +1917,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 1,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging \u00f7 and \u2013 gives 312 \u00f7 13 \u00d7 14 + 207 - 4 = 24 \u00d7 14 + 207 - 4 = 336 + 203 = 539."
   },
   {
@@ -1934,7 +1934,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 1,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging \u00d7 and \u2013 gives 171 \u00f7 3 \u00d7 16 + 72 - 412 = 57 \u00d7 16 + 72 - 412 = 912 + 72 - 412 = 572."
   },
   {
@@ -1951,7 +1951,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 3,
-    "difficulty": 1,
+    "difficulty": "Medium",
     "explanation": "Interchanging + and \u2212 gives 17 \u00d7 4 - 6 \u00f7 2 + 27 = 68 - 3 + 27 = 92."
   },
   {
@@ -1968,7 +1968,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 4,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging \u2212 and \u00d7 gives 18 \u00d7 23 - 455 \u00f7 7 + 28 = 414 - 65 + 28 = 377."
   },
   {
@@ -1985,7 +1985,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 4,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging \u00f7 and + gives 34 + 16 \u00f7 4 * 8 - 6 = 34 + 4 * 8 - 6 = 34 + 32 - 6 = 60."
   },
   {
@@ -2002,7 +2002,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 1,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging \u2212 and + gives 247 \u00f7 13 - 16 \u00d7 3 + 148 = 19 - 48 + 148 = 119."
   },
   {
@@ -2019,7 +2019,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 1,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging \u00f7 and * gives 95 \u00f7 5 + 19 * 2 - 21 = 19 + 38 - 21 = 36."
   },
   {
@@ -2036,7 +2036,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 2,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging \u00f7 and + gives 29 \u00d7 145 \u00f7 5 - 640 + 15 = 29 \u00d7 29 - 640 + 15 = 841 - 640 + 15 = 216."
   },
   {
@@ -2053,7 +2053,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 3,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging \u00f7 and \u00d7 gives 139 + 40 \u00d7 5 - 168 \u00f7 3 = 139 + 200 - 56 = 283."
   },
   {
@@ -2070,7 +2070,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 3,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging \u00f7 and * gives (50 * 3) \u00f7 15 + 25 - 10 = 150 \u00f7 15 + 15 = 10 + 15 = 25."
   },
   {
@@ -2087,7 +2087,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 1,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging + and * gives 16 * 4 \u00f7 2 + 12 - 4 = 32 + 12 - 4 = 40."
   },
   {
@@ -2104,7 +2104,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 3,
-    "difficulty": 2,
+    "difficulty": "Hard",
     "explanation": "Interchanging 8, 5 and \u2212, \u00d7 gives 8 + 44 \u00d7 5 - 25 = 8 + 220 - 25 = 203."
   },
   {
@@ -2121,7 +2121,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 1,
-    "difficulty": 1,
+    "difficulty": "Medium",
     "explanation": "Interchanging + and \u2013 gives 108 \u00f7 2 * 10 - 70 + 10 = 54 * 10 - 60 = 540 - 60 = 480."
   },
   {
@@ -2138,7 +2138,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 2,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging \u00f7 and + gives 7 * 9 \u00f7 3 + 7 - 3 = 7 * 3 + 4 = 21 + 4 = 25."
   },
   {
@@ -2155,7 +2155,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 1,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging \u00f7 and + gives 81 \u00f7 3 + 9 * 5 - 12 = 27 + 45 - 12 = 72 - 12 = 60."
   },
   {
@@ -2172,7 +2172,7 @@
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "correctOption": 4,
-    "difficulty": 2,
+    "difficulty": "Medium",
     "explanation": "Interchanging \u00f7 and * gives 81 \u00f7 9 + 15 * 3 - 4 = 9 + 45 - 4 = 50."
   },
   {
@@ -2187,7 +2187,7 @@
     "correctOption": 4,
     "sourceChosenOption": 4,
     "subtopic": "Letter-cluster Analogy / Series",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2021,
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-1-English.pdf",
     "explanation": "In FBXT, TPLH, and CYUQ, each consecutive letter decreases by 4 positions in the alphabet (e.g., F-4=B, B-4=X, X-4=T). In NJFA, the last difference is F to A (-5), which breaks the pattern."
@@ -2204,7 +2204,7 @@
     "correctOption": 4,
     "sourceChosenOption": 4,
     "subtopic": "Letter-cluster Analogy / Series",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2021,
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-1-English.pdf",
     "explanation": "The first three letters shift by +2 (P->R->T->V->X, N->P->R->T->V, N->P->R->T->V). The last letter follows the sequence of vowels: A, E, I, O, U. So the next cluster is XVVU."
@@ -2221,7 +2221,7 @@
     "correctOption": 3,
     "sourceChosenOption": 3,
     "subtopic": "Letter-cluster Analogy / Series",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2021,
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-2-English.pdf",
     "explanation": "Pattern for each position: 1st letter shifts -1 (C->B->A->Z->Y). 2nd letter shifts +2 (M->O->Q->S->U). 3rd letter shifts -3 (Q->N->K->H->E). 4th letter shifts +4 (R->V->Z->D->H). Result: YUEH."
@@ -2238,7 +2238,7 @@
     "correctOption": 4,
     "sourceChosenOption": 4,
     "subtopic": "Letter-cluster Analogy / Series",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2021,
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-16-Aug-2021-Shift-1-English.pdf",
     "explanation": "Pattern: 1st letter shifts +3 (T->W->Z->C->F). 2nd letter shifts +3 (H->K->N->Q->T). 3rd letter shifts -3 (M->J->G->D->A). 4th letter shifts -3 (E->B->Y->V->S). Result: FTAS."
@@ -2255,7 +2255,7 @@
     "correctOption": 4,
     "sourceChosenOption": 3,
     "subtopic": "Blood Relations",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2021,
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-16-Aug-2021-Shift-2-English.pdf",
     "explanation": "Ajay's father's daughter-in-law is either Ajay's wife or his brother's wife. Therefore, her only son Rajat is either Ajay's son or his nephew. Thus, Ajay is either the father or the uncle."
@@ -2272,7 +2272,7 @@
     "correctOption": 3,
     "sourceChosenOption": 3,
     "subtopic": "Blood Relations",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2023,
     "sourcePaper": "14-July-shift-2-2023.pdf",
     "explanation": "The son of my wife is my son. The brother of my son is also my son. The daughter of my son is my granddaughter. Thus, I am the grandfather of Suresha."
@@ -2289,7 +2289,7 @@
     "correctOption": 4,
     "sourceChosenOption": 4,
     "subtopic": "Blood Relations",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2023,
     "sourcePaper": "17-July-shift-3-2023.pdf",
     "explanation": "Vineeta's father's brother is her uncle. Her uncle's father is her grandfather. The wife of her grandfather is her grandmother (father's mother)."
@@ -2306,7 +2306,7 @@
     "correctOption": 4,
     "sourceChosenOption": 4,
     "subtopic": "Blood Relations",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2023,
     "sourcePaper": "20-July-shift-3-2023.pdf",
     "explanation": "Samuel's maternal uncle's son is his cousin. The sister of his cousin is also his cousin, who is the daughter of his maternal uncle (mother's brother's daughter)."
@@ -2323,7 +2323,7 @@
     "correctOption": 2,
     "sourceChosenOption": 2,
     "subtopic": "Blood Relations",
-    "difficulty": 2,
+    "difficulty": "Hard",
     "sourceYear": 2023,
     "sourcePaper": "21-July-shift-1-2023.pdf",
     "explanation": "J # K means J is the father of K. K @ L means K is the brother of L. Thus, J is the father of L."
@@ -2340,7 +2340,7 @@
     "correctOption": 3,
     "sourceChosenOption": 3,
     "subtopic": "Blood Relations",
-    "difficulty": 2,
+    "difficulty": "Hard",
     "sourceYear": 2022,
     "sourcePaper": "12-Dec-shift-2.pdf",
     "explanation": "W is the son of Q, and Q is the mother of T, making W the brother of T. T is the father of Y, and Y is the son of M, meaning T and M are Y's parents. M is the mother of K. Since T and M are parents, T is the father of K. As W is T's brother, W is K's father's brother."
@@ -2357,7 +2357,7 @@
     "correctOption": 3,
     "sourceChosenOption": 1,
     "subtopic": "Syllogism",
-    "difficulty": 2,
+    "difficulty": "Hard",
     "sourceYear": 2023,
     "sourcePaper": "18-July-shift-4-2023.pdf",
     "explanation": "Since all males are boys, some boys must be males (I is true). Since all students are teachers, some teachers must be students (II is true). There is no established direct relationship to conclude all males are students (III is false)."
@@ -2374,7 +2374,7 @@
     "correctOption": 3,
     "sourceChosenOption": 3,
     "subtopic": "Syllogism",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2023,
     "sourcePaper": "20-July-shift-4-2023.pdf",
     "explanation": "Indians are a subset of wealthy people, and cricketers are also a subset of wealthy people, but they do not necessarily overlap (I is false). Consequently, cricketers being honest is also not guaranteed (II is false)."
@@ -2391,7 +2391,7 @@
     "correctOption": 3,
     "sourceChosenOption": 3,
     "subtopic": "Syllogism",
-    "difficulty": 2,
+    "difficulty": "Easy",
     "sourceYear": 2020,
     "sourcePaper": "10-September-Shift-2.pdf",
     "explanation": "Since all purses are wallets and all wallets are sacks, all purses must be sacks (I is true). Since some bags are purses and all purses are wallets, some bags are wallets, meaning some wallets are bags (II is true)."
@@ -2408,7 +2408,7 @@
     "correctOption": 3,
     "sourceChosenOption": 3,
     "subtopic": "Syllogism",
-    "difficulty": 2,
+    "difficulty": "Hard",
     "sourceYear": 2020,
     "sourcePaper": "10-September-Shift-2.pdf",
     "explanation": "Tables are sofas, and sofas are benches, so all tables are benches (III is true). Since benches and chairs have no overlap, tables (which are benches) cannot be chairs (I is true). Sofas are benches, so they cannot be chairs (II is false)."
@@ -2425,7 +2425,7 @@
     "correctOption": 1,
     "sourceChosenOption": 1,
     "subtopic": "Syllogism",
-    "difficulty": 2,
+    "difficulty": "Hard",
     "sourceYear": 2020,
     "sourcePaper": "11-September-Shift-1.pdf",
     "explanation": "Some bottles are flasks and all flasks are bins, so some bottles are bins (I is true). Since some bottles are bins and all bottles are jugs, some jugs are bins (II is true). Since some bottles are flasks and all bottles are jugs, some flasks are jugs (III is true)."
@@ -2442,7 +2442,7 @@
     "correctOption": 3,
     "sourceChosenOption": 3,
     "subtopic": "Syllogism",
-    "difficulty": 2,
+    "difficulty": "Easy",
     "sourceYear": 2024,
     "sourcePaper": "11-September-Shift-2.pdf",
     "explanation": "Apples are mangoes which are lemons, so apples are lemons (I is true). Mangoes are lemons which are kiwis, so mangoes are kiwis (II is true)."
@@ -2459,7 +2459,7 @@
     "correctOption": 1,
     "sourceChosenOption": 1,
     "subtopic": "Syllogism",
-    "difficulty": 2,
+    "difficulty": "Easy",
     "sourceYear": 2024,
     "sourcePaper": "11-September-Shift-2.pdf",
     "explanation": "Pins overlap with pages, but there is no guaranteed overlap with pens (I is false). Boards overlap with pins, but there is no guaranteed overlap with pages (II is false) or pens (III is false)."
@@ -2476,7 +2476,7 @@
     "correctOption": 2,
     "sourceChosenOption": 2,
     "subtopic": "Syllogism",
-    "difficulty": 2,
+    "difficulty": "Hard",
     "sourceYear": 2024,
     "sourcePaper": "11-September-Shift-3.pdf",
     "explanation": "Rodents and kittens could overlap as there's no rule against it (I is false). Rats overlapping with mice doesn't guarantee they overlap with rodents, as mice and rodents are disjoint (II is false). Kittens and mice could overlap as well (III is false)."
@@ -2493,7 +2493,7 @@
     "correctOption": 3,
     "sourceChosenOption": 2,
     "subtopic": "Syllogism",
-    "difficulty": 2,
+    "difficulty": "Hard",
     "sourceYear": 2022,
     "sourcePaper": "12-Dec-shift-1.pdf",
     "explanation": "Since some oranges are bananas and all bananas are fruits, some oranges are fruits (III is true). Since all oranges are apples and some oranges are fruits, some apples are fruits, meaning some fruits are apples (I is true). Since some oranges are bananas and all oranges are apples, some apples are bananas (II is true)."
@@ -2510,7 +2510,7 @@
     "correctOption": 3,
     "sourceChosenOption": 3,
     "subtopic": "Syllogism",
-    "difficulty": 2,
+    "difficulty": "Hard",
     "sourceYear": 2022,
     "sourcePaper": "12-Dec-shift-2.pdf",
     "explanation": "S being inside B and B overlapping with C does not guarantee S is inside C (I is false). Statement II says some B are C, which contradicts 'No C is B' (II is false). All S being B does not mean all B are S (III is false)."
@@ -2527,7 +2527,7 @@
     "correctOption": 1,
     "sourceChosenOption": 1,
     "subtopic": "Coded Language",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2021,
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-13-Aug-2021-Shift-3-English.pdf",
     "explanation": "The code is the cube of the number of letters in the word. PARROT has 6 letters, and 6 cubed is 216."
@@ -2544,7 +2544,7 @@
     "correctOption": 1,
     "sourceChosenOption": 1,
     "subtopic": "Coded Language",
-    "difficulty": 3,
+    "difficulty": "Hard",
     "sourceYear": 2021,
     "sourcePaper": "SSC-CGL-QUESTION-PAPER-23-Aug-2021-Shift-1-English.pdf",
     "explanation": "Sum of the reverse alphabetical positions of the letters multiplied by the number of consonants in the word. For OPTIONAL: Sum of reverse letters = 114, number of consonants = 4. 114 * 4 = 456."
@@ -2561,7 +2561,7 @@
     "correctOption": 2,
     "sourceChosenOption": 2,
     "subtopic": "Coded Language",
-    "difficulty": 1,
+    "difficulty": "Medium",
     "sourceYear": 2023,
     "sourcePaper": "25-July-shift-3-2023.pdf",
     "explanation": "Comparing 'BENT' and 'DEBT', the common letters are B, E, and T, and the common digits are 3, 1, and 8. The remaining letter in 'BENT' is N, which corresponds to the remaining digit 9."
@@ -2578,7 +2578,7 @@
     "correctOption": 2,
     "sourceChosenOption": 2,
     "subtopic": "Coded Language",
-    "difficulty": 1,
+    "difficulty": "Medium",
     "sourceYear": 2023,
     "sourcePaper": "26-July-shift-1-2023.pdf",
     "explanation": "Comparing 'BIND' and 'DRIB', the common letters are B, I, and D, and the common digits are 9, 1, and 4. The remaining letter in 'BIND' is N, corresponding to the remaining digit 2."
@@ -2595,7 +2595,7 @@
     "correctOption": 2,
     "sourceChosenOption": 2,
     "subtopic": "Coded Language",
-    "difficulty": 1,
+    "difficulty": "Medium",
     "sourceYear": 2023,
     "sourcePaper": "26-July-shift-4-2023.pdf",
     "explanation": "The code is the square of the number of letters in the word. CHAPTER has 7 letters, and 7 squared is 49."
@@ -2612,7 +2612,7 @@
     "correctOption": 2,
     "sourceChosenOption": 2,
     "subtopic": "Coded Language",
-    "difficulty": 1,
+    "difficulty": "Medium",
     "sourceYear": 2023,
     "sourcePaper": "27-July-shift-1-2023.pdf",
     "explanation": "The code is the square of the number of letters in the word. MAN has 3 letters, and 3 squared is 9."
@@ -2629,7 +2629,7 @@
     "correctOption": 4,
     "sourceChosenOption": 4,
     "subtopic": "Coded Language",
-    "difficulty": 2,
+    "difficulty": "Hard",
     "sourceYear": 2022,
     "sourcePaper": "1-Dec-shift-3.pdf",
     "explanation": "The code is formed by taking the numerical positions of the letters in the English alphabet and writing them in reverse order."
@@ -2646,7 +2646,7 @@
     "correctOption": 4,
     "sourceChosenOption": 4,
     "subtopic": "Mathematical Operations",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2023,
     "sourcePaper": "17-July-shift-1-2023.pdf",
     "explanation": "If we interchange \u00f7 and x, the equation becomes 60 \u00f7 4 + 9 x 3 - 8. Following BODMAS, 15 + 27 - 8 = 42 - 8 = 34."
@@ -2663,7 +2663,7 @@
     "correctOption": 3,
     "sourceChosenOption": 3,
     "subtopic": "Mathematical Operations",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2023,
     "sourcePaper": "18-July-shift-1-2023.pdf",
     "explanation": "Interchanging \u00f7 and x gives 10 - 4 + 13 x 15 \u00f7 3. Solving this using BODMAS, we get 10 - 4 + 13 x 5 = 10 - 4 + 65 = 71."
@@ -2680,7 +2680,7 @@
     "correctOption": 2,
     "sourceChosenOption": 2,
     "subtopic": "Mathematical Operations",
-    "difficulty": 2,
+    "difficulty": "Hard",
     "sourceYear": 2023,
     "sourcePaper": "19-July-shift-3-2023.pdf",
     "explanation": "By interchanging 16 and 9, and + and -, the equation becomes 14 - 9 + 14 x 16 \u00f7 4. Applying BODMAS gives 14 - 9 + 14 x 4 = 14 - 9 + 56 = 61."
@@ -2697,7 +2697,7 @@
     "correctOption": 4,
     "sourceChosenOption": 4,
     "subtopic": "Mathematical Operations",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2023,
     "sourcePaper": "24-July-shift-3-2023.pdf",
     "explanation": "Interchanging x and \u00f7 gives 17 + 10 \u00f7 5 x 9 + 18. Applying BODMAS, this simplifies to 17 + 2 x 9 + 18 = 17 + 18 + 18 = 53."
@@ -2714,7 +2714,7 @@
     "correctOption": 3,
     "sourceChosenOption": 3,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2023,
     "sourcePaper": "17-July-shift-4-2023.pdf",
     "explanation": "Alphabetical order of the words: Granite, Greed, Green, Grip, Grown. So the correct sequence is 5, 1, 2, 4, 3."
@@ -2731,7 +2731,7 @@
     "correctOption": 3,
     "sourceChosenOption": 0,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2023,
     "sourcePaper": "19-July-shift-1-2023.pdf",
     "explanation": "Alphabetical order: Valiant (5), Vampire (4), Vanquish (3), Variance (1), Victorious (6), Violence (2). The order is 5, 4, 3, 1, 6, 2."
@@ -2748,7 +2748,7 @@
     "correctOption": 4,
     "sourceChosenOption": 4,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2023,
     "sourcePaper": "26-July-shift-2-2023.pdf",
     "explanation": "Alphabetical order: Pandanus (4), Pandarus (5), Pandemic (2), Pandemonium (1), Pandering (3). Sequence is 4, 5, 2, 1, 3."
@@ -2765,7 +2765,7 @@
     "correctOption": 1,
     "sourceChosenOption": 1,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "13-Dec-shift-1.pdf",
     "explanation": "Dictionary order: Overweening (5), Overweight (4), Overwhelming (3), Overwork (1), Overwrought (2). The third word is Overwhelming."
@@ -2782,7 +2782,7 @@
     "correctOption": 2,
     "sourceChosenOption": 2,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "13-Dec-shift-2.pdf",
     "explanation": "Alphabetical order: Threadbare (2), Threat (5), Thresh (1), Threw (4), Thrice (3). The correct sequence is 2, 5, 1, 4, 3."
@@ -2799,7 +2799,7 @@
     "correctOption": 3,
     "sourceChosenOption": 3,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2022,
     "sourcePaper": "13-Dec-shift-4.pdf",
     "explanation": "The words are already in dictionary order: Unaffected, Unarmed, Unasked, Unattached, Unauthorized. The third word is Unasked."
@@ -2816,7 +2816,7 @@
     "correctOption": 4,
     "sourceChosenOption": 4,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "2-Dec-shift-1.pdf",
     "explanation": "Alphabetical order: Latterly (4), Lattice (2), Laudable (5), Laudanum (1), Laudation (3). Sequence is 4, 2, 5, 1, 3."
@@ -2833,7 +2833,7 @@
     "correctOption": 3,
     "sourceChosenOption": 3,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "2-Dec-shift-2.pdf",
     "explanation": "Alphabetical order: Fundament (6), Funerary (2), Funicular (4), Fuscous (5), Fuselage (7), Fusion (3), Fustian (1). The sequence is 6, 2, 4, 5, 7, 3, 1."
@@ -2850,7 +2850,7 @@
     "correctOption": 2,
     "sourceChosenOption": 2,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "2-Dec-shift-3.pdf",
     "explanation": "Dictionary order: Sick (3), Sicken (4), Sickle (1), Sickly (2), Sickness (5). The third word is Sickle."
@@ -2867,7 +2867,7 @@
     "correctOption": 4,
     "sourceChosenOption": 4,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "2-Dec-shift-4.pdf",
     "explanation": "Alphabetical order: Kingdom (3), Kinglet (1), Kingly (5), Kingship (2), Kinsfolk (4). Sequence is 3, 1, 5, 2, 4."
@@ -2884,7 +2884,7 @@
     "correctOption": 1,
     "sourceChosenOption": 1,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "3-Dec-shift-1.pdf",
     "explanation": "Alphabetical order: Expedition (2), Expel (4), Expenditure (5), Expensive (1), Experience (3). Sequence is 2, 4, 5, 1, 3."
@@ -2901,7 +2901,7 @@
     "correctOption": 2,
     "sourceChosenOption": 2,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "3-Dec-shift-2.pdf",
     "explanation": "Dictionary order: Verse (4), Versicolour (3), Version (1), Verso (5), Versus (2). The fifth word is Versus."
@@ -2918,7 +2918,7 @@
     "correctOption": 3,
     "sourceChosenOption": 3,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "3-Dec-shift-3.pdf",
     "explanation": "Alphabetical order: Pardon (4), Pardoner (1), Parental (3), Parenthesis (5), Parenthetical (2). Sequence is 4, 1, 3, 5, 2."
@@ -2935,7 +2935,7 @@
     "correctOption": 3,
     "sourceChosenOption": 3,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "3-Dec-shift-4.pdf",
     "explanation": "Alphabetical order: Latitude (4), Laudanum (6), Laudatory (2), Launder (7), Laureate (3), Legacy (5), Lesage (1). Sequence is 4, 6, 2, 7, 3, 5, 1."
@@ -2952,7 +2952,7 @@
     "correctOption": 1,
     "sourceChosenOption": 1,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "5-Dec-shift-1.pdf",
     "explanation": "Alphabetical order: Seniority (4), Senna (5), Sennet (1), Sennight (2), Sennit (3). Sequence is 4, 5, 1, 2, 3."
@@ -2969,7 +2969,7 @@
     "correctOption": 3,
     "sourceChosenOption": 1,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "5-Dec-shift-2.pdf",
     "explanation": "Alphabetical order: Accursed (3), Accusable (1), Accuser (5), Acerbity (2), Acetify (4). Sequence is 3, 1, 5, 2, 4."
@@ -2986,7 +2986,7 @@
     "correctOption": 1,
     "sourceChosenOption": 1,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "5-Dec-shift-3.pdf",
     "explanation": "Alphabetical order: Humanity (6), Humanoid (3), Humbug (2), Humectants (7), Humidity (4), Humility (1), Humoresque (5). Sequence is 6, 3, 2, 7, 4, 1, 5."
@@ -3003,7 +3003,7 @@
     "correctOption": 3,
     "sourceChosenOption": 3,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "5-Dec-shift-4.pdf",
     "explanation": "Dictionary order: Theogonic (5), Theologue (4), Theology (3), Theorem (2), Theory (1). The third word is Theology."
@@ -3020,7 +3020,7 @@
     "correctOption": 1,
     "sourceChosenOption": 1,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "6-Dec-shift-1.pdf",
     "explanation": "Dictionary order: Serein (3), Serial (4), Series (1), Serious (2), Serried (5). The third word is Series."
@@ -3037,7 +3037,7 @@
     "correctOption": 2,
     "sourceChosenOption": 2,
     "subtopic": "Dictionary Order",
-    "difficulty": 2,
+    "difficulty": "Medium",
     "sourceYear": 2020,
     "sourcePaper": "6-Dec-shift-2.pdf",
     "explanation": "Alphabetical order: Miscalculate (2), Miscall (4), Miscasting (5), Miscellaneous (1), Mischance (3). Sequence is 2, 4, 5, 1, 3."
@@ -3054,7 +3054,8 @@
     "explanation": "The differences between consecutive terms are 11, 16, 22, 29. The differences of these differences (second differences) are 5, 6, 7. The next second difference is 8, making the next first difference 29 + 8 = 37. Thus, the next term is 102 + 37 = 139.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "9e5b7349-47ad-49ae-b1bb-843c5284ed9d"
+    "qid": "9e5b7349-47ad-49ae-b1bb-843c5284ed9d",
+    "difficulty": "Hard"
   },
   {
     "question": "Select the number from among the given options that can replace the question mark (?) in the following series. 5, 13, 22, 34, 51, 75, 108, 152, ?",
@@ -3068,7 +3069,8 @@
     "explanation": "The first differences are 8, 9, 12, 17, 24, 33, 44. The second differences are 1, 3, 5, 7, 9, 11 (consecutive odd numbers). The next second difference is 13, making the next first difference 44 + 13 = 57. The next term is 152 + 57 = 209.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "f764ca73-0a76-4d32-b7e1-f3792cdaa5c5"
+    "qid": "f764ca73-0a76-4d32-b7e1-f3792cdaa5c5",
+    "difficulty": "Hard"
   },
   {
     "question": "Select the number from among the given options that can replace the question mark (?) in the following series. 37, 52, 74, 104, 143, ?",
@@ -3082,7 +3084,8 @@
     "explanation": "The first differences are 15, 22, 30, 39. The second differences are 7, 8, 9. The next second difference is 10, making the next first difference 39 + 10 = 49. The next term is 143 + 49 = 192.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "1284af0e-84ad-478c-a590-301f26ed7399"
+    "qid": "1284af0e-84ad-478c-a590-301f26ed7399",
+    "difficulty": "Hard"
   },
   {
     "question": "Select the number from among the given options that can replace the question mark (?) in the following series. 24, 48, 51, 204, 209, ?",
@@ -3096,7 +3099,8 @@
     "explanation": "The pattern alternates between multiplication and addition: \u00d72, +3, \u00d74, +5. The next operation is \u00d76. Therefore, 209 \u00d7 6 = 1254.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "6554556b-3d2d-43f2-9b3b-c8358ca05d47"
+    "qid": "6554556b-3d2d-43f2-9b3b-c8358ca05d47",
+    "difficulty": "Medium"
   },
   {
     "question": "Select the number from among the given options that can replace the question mark (?) in the following series. 11, 13, 19, 49, 109, 239, ?",
@@ -3110,7 +3114,8 @@
     "explanation": "The differences are 2, 6, 30, 60, 130. These follow the pattern n\u00b3 \u00b1 n: 1\u00b3+1=2, 2\u00b3-2=6, 3\u00b3+3=30, 4\u00b3-4=60, 5\u00b3+5=130. The next difference is 6\u00b3-6 = 216-6 = 210. Therefore, 239 + 210 = 449.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "cbb4fd6c-51fc-4368-b1b7-85f1871a2dda"
+    "qid": "cbb4fd6c-51fc-4368-b1b7-85f1871a2dda",
+    "difficulty": "Medium"
   },
   {
     "question": "Which of the following numbers will replace the question mark (?) in the given series? 8, 15, 26, ? , 56, 75",
@@ -3124,7 +3129,8 @@
     "explanation": "The differences between consecutive terms are consecutive prime numbers starting from 7: 7, 11, 13, 17, 19. So, 26 + 13 = 39. Checking the next: 39 + 17 = 56.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "2b728c5d-8f94-491b-a0c6-833410ad6823"
+    "qid": "2b728c5d-8f94-491b-a0c6-833410ad6823",
+    "difficulty": "Medium"
   },
   {
     "question": "Which number should replace the question mark (?) in the following number series? 39, 42, 48, 57, 69, ?, 102",
@@ -3138,7 +3144,8 @@
     "explanation": "The differences are multiples of 3: 3, 6, 9, 12. The next difference is 15. Therefore, 69 + 15 = 84. Checking the next: 84 + 18 = 102.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "0c07fdd9-79c4-4c48-8cf4-b4ffa4dd8ecd"
+    "qid": "0c07fdd9-79c4-4c48-8cf4-b4ffa4dd8ecd",
+    "difficulty": "Medium"
   },
   {
     "question": "Which of the following numbers will replace the question mark (?) in the given series? 33, 80, 108, ?, 183, 230, 258",
@@ -3152,7 +3159,8 @@
     "explanation": "The differences between terms alternate between 47 and 28. (80 - 33 = 47), (108 - 80 = 28). The next difference is 47, so 108 + 47 = 155. Checking the next: 155 + 28 = 183.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "e42928ea-21c3-4404-a67a-9445d5c17f32"
+    "qid": "e42928ea-21c3-4404-a67a-9445d5c17f32",
+    "difficulty": "Medium"
   },
   {
     "question": "Which of the following numbers will replace the question mark (?) in the given series? 27, 38, ?, 68, 87, 110",
@@ -3166,7 +3174,8 @@
     "explanation": "The differences between consecutive terms are prime numbers starting from 11: 11, 13, 17, 19, 23. Thus, 38 + 13 = 51. Checking the next: 51 + 17 = 68.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "54110091-6d47-4663-ae14-b364c9043ddc"
+    "qid": "54110091-6d47-4663-ae14-b364c9043ddc",
+    "difficulty": "Medium"
   },
   {
     "question": "Which of the following numbers will replace the question mark (?) in the given series? 3, 8, 15, 26, 39, ?",
@@ -3180,7 +3189,8 @@
     "explanation": "The differences are prime numbers: 5, 7, 11, 13. The next prime number is 17. Therefore, 39 + 17 = 56.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "44ae86fc-7b45-4330-bb6c-aa4de5fc1c63"
+    "qid": "44ae86fc-7b45-4330-bb6c-aa4de5fc1c63",
+    "difficulty": "Medium"
   },
   {
     "question": "Which of the following numbers will replace the question mark (?) in the given series? 32, ? , 44, 56, 72, 92",
@@ -3194,7 +3204,8 @@
     "explanation": "The differences increase by 4 each time. Testing the backwards pattern from 92: differences are 20, 16, 12, 8, 4. So 32 + 4 = 36. Checking the next: 36 + 8 = 44.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "433ab35c-d0db-403d-81db-5b3ce427e3a2"
+    "qid": "433ab35c-d0db-403d-81db-5b3ce427e3a2",
+    "difficulty": "Medium"
   },
   {
     "question": "Which of the following numbers will replace the question mark (?) in the given series? 8, 14, ? , 44, 68, 98, 134",
@@ -3208,7 +3219,8 @@
     "explanation": "The differences are multiples of 6: 6, 12, 18, 24, 30, 36. So 14 + 12 = 26. Checking the next: 26 + 18 = 44.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "0ec9bf0c-eaa8-4c6a-8fc7-e6e6d12559de"
+    "qid": "0ec9bf0c-eaa8-4c6a-8fc7-e6e6d12559de",
+    "difficulty": "Medium"
   },
   {
     "question": "Which of the following numbers will replace the question mark (?) in the given series? 2, 10, 40, 120, 240, ?",
@@ -3222,7 +3234,8 @@
     "explanation": "The pattern involves multiplying by decreasing integers: \u00d75, \u00d74, \u00d73, \u00d72. The next operation is \u00d71. Therefore, 240 \u00d7 1 = 240.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "93edc871-0340-4f0d-bee4-48d584427d65"
+    "qid": "93edc871-0340-4f0d-bee4-48d584427d65",
+    "difficulty": "Medium"
   },
   {
     "question": "Which of the following numbers will replace the question mark (?) in the given series? 214, 207, 193, ? , 144, 109",
@@ -3236,7 +3249,8 @@
     "explanation": "The sequence decreases by multiples of 7: -7, -14, -21, -28, -35. Therefore, 193 - 21 = 172. Checking the next: 172 - 28 = 144.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "3a4fae49-0a7a-4b1c-b942-4b4044c0af57"
+    "qid": "3a4fae49-0a7a-4b1c-b942-4b4044c0af57",
+    "difficulty": "Medium"
   },
   {
     "question": "Select the number from among the given options that can replace the question mark (?) in the following series. 2, 6, 9, 27, 30, 90, ?",
@@ -3250,7 +3264,8 @@
     "explanation": "The pattern alternates between multiplying by 3 and adding 3: \u00d73, +3, \u00d73, +3, \u00d73. The next operation is +3. Therefore, 90 + 3 = 93.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "f00eaa7d-b26b-41aa-800b-f92b01c7f001"
+    "qid": "f00eaa7d-b26b-41aa-800b-f92b01c7f001",
+    "difficulty": "Medium"
   },
   {
     "question": "Which of the following numbers will replace the question mark (?) in the given series? 232, 221, 199, ? , 122, 67",
@@ -3264,7 +3279,8 @@
     "explanation": "The sequence decreases by multiples of 11: -11, -22, -33, -44, -55. Therefore, 199 - 33 = 166. Checking the next: 166 - 44 = 122.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "765adfb5-7efc-4ba9-a59c-86f0b7cb9b22"
+    "qid": "765adfb5-7efc-4ba9-a59c-86f0b7cb9b22",
+    "difficulty": "Medium"
   },
   {
     "question": "Which of the following numbers will replace the question mark (?) in the given series? 11, 36, ?, 121, 185, 266",
@@ -3278,7 +3294,8 @@
     "explanation": "The differences between consecutive terms are squares of consecutive integers: 5\u00b2=25, 6\u00b2=36, 7\u00b2=49, 8\u00b2=64, 9\u00b2=81. So, 11 + 25 = 36. Then 36 + 36 = 72. Checking the next: 72 + 49 = 121.",
     "subtopic": "Number/Figure Series",
     "source": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
-    "qid": "c203562d-bf9e-4de0-beb7-1a0c4d2f16ed"
+    "qid": "c203562d-bf9e-4de0-beb7-1a0c4d2f16ed",
+    "difficulty": "Hard"
   },
   {
     "question": "Three of the following four triads are alike in a certain way as they are formed by performing same mathematical operations among themselves and thus form a group. Which triad does NOT belong to that group?",
@@ -3291,7 +3308,7 @@
     "correctOption": 3,
     "explanation": "In all options except the third, the first number is the square of the difference between the second and third numbers: (13-7)^2=36, (9-5)^2=16, (3-2)^2=1. However, (16-8)^2=64, which is not 72.",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Hard",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "aec69d19-e8fe-4712-99e7-3348e91ec0e9",
@@ -3308,7 +3325,7 @@
     "correctOption": 4,
     "explanation": "In all options except the fourth, the first and second letters are opposite pairs, and the third letter is 3 positions before the first letter alphabetically. In option 4, the third letter (C) is 2 positions before the first letter (E).",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "3d8cb080-2c76-475b-a529-f84932704ac9",
@@ -3325,7 +3342,7 @@
     "correctOption": 4,
     "explanation": "In all options except the fourth, the letters decrease alphabetically by 1, then by 2. Option 4 (DCB) decreases by 1, then by 1.",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "af25551c-6fad-4fc7-9d41-d87e65550365",
@@ -3342,7 +3359,7 @@
     "correctOption": 2,
     "explanation": "The value of sin 90\u00b0, cos 0\u00b0, and tan 45\u00b0 is 1. The value of sec 60\u00b0 is 2.",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "d9f64eca-c948-4805-84dd-aa6bcad2d789",
@@ -3359,7 +3376,7 @@
     "correctOption": 3,
     "explanation": "In all options except the third, the first and second letters have a difference of +3, and the first and third letters form an opposite pair (e.g. E-V, B-Y, G-T). Option 3 (JMP) does not follow the opposite pair rule for the first and third letters (J's opposite is Q, not P).",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "7a5cb939-3d7f-48cd-a2ec-e718ba0b0c5c",
@@ -3376,7 +3393,7 @@
     "correctOption": 3,
     "explanation": "In all options except the third, the letters increase by 3 alphabetical positions sequentially. Option 3 increases by 1 position sequentially.",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "1fab3855-7d90-4af3-b9eb-1896285c2693",
@@ -3393,7 +3410,7 @@
     "correctOption": 2,
     "explanation": "In all options except the second, the first and second letters have a difference of +4, and the first and third letters are opposite pairs. Option 2 has a difference of +3 between the first and second letters.",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "3f478fcd-8357-4509-9d38-e8b226f9e7a5",
@@ -3410,7 +3427,7 @@
     "correctOption": 1,
     "explanation": "In all options except the first, the 1st and 3rd letters form an opposite pair, and the 2nd and 4th letters form an opposite pair. In Option 1, D and V are not opposite pairs.",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "021a9c97-0f10-4576-aa7d-c634af4b7073",
@@ -3427,7 +3444,7 @@
     "correctOption": 2,
     "explanation": "In all options except the second, the first and third letters form an opposite pair, and the first letter is 3 alphabetical positions after the second letter. Option 2 (GET) has a difference of 2 positions between the first and second letters.",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "fdd5601b-47a5-4557-a8ee-0a1494f90dc4",
@@ -3444,7 +3461,7 @@
     "correctOption": 3,
     "explanation": "In all options except the third, the letters are in consecutive decreasing alphabetical order. Option 3 is in consecutive increasing order.",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "b0deeeb7-b930-4ce4-9bb8-f3103405d126",
@@ -3461,7 +3478,7 @@
     "correctOption": 3,
     "explanation": "In all options except the third, the letters decrease by 2 positions each time. Option 3 decreases by 1, then by 2.",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "be787f11-f8a8-4a00-9453-0e5d3b432733",
@@ -3478,7 +3495,7 @@
     "correctOption": 3,
     "explanation": "In all options except the third, the letters increase by 5 alphabetical positions each time. Option 3 increases by 4 positions each time.",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "3bc73004-e6b4-4677-8321-7cb3c56ed894",
@@ -3495,7 +3512,7 @@
     "correctOption": 4,
     "explanation": "In all options except the fourth, the third number is the product of the first two numbers. In option 4, the third number is the sum of the first two numbers.",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Hard",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "1806e023-2ce7-420e-bc8c-af26dac2b4cc",
@@ -3512,7 +3529,7 @@
     "correctOption": 1,
     "explanation": "In all options except the first, the letters increase by 4 alphabetical positions sequentially. Option 1 increases by 4, then by 3.",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "1f8b9f49-99ee-4746-a161-c7b011afee65",
@@ -3529,7 +3546,7 @@
     "correctOption": 2,
     "explanation": "In all options except the second, the letters increase by 5 positions, then by 3 positions. Option 2 increases by 5, then by 4.",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "41c37683-27c6-46e0-afa5-bbfd6005b6cf",
@@ -3546,7 +3563,7 @@
     "correctOption": 3,
     "explanation": "In all options except the third, the letters follow a -3, +5 positional pattern. Option 3 follows a -1, +5 pattern.",
     "subtopic": "Classification (Odd One Out)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "f9d93d98-0677-419a-9a69-36bef1fcda73",
@@ -3563,7 +3580,7 @@
     "correctOption": 4,
     "explanation": "Depression negatively affects a person's mood, just as insomnia negatively affects a person's sleep.",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "1e0ba137-521f-4fc4-af98-4a892e4aebac",
@@ -3580,7 +3597,7 @@
     "correctOption": 4,
     "explanation": "A chisel is a tool used by a sculptor to carve materials. Similarly, an anvil is a tool used by a blacksmith to shape metal.",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "74af88f9-d4af-4979-92d7-d83762447383",
@@ -3597,7 +3614,7 @@
     "correctOption": 2,
     "explanation": "The second number is the first number multiplied by (half of the first number plus 1). For 16: 16 * (8+1) = 144. For 28: 28 * (14+1) = 420.",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "9f55f625-f1f9-4f13-a91a-a0b1d8beebed",
@@ -3614,7 +3631,7 @@
     "correctOption": 4,
     "explanation": "\"Awful\" and \"Nice\" are opposite in meaning. The opposite of \"Nomadic\" (wandering) is \"Settled\".",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "bfc41368-3ea2-4c4b-a067-f684f476794e",
@@ -3631,7 +3648,7 @@
     "correctOption": 4,
     "explanation": "The second number is the square of the first number plus 4. 21^2 + 4 = 445. Thus, 24^2 + 4 = 576 + 4 = 580.",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Hard",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "ed38af9b-7128-4fa1-8fc6-aa50add47854",
@@ -3648,7 +3665,7 @@
     "correctOption": 4,
     "explanation": "A cartridge is an essential component inserted into a printer. Similarly, a motherboard is an essential component of a Central Processing Unit (or computer).",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "aa862b41-ed47-4078-8b0a-deb814c4482d",
@@ -3665,7 +3682,7 @@
     "correctOption": 2,
     "explanation": "Both numbers are multiples of 13 in the ratio 3:7 (39 = 3*13, 91 = 7*13). Similarly, 51 is 3*17, so the next number is 7*17 = 119.",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "f4ee6ef9-e8b4-4c51-ac49-3bb4d12e998e",
@@ -3682,7 +3699,7 @@
     "correctOption": 1,
     "explanation": "The skin is the primary sense organ for touch, just as the nose is the primary sense organ for smell.",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "b76e0e65-7a9c-4733-acff-b14401466965",
@@ -3699,7 +3716,7 @@
     "correctOption": 4,
     "explanation": "The logic is n : n * (n-2)^2. For 5: 5 * 3^2 = 45. For 3: 3 * 1^2 = 3. For 6: 6 * 4^2 = 6 * 16 = 96.",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Hard",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "e1fe07a3-c4ad-4b7f-b36e-5cbbbb7de664",
@@ -3716,7 +3733,7 @@
     "correctOption": 3,
     "explanation": "The first number is 5 times the cube of the second number. 5 * 5^3 = 625; 5 * 8^3 = 2560. Thus, for 5000, 5000 / 5 = 1000, which is the cube of 10.",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Hard",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "7920380b-1062-43e4-b1de-8c6a8d89e46c",
@@ -3733,7 +3750,7 @@
     "correctOption": 2,
     "explanation": "An orthopaedic specialist focuses on the treatment of bones, whereas a cardiologist specialises in the treatment of the heart.",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "743193bf-4d2a-4e26-a7d7-7f2263b3c50d",
@@ -3750,7 +3767,7 @@
     "correctOption": 2,
     "explanation": "The first number is 3 times the cube of the second number. 3 * 7^3 = 1029; 3 * 9^3 = 2187. Therefore, 24 = 3 * 2^3, making the answer 2.",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Hard",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "c01fa17f-cc55-4e9a-8dd9-0d7f2c059aae",
@@ -3767,7 +3784,7 @@
     "correctOption": 1,
     "explanation": "The first number is twice the square of the second number. 2 * 7^2 = 98; 2 * 9^2 = 162. For 242, 242 / 2 = 121, which is the square of 11.",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Hard",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "00607f14-3bfd-4e06-9857-6afa82f9e094",
@@ -3784,7 +3801,7 @@
     "correctOption": 3,
     "explanation": "The second number is obtained by multiplying the first number by itself minus 2. 7 * 5 = 35; 21 * 19 = 399. Thus, 4 * 2 = 8.",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "9f281fb4-706f-4862-b57f-fc92376fac1f",
@@ -3801,7 +3818,7 @@
     "correctOption": 4,
     "explanation": "The second number is the square of the first number minus 2. 7^2 - 2 = 47; 11^2 - 2 = 119. For 3, 3^2 - 2 = 9 - 2 = 7.",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Hard",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "de7fff23-15a7-42a6-bba7-1be4b25e86f6",
@@ -3818,7 +3835,7 @@
     "correctOption": 4,
     "explanation": "A plant is artificially kept and nurtured in a pot, just as a fish is artificially kept and nurtured in an aquarium.",
     "subtopic": "Analogy (Word/Number)",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "sourceYear": 2024,
     "sourcePaper": "SSC CGL QUESTION PAPERS \u2014 EXTRACTED TEXT",
     "qid": "e599a553-1406-475f-bb69-1b2d7e54ce48",

@@ -91,6 +91,8 @@ const feedbackExplanation = document.getElementById('feedback-explanation');
 // Initialize App
 
 function startTopicPractice(topic) {
+    const diffSelect = document.getElementById('difficulty-select');
+    const difficultyFilter = diffSelect ? diffSelect.value : 'All';
     markedQuestions = new Set();
     mode = 'topicPractice';
     drillTopics = [topic];
@@ -118,9 +120,23 @@ function startTopicPractice(topic) {
 function calculateTopicPracticeResults() {
     let totalCorrect = 0;
     const attempted = currentQuiz.length;
+    const difficultyPerformance = { Easy: {attempted:0, correct:0}, Medium: {attempted:0, correct:0}, Hard: {attempted:0, correct:0} };
+    const topicDiff = {};
     currentQuiz.forEach(q => {
-        if (userAnswers[q.qid] === q.correctOption) totalCorrect++;
+        if (!topicDiff[q.subtopic]) topicDiff[q.subtopic] = { Easy: {attempted:0, correct:0}, Medium: {attempted:0, correct:0}, Hard: {attempted:0, correct:0} };
+        let diff = q.difficulty || 'Medium';
+        difficultyPerformance[diff].attempted++;
+        topicDiff[q.subtopic][diff].attempted++;
+        if (userAnswers[q.qid] === q.correctOption) {
+            totalCorrect++;
+            difficultyPerformance[diff].correct++;
+            topicDiff[q.subtopic][diff].correct++;
+        }
     });
+    for(let diff in difficultyPerformance) {
+        let d = difficultyPerformance[diff];
+        d.accuracy = d.attempted > 0 ? Math.round((d.correct/d.attempted)*100) : 0;
+    }
 
     const accuracy = attempted > 0 ? Math.round((totalCorrect / attempted) * 100) : 0;
     const topic = drillTopics[0];
@@ -554,17 +570,28 @@ function calculateDiagnosticResults() {
     let totalCorrect = 0;
     const topicStats = {};
 
+    const difficultyPerformance = { Easy: {attempted:0, correct:0}, Medium: {attempted:0, correct:0}, Hard: {attempted:0, correct:0} };
+    const topicDiff = {};
     currentQuiz.forEach(q => {
-        if (!topicStats[q.subtopic]) {
-            topicStats[q.subtopic] = { total: 0, correct: 0 };
-        }
+        if (!topicStats[q.subtopic]) topicStats[q.subtopic] = { total: 0, correct: 0 };
+        if (!topicDiff[q.subtopic]) topicDiff[q.subtopic] = { Easy: {attempted:0, correct:0}, Medium: {attempted:0, correct:0}, Hard: {attempted:0, correct:0} };
         topicStats[q.subtopic].total++;
+        
+        let diff = q.difficulty || 'Medium';
+        difficultyPerformance[diff].attempted++;
+        topicDiff[q.subtopic][diff].attempted++;
         
         if (userAnswers[q.qid] === q.correctOption) {
             topicStats[q.subtopic].correct++;
             totalCorrect++;
+            difficultyPerformance[diff].correct++;
+            topicDiff[q.subtopic][diff].correct++;
         }
     });
+    for(let diff in difficultyPerformance) {
+        let d = difficultyPerformance[diff];
+        d.accuracy = d.attempted > 0 ? Math.round((d.correct/d.attempted)*100) : 0;
+    }
 
     const overallAccuracy = Math.round((totalCorrect / currentQuiz.length) * 100) || 0;
     
@@ -572,7 +599,9 @@ function calculateDiagnosticResults() {
         totalQuestions: currentQuiz.length,
         totalCorrect,
         overallAccuracy,
-        topics: {}
+        topics: {},
+        difficultyPerformance: difficultyPerformance,
+        topicDiff: topicDiff
     };
 
     // Calculate priority scores
@@ -688,6 +717,24 @@ function renderResultsScreen(results) {
         container.appendChild(card);
     });
 
+
+    const diffContainer = document.getElementById('difficulty-results');
+    if (diffContainer && results.difficultyPerformance) {
+        let dh = '<h3 style="margin-bottom: 10px;">Difficulty Performance</h3><div style="display:flex; gap:10px; margin-bottom: 20px;">';
+        ['Easy', 'Medium', 'Hard'].forEach(lvl => {
+            if (results.difficultyPerformance[lvl] && results.difficultyPerformance[lvl].attempted > 0) {
+                const d = results.difficultyPerformance[lvl];
+                let color = lvl==='Easy'?'#10b981' : (lvl==='Hard'?'#ef4444' : '#f59e0b');
+                dh += `<div class="card" style="flex:1; text-align:center; border: 1px solid ${color};">
+                    <div style="font-weight:bold; margin-bottom:5px; color:${color};">${lvl}</div>
+                    <div>${d.correct} / ${d.attempted}</div>
+                    <div>${d.accuracy}%</div>
+                </div>`;
+            }
+        });
+        dh += '</div>';
+        diffContainer.innerHTML = dh;
+    }
     const reviewContainer = document.getElementById('diagnostic-review');
     reviewContainer.innerHTML = '<h3>Review Answers</h3>';
     
@@ -782,9 +829,23 @@ function selectDrillQuestions(count, topics) {
 function calculateDrillResults() {
     let totalCorrect = 0;
     const attempted = currentQuiz.length;
+    const difficultyPerformance = { Easy: {attempted:0, correct:0}, Medium: {attempted:0, correct:0}, Hard: {attempted:0, correct:0} };
+    const topicDiff = {};
     currentQuiz.forEach(q => {
-        if (userAnswers[q.qid] === q.correctOption) totalCorrect++;
+        if (!topicDiff[q.subtopic]) topicDiff[q.subtopic] = { Easy: {attempted:0, correct:0}, Medium: {attempted:0, correct:0}, Hard: {attempted:0, correct:0} };
+        let diff = q.difficulty || 'Medium';
+        difficultyPerformance[diff].attempted++;
+        topicDiff[q.subtopic][diff].attempted++;
+        if (userAnswers[q.qid] === q.correctOption) {
+            totalCorrect++;
+            difficultyPerformance[diff].correct++;
+            topicDiff[q.subtopic][diff].correct++;
+        }
     });
+    for(let diff in difficultyPerformance) {
+        let d = difficultyPerformance[diff];
+        d.accuracy = d.attempted > 0 ? Math.round((d.correct/d.attempted)*100) : 0;
+    }
 
     const drillAccuracy = attempted > 0 ? Math.round((totalCorrect / attempted) * 100) : 0;
     
@@ -839,7 +900,9 @@ function calculateDrillResults() {
         attempted: attempted,
         accuracy: drillAccuracy,
         diagnosticAccuracy: diagnosticAccuracy,
-        change: change
+        change: change,
+        difficultyPerformance: difficultyPerformance,
+        topicDiff: topicDiff
     });
     
     if (history.drills.length > 50) {
@@ -862,11 +925,52 @@ function showProgressScreen() {
     
     const content = document.getElementById('progress-content');
     
+
+    let aggDiff = { Easy: {att:0, cor:0}, Medium: {att:0, cor:0}, Hard: {att:0, cor:0} };
+    function addDiff(histArray) {
+        histArray.forEach(record => {
+            if (record.difficultyPerformance) {
+                for (let lvl of ['Easy', 'Medium', 'Hard']) {
+                    if (record.difficultyPerformance[lvl]) {
+                        aggDiff[lvl].att += record.difficultyPerformance[lvl].attempted;
+                        aggDiff[lvl].cor += record.difficultyPerformance[lvl].correct;
+                    }
+                }
+            }
+        });
+    }
+    addDiff(diags); addDiff(drills); addDiff(topicPractices); addDiff(fullPractices);
+    
+    let diffHtml = '';
+    if (aggDiff.Easy.att > 0 || aggDiff.Medium.att > 0 || aggDiff.Hard.att > 0) {
+        diffHtml = '<div class="card" style="margin-bottom: 20px;"><h3 style="margin-bottom:10px;">Difficulty Performance</h3><div style="display:flex; gap:10px; flex-wrap:wrap;">';
+        for (let lvl of ['Easy', 'Medium', 'Hard']) {
+            if (aggDiff[lvl].att > 0) {
+                let acc = Math.round((aggDiff[lvl].cor / aggDiff[lvl].att) * 100);
+                let color = lvl==='Easy'?'#10b981' : (lvl==='Hard'?'#ef4444' : '#f59e0b');
+                diffHtml += `<div style="flex:1; min-width: 100px; text-align:center; padding: 15px; border: 1px solid ${color}; border-radius: 6px; background: rgba(255,255,255,0.02);">
+                    <div style="font-weight:bold; color: ${color}; margin-bottom:5px;">${lvl}</div>
+                    <div style="font-size:1.2rem; margin-bottom:5px;">${acc}%</div>
+                    <div style="font-size:0.8rem; color: var(--text-muted);">${aggDiff[lvl].cor} / ${aggDiff[lvl].att}</div>
+                </div>`;
+            } else {
+                diffHtml += `<div style="flex:1; min-width: 100px; text-align:center; padding: 15px; border: 1px solid var(--border-color); border-radius: 6px; background: rgba(255,255,255,0.02); opacity: 0.5;">
+                    <div style="font-weight:bold; color: var(--text-muted); margin-bottom:5px;">${lvl}</div>
+                    <div style="font-size:0.9rem;">No data</div>
+                </div>`;
+            }
+        }
+        diffHtml += '</div></div>';
+    }
+
     if (diags.length === 0 && drills.length === 0 && topicPractices.length === 0 && fullPractices.length === 0) {
         content.innerHTML = '<div class="empty-state" style="text-align: center; padding: 40px 20px;">' +
             '<h3 style="margin-bottom: 15px;">No progress yet</h3>' +
             '<p style="color: var(--text-muted);">Complete your first diagnostic to start tracking your progress.</p>' +
             '</div>';
+
+    // Prepend difficulty html
+    content.innerHTML = diffHtml + content.innerHTML;
     // Handle Feedback UI
     const feedbacks = getSavedFeedback();
     if (typeof feedbackCount !== 'undefined' && feedbackCount) feedbackCount.textContent = feedbacks.length;
@@ -993,6 +1097,50 @@ function showProgressScreen() {
     
     html += '</tbody></table></div>';
     
+    // Topic x Difficulty Summary
+    const txD = {};
+    topics.forEach(t => { txD[t] = { Easy: {c:0, a:0}, Medium: {c:0, a:0}, Hard: {c:0, a:0} }; });
+    
+    function addTxD(records) {
+        records.forEach(r => {
+            if (r.topicDiff) {
+                for (let t in r.topicDiff) {
+                    if (txD[t]) {
+                        ['Easy', 'Medium', 'Hard'].forEach(lvl => {
+                            if (r.topicDiff[t][lvl]) {
+                                txD[t][lvl].a += r.topicDiff[t][lvl].attempted;
+                                txD[t][lvl].c += r.topicDiff[t][lvl].correct;
+                            }
+                        });
+                    }
+                }
+            }
+        });
+    }
+    addTxD(diags); addTxD(drills); addTxD(topicPractices); addTxD(fullPractices);
+    
+    let hasTxD = false;
+    for (let t in txD) {
+        if (txD[t].Easy.a > 0 || txD[t].Medium.a > 0 || txD[t].Hard.a > 0) hasTxD = true;
+    }
+    
+    if (hasTxD) {
+        html += '<h3 style="margin-top: 30px;">Topic by Difficulty Performance</h3>';
+        html += '<div class="progress-table-container"><table class="progress-table" style="font-size: 0.9rem;"><thead><tr><th>Topic</th><th>Easy</th><th>Medium</th><th>Hard</th></tr></thead><tbody>';
+        
+        topics.forEach(t => {
+            let ez = txD[t].Easy.a > 0 ? `${Math.round(txD[t].Easy.c/txD[t].Easy.a*100)}%` : '-';
+            let md = txD[t].Medium.a > 0 ? `${Math.round(txD[t].Medium.c/txD[t].Medium.a*100)}%` : '-';
+            let hd = txD[t].Hard.a > 0 ? `${Math.round(txD[t].Hard.c/txD[t].Hard.a*100)}%` : '-';
+            
+            if (ez !== '-' || md !== '-' || hd !== '-') {
+                html += `<tr><td>${t}</td><td>${ez}</td><td>${md}</td><td>${hd}</td></tr>`;
+            }
+        });
+        html += '</tbody></table></div>';
+    }
+    
+    
     
     if (topicPractices.length === 0) {
         html += '<p style="text-align: center; color: var(--text-muted); margin-bottom: 30px;">No topic practices completed yet.</p>';
@@ -1008,6 +1156,50 @@ function showProgressScreen() {
             </tr>`;
         });
         html += '</tbody></table></div>';
+    
+    // Topic x Difficulty Summary
+    const txD = {};
+    topics.forEach(t => { txD[t] = { Easy: {c:0, a:0}, Medium: {c:0, a:0}, Hard: {c:0, a:0} }; });
+    
+    function addTxD(records) {
+        records.forEach(r => {
+            if (r.topicDiff) {
+                for (let t in r.topicDiff) {
+                    if (txD[t]) {
+                        ['Easy', 'Medium', 'Hard'].forEach(lvl => {
+                            if (r.topicDiff[t][lvl]) {
+                                txD[t][lvl].a += r.topicDiff[t][lvl].attempted;
+                                txD[t][lvl].c += r.topicDiff[t][lvl].correct;
+                            }
+                        });
+                    }
+                }
+            }
+        });
+    }
+    addTxD(diags); addTxD(drills); addTxD(topicPractices); addTxD(fullPractices);
+    
+    let hasTxD = false;
+    for (let t in txD) {
+        if (txD[t].Easy.a > 0 || txD[t].Medium.a > 0 || txD[t].Hard.a > 0) hasTxD = true;
+    }
+    
+    if (hasTxD) {
+        html += '<h3 style="margin-top: 30px;">Topic by Difficulty Performance</h3>';
+        html += '<div class="progress-table-container"><table class="progress-table" style="font-size: 0.9rem;"><thead><tr><th>Topic</th><th>Easy</th><th>Medium</th><th>Hard</th></tr></thead><tbody>';
+        
+        topics.forEach(t => {
+            let ez = txD[t].Easy.a > 0 ? `${Math.round(txD[t].Easy.c/txD[t].Easy.a*100)}%` : '-';
+            let md = txD[t].Medium.a > 0 ? `${Math.round(txD[t].Medium.c/txD[t].Medium.a*100)}%` : '-';
+            let hd = txD[t].Hard.a > 0 ? `${Math.round(txD[t].Hard.c/txD[t].Hard.a*100)}%` : '-';
+            
+            if (ez !== '-' || md !== '-' || hd !== '-') {
+                html += `<tr><td>${t}</td><td>${ez}</td><td>${md}</td><td>${hd}</td></tr>`;
+            }
+        });
+        html += '</tbody></table></div>';
+    }
+    
     }
     
     if (drills.length === 0) {
@@ -1026,6 +1218,50 @@ function showProgressScreen() {
             </tr>`;
         });
         html += '</tbody></table></div>';
+    
+    // Topic x Difficulty Summary
+    const txD = {};
+    topics.forEach(t => { txD[t] = { Easy: {c:0, a:0}, Medium: {c:0, a:0}, Hard: {c:0, a:0} }; });
+    
+    function addTxD(records) {
+        records.forEach(r => {
+            if (r.topicDiff) {
+                for (let t in r.topicDiff) {
+                    if (txD[t]) {
+                        ['Easy', 'Medium', 'Hard'].forEach(lvl => {
+                            if (r.topicDiff[t][lvl]) {
+                                txD[t][lvl].a += r.topicDiff[t][lvl].attempted;
+                                txD[t][lvl].c += r.topicDiff[t][lvl].correct;
+                            }
+                        });
+                    }
+                }
+            }
+        });
+    }
+    addTxD(diags); addTxD(drills); addTxD(topicPractices); addTxD(fullPractices);
+    
+    let hasTxD = false;
+    for (let t in txD) {
+        if (txD[t].Easy.a > 0 || txD[t].Medium.a > 0 || txD[t].Hard.a > 0) hasTxD = true;
+    }
+    
+    if (hasTxD) {
+        html += '<h3 style="margin-top: 30px;">Topic by Difficulty Performance</h3>';
+        html += '<div class="progress-table-container"><table class="progress-table" style="font-size: 0.9rem;"><thead><tr><th>Topic</th><th>Easy</th><th>Medium</th><th>Hard</th></tr></thead><tbody>';
+        
+        topics.forEach(t => {
+            let ez = txD[t].Easy.a > 0 ? `${Math.round(txD[t].Easy.c/txD[t].Easy.a*100)}%` : '-';
+            let md = txD[t].Medium.a > 0 ? `${Math.round(txD[t].Medium.c/txD[t].Medium.a*100)}%` : '-';
+            let hd = txD[t].Hard.a > 0 ? `${Math.round(txD[t].Hard.c/txD[t].Hard.a*100)}%` : '-';
+            
+            if (ez !== '-' || md !== '-' || hd !== '-') {
+                html += `<tr><td>${t}</td><td>${ez}</td><td>${md}</td><td>${hd}</td></tr>`;
+            }
+        });
+        html += '</tbody></table></div>';
+    }
+    
     }
     
     html += '<h3>Recent Diagnostics</h3><div class="progress-table-container"><table class="progress-table"><thead><tr><th>Date</th><th>Score</th><th>Accuracy</th></tr></thead><tbody>';
@@ -1039,7 +1275,54 @@ function showProgressScreen() {
     });
     html += '</tbody></table></div>';
     
+    // Topic x Difficulty Summary
+    const txD = {};
+    topics.forEach(t => { txD[t] = { Easy: {c:0, a:0}, Medium: {c:0, a:0}, Hard: {c:0, a:0} }; });
+    
+    function addTxD(records) {
+        records.forEach(r => {
+            if (r.topicDiff) {
+                for (let t in r.topicDiff) {
+                    if (txD[t]) {
+                        ['Easy', 'Medium', 'Hard'].forEach(lvl => {
+                            if (r.topicDiff[t][lvl]) {
+                                txD[t][lvl].a += r.topicDiff[t][lvl].attempted;
+                                txD[t][lvl].c += r.topicDiff[t][lvl].correct;
+                            }
+                        });
+                    }
+                }
+            }
+        });
+    }
+    addTxD(diags); addTxD(drills); addTxD(topicPractices); addTxD(fullPractices);
+    
+    let hasTxD = false;
+    for (let t in txD) {
+        if (txD[t].Easy.a > 0 || txD[t].Medium.a > 0 || txD[t].Hard.a > 0) hasTxD = true;
+    }
+    
+    if (hasTxD) {
+        html += '<h3 style="margin-top: 30px;">Topic by Difficulty Performance</h3>';
+        html += '<div class="progress-table-container"><table class="progress-table" style="font-size: 0.9rem;"><thead><tr><th>Topic</th><th>Easy</th><th>Medium</th><th>Hard</th></tr></thead><tbody>';
+        
+        topics.forEach(t => {
+            let ez = txD[t].Easy.a > 0 ? `${Math.round(txD[t].Easy.c/txD[t].Easy.a*100)}%` : '-';
+            let md = txD[t].Medium.a > 0 ? `${Math.round(txD[t].Medium.c/txD[t].Medium.a*100)}%` : '-';
+            let hd = txD[t].Hard.a > 0 ? `${Math.round(txD[t].Hard.c/txD[t].Hard.a*100)}%` : '-';
+            
+            if (ez !== '-' || md !== '-' || hd !== '-') {
+                html += `<tr><td>${t}</td><td>${ez}</td><td>${md}</td><td>${hd}</td></tr>`;
+            }
+        });
+        html += '</tbody></table></div>';
+    }
+    
+    
     content.innerHTML = html;
+
+    // Prepend difficulty html
+    content.innerHTML = diffHtml + content.innerHTML;
     // Handle Feedback UI
     const feedbacks = getSavedFeedback();
     if (typeof feedbackCount !== 'undefined' && feedbackCount) feedbackCount.textContent = feedbacks.length;
@@ -1094,11 +1377,17 @@ function renderMistakes(containerId) {
         const safeQ = escapeHTML(q.question);
         const safeUserAns = escapeHTML(userOptText);
         const safeCorrectAns = escapeHTML(correctOptText);
-        const safeExplanation = escapeHTML(q.explanation || 'No explanation available.').replace(/\n/g, '<br>');
+        const safeExplanation = escapeHTML(q.explanation || 'No explanation available.').replace(/
+/g, '<br>');
+        const diff = q.difficulty || 'Medium';
+        const badgeColor = diff === 'Easy' ? '#10b981' : (diff === 'Hard' ? '#ef4444' : '#f59e0b');
         
         html += `
         <div class="mistake-item card" style="margin-bottom: 15px; text-align: left; padding: 15px; background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 6px;">
-            <p style="font-weight: 600; margin-bottom: 15px;">Q${idx + 1}. ${safeQ}</p>
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom: 15px;">
+                <p style="font-weight: 600; margin: 0;">Q${idx + 1}. ${safeQ}</p>
+                <span style="font-size: 0.75rem; padding: 3px 6px; border-radius: 4px; background-color: ${badgeColor}; color: white; margin-left: 10px; flex-shrink: 0;">${diff}</span>
+            </div>
             
             <div style="margin-bottom: 10px; padding: 10px; background-color: rgba(239, 68, 68, 0.1); border-left: 4px solid var(--danger-color);">
                 <p style="font-size: 0.9rem; font-weight: 600; margin-bottom: 5px; color: var(--danger-color);">Your Answer: Option ${userAnswers[q.qid] || '-'}</p>
@@ -1146,17 +1435,30 @@ function calculateFullPracticeResults() {
     const attempted = currentQuiz.length;
     const topicStats = {};
 
+    const difficultyPerformance = { Easy: {attempted:0, correct:0}, Medium: {attempted:0, correct:0}, Hard: {attempted:0, correct:0} };
+    const topicDiff = {};
     currentQuiz.forEach(q => {
         if (!topicStats[q.subtopic]) {
             topicStats[q.subtopic] = { attempted: 0, correct: 0 };
         }
+        if (!topicDiff[q.subtopic]) topicDiff[q.subtopic] = { Easy: {attempted:0, correct:0}, Medium: {attempted:0, correct:0}, Hard: {attempted:0, correct:0} };
         topicStats[q.subtopic].attempted++;
+        
+        let diff = q.difficulty || 'Medium';
+        difficultyPerformance[diff].attempted++;
+        topicDiff[q.subtopic][diff].attempted++;
         
         if (userAnswers[q.qid] === q.correctOption) {
             totalCorrect++;
             topicStats[q.subtopic].correct++;
+            difficultyPerformance[diff].correct++;
+            topicDiff[q.subtopic][diff].correct++;
         }
     });
+    for(let diff in difficultyPerformance) {
+        let d = difficultyPerformance[diff];
+        d.accuracy = d.attempted > 0 ? Math.round((d.correct/d.attempted)*100) : 0;
+    }
 
     const accuracy = attempted > 0 ? Math.round((totalCorrect / attempted) * 100) : 0;
     
@@ -1228,7 +1530,9 @@ function calculateFullPracticeResults() {
         score: totalCorrect,
         attempted: attempted,
         accuracy: accuracy,
-        topicPerformance: topicPerformance
+        topicPerformance: topicPerformance,
+        difficultyPerformance: difficultyPerformance,
+        topicDiff: topicDiff
     });
     
     if (history.fullPractices.length > 50) {
