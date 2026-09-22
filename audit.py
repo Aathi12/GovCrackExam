@@ -1,153 +1,48 @@
-import json
+import glob
 import re
-import collections
 
-def audit_questions():
-    with open('data/questions.json', 'r', encoding='utf-8') as f:
-        questions = json.load(f)
-        
-    audit_results = {}
-    topic_summary = collections.defaultdict(lambda: {'Total': 0, 'VERIFIED': 0, 'MINOR_ISSUE': 0, 'NEEDS_REVIEW': 0, 'INVALID': 0})
-    
-    exact_duplicates = 0
-    near_duplicates = 0
-    
-    seen_texts = {}
-    seen_signatures = {}
+topics = [
+    "Coded Language",
+    "Letter-cluster Analogy / Series",
+    "Syllogism",
+    "Blood Relations",
+    "Dictionary Order",
+    "Mathematical Operations",
+    "Number/Figure Series",
+    "Classification (Odd One Out)",
+    "Analogy (Word/Number)"
+]
 
-    for q in questions:
-        qid = q['qid']
-        topic = q['subtopic']
-        status = 'VERIFIED'
-        issues = []
-        notes = ''
-        
-        topic_summary[topic]['Total'] += 1
-        
-        # 1. Option Quality
-        options = q.get('options', [])
-        if len(options) != 4:
-            status = 'INVALID'
-            issues.append(f"Expected 4 options, found {len(options)}")
-            
-        if len(set(options)) != len(options):
-            status = 'INVALID'
-            issues.append("Duplicate options found")
-            
-        correct = q.get('correctOption')
-        if correct not in [1, 2, 3, 4]:
-            status = 'INVALID'
-            issues.append(f"Invalid correctOption: {correct}")
-            
-        # 2. Text Quality & OCR
-        text = q.get('question', '')
-        if not text.strip():
-            status = 'INVALID'
-            issues.append("Empty question text")
-            
-        # OCR checks - look for common OCR corruption markers
-        # The character \ufffd is often used for replacement
-        if '\ufffd' in text or text.count('?') > 3:
-            status = 'MINOR_ISSUE' if status == 'VERIFIED' else status
-            issues.append("Possible OCR corruption in question")
-            
-        if any('\ufffd' in opt for opt in options):
-            status = 'MINOR_ISSUE' if status == 'VERIFIED' else status
-            issues.append("Possible OCR corruption in options")
-            
-        # 3. Explanation Audit
-        exp = q.get('explanation', '')
-        if not exp.strip():
-            status = 'MINOR_ISSUE' if status == 'VERIFIED' else status
-            issues.append("Missing explanation")
-        elif len(exp) < 10:
-            status = 'MINOR_ISSUE' if status == 'VERIFIED' else status
-            issues.append("Explanation too short to be useful")
-            
-        # 4. Dictionary Order specific check
-        if topic == 'Dictionary Order':
-            words = re.findall(r'\d\.\s*([A-Za-z]+)', text)
-            if words:
-                sorted_words = sorted(words)
-            if not words:
-                status = 'NEEDS_REVIEW' if status == 'VERIFIED' else status
-                issues.append("Could not parse words to order")
-                
-        # 5. Duplicates
-        norm_text = re.sub(r'[^a-z0-9]', '', text.lower())
-        if norm_text in seen_texts:
-            status = 'NEEDS_REVIEW' if status == 'VERIFIED' else status
-            issues.append(f"Near duplicate of {seen_texts[norm_text]}")
-            near_duplicates += 1
-        else:
-            seen_texts[norm_text] = qid
-            
-        sig = json.dumps({'q': norm_text, 'o': options, 'c': correct})
-        if sig in seen_signatures:
-            status = 'INVALID'
-            issues.append(f"Exact duplicate of {seen_signatures[sig]}")
-            exact_duplicates += 1
-        else:
-            seen_signatures[sig] = qid
-            
-        if not issues:
-            notes = "Structurally verified."
-        else:
-            notes = "Identified issues during automated audit."
-            
-        audit_results[qid] = {
-            'status': status,
-            'issues': issues,
-            'notes': notes
-        }
-        
-        topic_summary[topic][status] += 1
+pages = glob.glob('*.html')
 
-    with open('data/phase40_quality_audit.json', 'w', encoding='utf-8') as f:
-        json.dump(audit_results, f, indent=2)
-        
-    # Generate Report
-    md = "# Phase 40 — Question Quality Audit\n\n"
-    md += "## Per-Topic Summary\n\n"
-    md += "| Topic | Total | Verified | Minor Issue | Needs Review | Invalid |\n"
-    md += "|---|---|---|---|---|---|\n"
+audit_content = "# Phase 49 SEO Content Audit\n\n## Pages\n"
+for page in pages:
+    if page == '404.html': continue
+    with open(page, 'r', encoding='utf-8') as f:
+        html = f.read()
     
-    global_total = 0
-    global_verified = 0
-    global_minor = 0
-    global_review = 0
-    global_invalid = 0
+    title_match = re.search(r'<title>(.*?)</title>', html)
+    title = title_match.group(1) if title_match else "Missing"
     
-    for topic, counts in topic_summary.items():
-        md += f"| {topic} | {counts['Total']} | {counts['VERIFIED']} | {counts['MINOR_ISSUE']} | {counts['NEEDS_REVIEW']} | {counts['INVALID']} |\n"
-        global_total += counts['Total']
-        global_verified += counts['VERIFIED']
-        global_minor += counts['MINOR_ISSUE']
-        global_review += counts['NEEDS_REVIEW']
-        global_invalid += counts['INVALID']
-        
-    md += "\n## Global Summary\n\n"
-    md += f"- Total Questions: {global_total}\n"
-    md += f"- VERIFIED: {global_verified}\n"
-    md += f"- MINOR_ISSUE: {global_minor}\n"
-    md += f"- NEEDS_REVIEW: {global_review}\n"
-    md += f"- INVALID: {global_invalid}\n"
-    md += f"- Exact Duplicates: {exact_duplicates}\n"
-    md += f"- Probable Near-Duplicates: {near_duplicates}\n\n"
+    desc_match = re.search(r'<meta name="description" content="(.*?)">', html)
+    desc = "Present" if desc_match else "Missing"
     
-    md += "## Issues Detailed\n\n"
-    for q in questions:
-        qid = q['qid']
-        res = audit_results[qid]
-        if res['status'] != 'VERIFIED':
-            md += f"### {qid}\n"
-            md += f"- **Topic:** {q['subtopic']}\n"
-            md += f"- **Classification:** {res['status']}\n"
-            md += f"- **Issues:** {', '.join(res['issues'])}\n"
-            md += f"- **Notes:** {res['notes']}\n\n"
-            
-    with open('PHASE40_QUESTION_QUALITY_AUDIT.md', 'w', encoding='utf-8') as f:
-        f.write(md)
+    canon_match = re.search(r'<link rel="canonical" href="(.*?)">', html)
+    canon = canon_match.group(1) if canon_match else "Missing"
+    
+    og_title = "Present" if 'property="og:title"' in html else "Missing"
+    og_desc = "Present" if 'property="og:description"' in html else "Missing"
+    og_url = "Present" if 'property="og:url"' in html else "Missing"
+    
+    audit_content += f"### {page}\n"
+    audit_content += f"- Title: {title}\n"
+    audit_content += f"- Description: {desc}\n"
+    audit_content += f"- Canonical: {canon}\n"
+    audit_content += f"- Open Graph: Title: {og_title}, Desc: {og_desc}, URL: {og_url}\n\n"
 
-if __name__ == '__main__':
-    audit_questions()
+audit_content += "## Topics in Production Data\n"
+for t in topics:
+    audit_content += f"- {t}\n"
+
+with open('PHASE49_SEO_CONTENT_AUDIT.md', 'w', encoding='utf-8') as f:
+    f.write(audit_content)
