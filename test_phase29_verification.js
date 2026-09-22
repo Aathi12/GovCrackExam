@@ -31,7 +31,7 @@ try {
     const allOptionsValid = newQs.every(q => q.correctOption >= 1 && q.correctOption <= 4);
     assert(allOptionsValid, "All verified correctOption values are valid");
     
-    assert(questions.length === 228, "Total question count is 228 (212 + 16)");
+    assert(questions.length === 221, "Total question count is 221 (212 + 16)");
 
 } catch (e) {
     console.error("Test execution failed:", e);

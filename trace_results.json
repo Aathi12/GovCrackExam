@@ -1,0 +1,257 @@
+[
+  {
+    "qid": "5c90b8f0-1c5f-4a0e-9b55-b4c4c2357778",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "7f13c6a4-2e98-4d51-8d2a-f8231db6e4a2",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "8d3e9c2b-4f51-4a9c-b168-e5f8a0b5c1c8",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['ZUDH', 'ZVGH', 'YUEH', 'YVEI']"
+  },
+  {
+    "qid": "f1e2d3c4-b5a6-4a9c-b168-9f8e7d6c5b4a",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['FTAR', 'FTBS', 'FUAS', 'FTAS']"
+  },
+  {
+    "qid": "3a18a9be-4f51-4122-a9b0-9b48b9415c4d",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "729b8c0a-0988-436f-8547-73d8abec8dbf",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "ccfb6645-5d9c-4ec1-a53f-c9417d4a2be2",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "5c94a5bd-2615-4ba8-bb5e-7a2e8c25dbd0",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "382c40c8-7096-419b-ab00-cbcdfc97a7e3",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "e6ef92be-e7c6-43d5-99bc-1ccdf26176a9",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: [\"Mother's brother\", \"Father's brother\", 'Brother']"
+  },
+  {
+    "qid": "5d590497-2856-42b7-a06f-b258671b5631",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "b478d10b-8d76-4d0f-8e99-4d6b67cb1a45",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "e6a2b53a-cf72-4d57-b087-35718a287a2a",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "f471e987-19db-48fb-b8dc-79b8849b2512",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "9d9841f3-e578-4ea7-9092-2bdfbc531a89",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "7f8a3791-c22e-4b6e-a342-990fc7b61d2a",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "a1d3725b-5b23-4581-9b63-ef5a9b891cd3",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "b78b1f5d-d12c-47fc-8f74-88db09a962a3",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "5d2f62bb-b141-47cc-937b-99933aeb30d4",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "c6218e87-a2f2-4ed7-9bfa-f73c1789c6d5",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "cl-q1",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "cl-q6",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "cl-q11",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "cl-q16",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "cl-q22",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "cl-q24",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "cl-q33",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "50e26002-c9fa-45cd-acb2-29fc12d5d8a1",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['\u00f7 and x']"
+  },
+  {
+    "qid": "b0f0fc74-323e-4b40-a192-3a5cbb08df1a",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['+ and x', '\u00f7 and x', '- and x']"
+  },
+  {
+    "qid": "8d3d92fb-1e3d-4c3d-abfc-f8d29b0f16f3",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "fb21b8b7-69e0-410a-b333-e1bb18b6e36d",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['\u00f7 and x', 'x and \u00f7']"
+  },
+  {
+    "qid": "8d3e9812-706a-4d74-9f4a-251f2b6e162d",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "c62b9a14-3a91-4c6e-b15a-4f5164d1f23a",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['4, 5, 3, 1, 2, 6', '5, 3, 4, 1, 6, 2', '5, 4, 3, 1, 6, 2', '4, 3, 5, 2, 1, 6']"
+  },
+  {
+    "qid": "5a4d1b82-9f1c-4b52-a3c6-931d8f7e2a91",
+    "status": "PASS",
+    "reason": "Found in corpus with all options"
+  },
+  {
+    "qid": "e1f9a2b5-7c8d-4a12-b5e8-45d619bfa7d2",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['Overwhelming', 'Overwrought', 'Overweight', 'Overweening']"
+  },
+  {
+    "qid": "9d4f6c12-3b8a-4d9f-a1e4-8c729f1b5e3a",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['2, 4, 5, 1, 3', '2, 5, 1, 4, 3', '2, 5, 4, 1, 3', '2, 1, 5, 4, 3']"
+  },
+  {
+    "qid": "1b9f4a5c-7e3d-4c8f-a9b2-6d1e3f8a4c2b",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['Unauthorized', 'Unarmed', 'Unasked', 'Unattached']"
+  },
+  {
+    "qid": "c3e5d8f9-1a4b-4c2d-a6b8-9e7f1d5c3b4a",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['2, 4, 5, 3, 1', '2, 4, 1, 5, 3', '4, 2, 3, 1, 5', '4, 2, 5, 1, 3']"
+  },
+  {
+    "qid": "7f8e9a2b-3c4d-4e5f-b6a1-0d2c3e4f5a6b",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['6, 2, 5, 7, 3, 4, 1', '6, 2, 5, 7, 4, 1, 3', '6, 2, 4, 5, 7, 3, 1', '6, 2, 5, 4, 7, 3, 1']"
+  },
+  {
+    "qid": "a1b2c3d4-e5f6-4a5b-c6d7-e8f9a0b1c2d3",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['Sick', 'Sickle', 'Sicken', 'Sickly']"
+  },
+  {
+    "qid": "d4e5f6a7-b8c9-4d0e-a1b2-c3d4e5f6a7b8",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['1, 3, 2, 5, 4', '3, 1, 2, 5, 4', '1, 3, 5, 2, 4', '3, 1, 5, 2, 4']"
+  },
+  {
+    "qid": "f7a8b9c0-d1e2-4f3a-b4c5-d6e7f8a9b0c1",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['2, 4, 5, 1, 3', '2, 4, 5, 3, 1', '5, 2, 1, 4, 3', '4, 2, 5, 1, 3']"
+  },
+  {
+    "qid": "c1d2e3f4-a5b6-4c7d-e8f9-a0b1c2d3e4f5",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['Verso', 'Versus', 'Version', 'Verse']"
+  },
+  {
+    "qid": "b0c1d2e3-f4a5-4b6c-7d8e-9f0a1b2c3d4e",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['1, 4, 3, 2, 5', '4, 1, 3, 2, 5', '4, 1, 3, 5, 2', '1, 4, 3, 5, 2']"
+  },
+  {
+    "qid": "a9b0c1d2-e3f4-4a5b-6c7d-8e9f0a1b2c3d",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['4, 6, 7, 3, 2, 1, 5', '4, 6, 7, 2, 3, 1, 5', '4, 6, 2, 7, 3, 5, 1', '4, 6, 2, 3, 7, 1, 5']"
+  },
+  {
+    "qid": "8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['4, 5, 1, 2, 3', '5, 4, 2, 1, 3', '4, 5, 2, 1, 3', '4, 5, 1, 3, 2']"
+  },
+  {
+    "qid": "7d8e9f0a-1b2c-4d3e-5f6a-7b8c9d0e1f2a",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['3, 1, 5, 4, 2', '1, 3, 5, 2, 4', '3, 1, 5, 2, 4', '1, 3, 5, 4, 2']"
+  },
+  {
+    "qid": "6c7d8e9f-0a1b-4c2d-3e4f-5a6b7c8d9e0f",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['6, 3, 2, 7, 4, 1, 5', '6, 3, 2, 7, 1, 4, 5', '6, 3, 7, 2, 1, 4, 5', '6, 3, 7, 2, 4, 1, 5']"
+  },
+  {
+    "qid": "5b6c7d8e-9f0a-4b1c-2d3e-4f5a6b7c8d9e",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['Theologue', 'Theorem', 'Theology', 'Theogonic']"
+  },
+  {
+    "qid": "4a5b6c7d-8e9f-40a1-b2c3-d4e5f6a7b8c9",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['Series', 'Serein', 'Serial', 'Serious']"
+  },
+  {
+    "qid": "394a5b6c-7d8e-49f0-a1b2-c3d4e5f6a7b8",
+    "status": "REVIEW",
+    "reason": "Missing options in corpus: ['2, 4, 1, 5, 3', '2, 4, 5, 1, 3', '4, 2, 5, 3, 1', '4, 2, 5, 1, 3']"
+  }
+]

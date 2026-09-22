@@ -300,7 +300,7 @@ Key findings:
 - High priority effectively isolates recent/repeated mistakes without duplicating questions inside a single session.
 - Unseen questions correctly hold mid-tier priority to ensure gradual coverage of the full topic pool.
 
-Question bank: 228 unchanged
+Question bank: 221 unchanged
 Topics: 9 unchanged
 Frequency weights: unchanged
 Difficulty: unchanged

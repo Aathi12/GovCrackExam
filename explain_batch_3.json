@@ -1,0 +1,392 @@
+[
+  {
+    "qid": "6a7d63c4-3f39-4948-aff8-3c720c5ced7e",
+    "subtopic": "Blood Relations",
+    "question": "\u2018A + B\u2019 means \u2018A is the brother of B\u2019. \u2018A \u2013 B\u2019 means \u2018A is the mother of B\u2019. \u2018A \u00d7 B\u2019 means \u2018A is the husband of B\u2019. \u2018A \u00f7 B\u2019 means \u2018A is the sister of B\u2019. If P \u00f7 Q \u2013 R + S \u2013 K \u00d7 L, then which of the following statements is correct?.",
+    "options": [
+      "Q is L\u2019s mother",
+      "R is K\u2019s mother\u2019s brother",
+      "Q is S\u2019s sister",
+      "R is L\u2019s husband\u2019s brother"
+    ],
+    "correctOption": 2,
+    "explanation": "R is the brother of S, and S is the mother of K. Therefore, R is K's mother's brother (maternal uncle)."
+  },
+  {
+    "qid": "0d5f1307-3ebc-44e4-ada2-51e83d08c81b",
+    "subtopic": "Blood Relations",
+    "question": "Pointing to a man, Rocky (a man) said, \u201cHe is the father of the daughter of my daughter-in-law.\u201d How Rocky is related to that man?",
+    "options": [
+      "Uncle",
+      "Son",
+      "Father",
+      "Brother-in-law"
+    ],
+    "correctOption": 3,
+    "explanation": "The daughter of Rocky's daughter-in-law is Rocky's granddaughter. The father of his granddaughter is Rocky's son. Since Rocky is a man pointing to his son, Rocky is the father of that man."
+  },
+  {
+    "qid": "9868b7da-a5c1-43ee-8afe-d1ee00e40d40",
+    "subtopic": "Blood Relations",
+    "question": "\u2018E + B\u2019 means \u2018E is the husband of B\u2019 \u2018E \u2013 B\u2019 means \u2018E is the daughter of B\u2019 \u2018E $ B\u2019 means \u2018E is the father of B\u2019 \u2018E # B\u2019 means \u2018E is the mother of B\u2019 If \u2018N +D # Z $ B\u2019, then how is N related to B?",
+    "options": [
+      "N is the paternal grandfather of B",
+      "N is the mother-in-law of B",
+      "N is the paternal grandmother of B",
+      "N is the maternal grandmother of B"
+    ],
+    "correctOption": 1,
+    "explanation": "N is the husband of D, and D is the mother of Z, making N the father of Z. Z is the father of B. Therefore, N is the paternal grandfather of B."
+  },
+  {
+    "qid": "a7a8cdee-6dc3-4cc9-80b6-0031e3ace3d7",
+    "subtopic": "Blood Relations",
+    "question": "A # B means \u2018A is the sister of B\u2019 A @ B means \u2018A is the daughter of B\u2019 A & B means \u2018A is the husband of B\u2019 A % B means \u2018A is the father of B\u2019 If A % B & C # D @ E, then how is B related to E?",
+    "options": [
+      "Brother",
+      "Son-in-law",
+      "Father",
+      "Son"
+    ],
+    "correctOption": 2,
+    "explanation": "C and D are sisters, and D is the daughter of E, so C is also the daughter of E. B is the husband of C. Thus, B is the son-in-law of E."
+  },
+  {
+    "qid": "6cd9793f-fc8f-466a-881a-4c1a4c455cdc",
+    "subtopic": "Blood Relations",
+    "question": "If A \u00d7 B means that A is the brother of B, A \u2013 B means that A is the sister of B, A + B means that A is the father of B then which of the following expression shows that P is the paternal aunt of R?",
+    "options": [
+      "P \u2013 Q \u00d7 R",
+      "P \u2013 Q + R",
+      "P \u00d7 Q + R",
+      "P + Q \u2013 R"
+    ],
+    "correctOption": 2,
+    "explanation": "P - Q + R means P is the sister of Q, and Q is the father of R. Thus, P is the sister of R's father, which makes P the paternal aunt of R."
+  },
+  {
+    "qid": "cfc5fd05-d178-4351-9968-2681436d8afd",
+    "subtopic": "Blood Relations",
+    "question": "A @ B means \u2018A is the sister of B\u2019. A & B means \u2018A is the brother of B\u2019. A # B means \u2018A is the wife of B\u2019. A ^ B means \u2018A is the mother of B\u2019 A + B means \u2018A is the father of B\u2019. If A + G & I + R @ S @ T # U & V, then which of the following statements is NOT correct?",
+    "options": [
+      "I is the father-in-law of U.",
+      "A is the maternal grandfather of T.",
+      "G is the brother of I.",
+      "R is the paternal granddaughter of A."
+    ],
+    "correctOption": 2,
+    "explanation": "I is the father of T, making A (who is the father of I) the paternal grandfather of T, not the maternal grandfather."
+  },
+  {
+    "qid": "0bcd175a-f695-488b-abe3-3f2dcce7a281",
+    "subtopic": "Blood Relations",
+    "question": "A # B means \u2018A is the sister of B\u2019. A @ B means \u2018A is the son of B\u2019. A & B means \u2018A is the father of B\u2019. A % B means \u2018A is the mother of B\u2019. If W @ Q # T & Y @ M % K, then how is Q related to K?",
+    "options": [
+      "Mother\u2019s sister",
+      "Sister",
+      "Mother",
+      "Father\u2019s sister"
+    ],
+    "correctOption": 4,
+    "explanation": "Q is the sister of T, and T is the father of Y (and thus K). Therefore, Q is the father's sister of K."
+  },
+  {
+    "qid": "e6fad04c-4a81-43bc-ae23-7f475c2826de",
+    "subtopic": "Blood Relations",
+    "question": "\u2018A @ B\u2019 means \u2018A is the husband of B\u2019. \u2018A & B\u2019 means \u2018A is the mother of B\u2019. \u2018A # B\u2019 means \u2018B is the daughter of A\u2019. If G # H & I @ J & K, then how is H related to J?",
+    "options": [
+      "Mother",
+      "Brother",
+      "Sister",
+      "Mother-in-law"
+    ],
+    "correctOption": 4,
+    "explanation": "H is the mother of I, and I is the husband of J. Therefore, H is the mother-in-law of J."
+  },
+  {
+    "qid": "fb2d24c4-fab9-48d3-bdec-7b481f12c680",
+    "subtopic": "Blood Relations",
+    "question": "In a certain code language, A # B means A is the sister of B. A @ B means A is the son of B. A & B means A is the wife of B. A % B means A is the father of B. How is Q related to R if P & Q % L # R & K?",
+    "options": [
+      "Sister",
+      "Mother",
+      "Father",
+      "Wife"
+    ],
+    "correctOption": 3,
+    "explanation": "Q is the father of L, and L is the sister of R. Therefore, Q is the father of R."
+  },
+  {
+    "qid": "c36fd25a-4c5d-4a9a-8251-5f67a8190e07",
+    "subtopic": "Blood Relations",
+    "question": "In a certain code language, A + B means \u2018A is the brother of B\u2019. A \u2212 B means \u2018A is the father of B\u2019. A \u00d7 B means \u2018A is the mother of B\u2019. A \u00f7 B means \u2018A is the wife of B\u2019. Based on the above, how is P related to T if \u2018P \u00d7 Q + R \u00f7 S \u2212 T\u2019?",
+    "options": [
+      "Mother\u2019s mother",
+      "Mother",
+      "Sister",
+      "Wife"
+    ],
+    "correctOption": 1,
+    "explanation": "P is the mother of Q, who is the brother of R, so P is the mother of R. R is the wife of S, who is the father of T, meaning R is the mother of T. Thus, P is the mother of T's mother."
+  },
+  {
+    "qid": "83328b69-b7ed-4c80-9be1-257959a5309b",
+    "subtopic": "Blood Relations",
+    "question": "In a certain code language, \u2018A + B\u2019 means \u2018A is the mother of B\u2019; \u2018A \u2212 B\u2019 means \u2018A is the brother of B\u2019; \u2018A \u00d7 B\u2019 means \u2018A is the wife of B\u2019 and \u2018A \u00f7 B\u2019 means \u2018A is the father of B\u2019. Based on the above, how is 5 related to 3 if \u20185 \u2212 2 \u00d7 4 \u00f7 3\u2019?",
+    "options": [
+      "Father\u2019s brother",
+      "Father\u2019s sister",
+      "Mother\u2019s sister",
+      "Mother\u2019s brother"
+    ],
+    "correctOption": 4,
+    "explanation": "2 is the wife of 4, and 4 is the father of 3, meaning 2 is the mother of 3. 5 is the brother of 2, making 5 the mother's brother of 3."
+  },
+  {
+    "qid": "9d053f4b-5703-4356-ac5e-181e991e0727",
+    "subtopic": "Blood Relations",
+    "question": "In a certain code language, A + B means \u2018A is the son of B\u2019, A \u2212 B means \u2018A is the wife of B\u2019, A \u00d7 B means \u2018A is the brother of B\u2019 and A \u00f7 B means \u2018A is the mother of B\u2019. Based on the above, if \u2018P + Q \u00f7 R \u2212 T \u00d7 M\u2019, which of the following is true?",
+    "options": [
+      "T is the brother of P.",
+      "M is the sister of T.",
+      "P is the brother of R.",
+      "Q is the mother of M."
+    ],
+    "correctOption": 3,
+    "explanation": "P is the son of Q, and Q is the mother of R. Since R is the wife of T, R is female. Thus, P is the brother of R."
+  },
+  {
+    "qid": "d15177e7-90d3-44a8-a0d8-f35bf294267d",
+    "subtopic": "Blood Relations",
+    "question": "In a certain code language, A + B means \u2018A is the wife of B\u2019. A \u2212 B means \u2018A is the son of B\u2019. A \u00d7 B means \u2018A is the husband of B\u2019. A \u00f7 B means \u2018A is the father of B\u2019. Based on the above, how is P related to T if \u2018P \u2212 Q + R \u00f7 S \u00d7 T\u2019?",
+    "options": [
+      "Husband\u2019s brother",
+      "Son\u2019s son",
+      "Father",
+      "Father-in-law"
+    ],
+    "correctOption": 1,
+    "explanation": "P is the son of Q, and Q is the wife of R, making R the father of P. R is the father of S, so P and S are brothers. S is the husband of T. Thus, P is the husband's brother to T."
+  },
+  {
+    "qid": "dd141329-e4ff-4f9f-b0ba-e8c008e67f74",
+    "subtopic": "Blood Relations",
+    "question": "In a certain code language, R + T means \u2018R is the sister of T\u2019. R \u2013 T means \u2018R is the father of T\u2019. R * T means \u2018R is the wife of T\u2019. R \u00f7 T means \u2018R is the mother of T\u2019. Based on the above, how is M related to Q if \u2018M * N \u2013 P + Q \u00f7 R +T\u2019?",
+    "options": [
+      "Mother\u2019s mother",
+      "Mother",
+      "Mother\u2019s sister",
+      "Sister"
+    ],
+    "correctOption": 2,
+    "explanation": "M is the wife of N, and N is the father of P. P is the sister of Q. Thus, N is the father of Q, making M the mother of Q."
+  },
+  {
+    "qid": "383a4e35-79cd-4f33-84df-8b6d7741a555",
+    "subtopic": "Blood Relations",
+    "question": "If A \u00d7 B means that A is the father of B, A \u00f7 B means that A is the mother of B, A + B means that A is the brother of B then which of the following expression shows that P is the paternal grandmother of R?",
+    "options": [
+      "P \u00f7 R \u00d7 Q",
+      "P \u00f7 Q \u00d7 R",
+      "P \u00f7 Q + R",
+      "P \u00d7 Q \u00f7 R"
+    ],
+    "correctOption": 2,
+    "explanation": "P \u00f7 Q \u00d7 R translates to P is the mother of Q, and Q is the father of R, making P the paternal grandmother of R."
+  },
+  {
+    "qid": "cedc718a-9add-42c1-bd12-3a8910d629d0",
+    "subtopic": "Blood Relations",
+    "question": "\u2018A @ B\u2019 means \u2018A is the husband of B\u2019. \u2018A & B\u2019 means \u2018A is the father of B\u2019. \u2018A # B\u2019 means \u2018B is the son of A\u2019. If F & G @ H # I @ J, then how is G related to J?",
+    "options": [
+      "Father",
+      "Son",
+      "Husband",
+      "Father-in-law"
+    ],
+    "correctOption": 4,
+    "explanation": "G is the husband of H, and H is the mother of I, so G is the father of I. I is the husband of J. Thus, G is the father-in-law of J."
+  },
+  {
+    "qid": "37c333a6-f760-48c3-be5f-07cd401e0ddc",
+    "subtopic": "Mathematical Operations",
+    "question": "Which two numbers should be interchanged to make the given equation correct? 36 \u00d7 81 \u00f7 9 \u2013 (88 \u00f7 4) + 14 + (22 + 7) = 169",
+    "options": [
+      "36 and 14",
+      "81 and 36",
+      "9 and 36",
+      "14 and 22"
+    ],
+    "correctOption": 1,
+    "explanation": "Interchanging 36 and 14 gives 14 \u00d7 81 \u00f7 9 \u2013 (88 \u00f7 4) + 36 + (22 + 7) = 14 \u00d7 9 - 22 + 36 + 29 = 126 - 22 + 65 = 169."
+  },
+  {
+    "qid": "f87119a6-4d7d-4c9f-beb4-1fcd6341717e",
+    "subtopic": "Mathematical Operations",
+    "question": "Which two signs should be interchanged to make the given equation correct? 588 \u00f7 28 \u00d7 32 + 72 \u2013 160 = 760",
+    "options": [
+      "\u2013 and +",
+      "\u00f7 and \u2013",
+      "+ and \u00d7",
+      "\u00f7 and +"
+    ],
+    "correctOption": 1,
+    "explanation": "Interchanging \u2013 and + gives 588 \u00f7 28 \u00d7 32 - 72 + 160 = 21 \u00d7 32 - 72 + 160 = 672 - 72 + 160 = 760."
+  },
+  {
+    "qid": "31048e62-ebea-49c9-93e6-2bd33f530984",
+    "subtopic": "Mathematical Operations",
+    "question": "Which two signs should be interchanged to make the given equation correct? 294 + 14 \u00d7 4 \u00f7 16 - 67 = 33",
+    "options": [
+      "+ and \u00f7",
+      "\u00d7 and \u00f7",
+      "+ and -",
+      "- and \u00f7"
+    ],
+    "correctOption": 1,
+    "explanation": "Interchanging + and \u00f7 gives 294 \u00f7 14 \u00d7 4 + 16 - 67 = 21 \u00d7 4 + 16 - 67 = 84 + 16 - 67 = 33."
+  },
+  {
+    "qid": "851eb0b4-c792-481a-942c-9e758cc5c9af",
+    "subtopic": "Mathematical Operations",
+    "question": "Which two signs should be interchanged to make the given equation correct? 3 \u00d7 12 \u2212 6 \u00f7 2 + 12 = 16",
+    "options": [
+      "\u00f7 and +",
+      "\u00d7 and \u00f7",
+      "\u2212 and \u00f7",
+      "\u2212 and +"
+    ],
+    "correctOption": 3,
+    "explanation": "Interchanging \u2212 and \u00f7 gives 3 \u00d7 12 \u00f7 6 - 2 + 12 = 36 \u00f7 6 - 2 + 12 = 6 - 2 + 12 = 16."
+  },
+  {
+    "qid": "a591de88-b22f-4c9d-aeb2-73ade67e4529",
+    "subtopic": "Mathematical Operations",
+    "question": "Which two signs should be interchanged to make the given equation correct? 13 \u00d7 6 + 24 \u00f7 6 \u2013 17 = 91",
+    "options": [
+      "\u00f7 and +",
+      "+ and \u00d7",
+      "\u00f7 and \u00d7",
+      "+ and \u2013"
+    ],
+    "correctOption": 4,
+    "explanation": "Interchanging + and \u2013 gives 13 \u00d7 6 - 24 \u00f7 6 + 17 = 78 - 4 + 17 = 91."
+  },
+  {
+    "qid": "514e6f1d-f3d1-4337-bfdc-d898a6309a7e",
+    "subtopic": "Mathematical Operations",
+    "question": "Which two numbers and two signs should be interchanged in the following equation to make it correct? 4 + 2 \u00f7 7 + 8 \u00d7 9 = 25",
+    "options": [
+      "4 and 9, + and \u00d7",
+      "4 and 7, \u00f7 and \u00d7",
+      "4 and 9, \u00f7 and \u00d7",
+      "4 and 7, + and \u00d7"
+    ],
+    "correctOption": 3,
+    "explanation": "Interchanging 4 and 9, and \u00f7 and \u00d7 gives 9 + 2 \u00d7 7 + 8 \u00f7 4 = 9 + 14 + 2 = 25."
+  },
+  {
+    "qid": "69268049-bd0d-49b2-914f-d31769baf783",
+    "subtopic": "Mathematical Operations",
+    "question": "Which two signs should be interchanged to make the given equation correct? 312 \u2013 13 \u00d7 14 + 207 \u00f7 4 = 539",
+    "options": [
+      "\u00f7 and \u2013",
+      "\u2013 and +",
+      "\u00f7 and +",
+      "+ and \u00d7"
+    ],
+    "correctOption": 1,
+    "explanation": "Interchanging \u00f7 and \u2013 gives 312 \u00f7 13 \u00d7 14 + 207 - 4 = 24 \u00d7 14 + 207 - 4 = 336 + 203 = 539."
+  },
+  {
+    "qid": "ecf23114-8043-403e-876b-328ef70386d1",
+    "subtopic": "Mathematical Operations",
+    "question": "Which two signs should be interchanged to make the given equation correct? 171 \u00f7 3 \u2013 16 + 72 \u00d7 412 = 572",
+    "options": [
+      "\u00d7 and \u2013",
+      "\u00f7 and \u2013",
+      "\u00f7 and +",
+      "\u2013 and +"
+    ],
+    "correctOption": 1,
+    "explanation": "Interchanging \u00d7 and \u2013 gives 171 \u00f7 3 \u00d7 16 + 72 - 412 = 57 \u00d7 16 + 72 - 412 = 912 + 72 - 412 = 572."
+  },
+  {
+    "qid": "a7a02e87-085a-4f03-a4fc-760fee06f802",
+    "subtopic": "Mathematical Operations",
+    "question": "Which two signs should be interchanged to make the given equation correct? 17 \u00d7 4 + 6 \u00f7 2 \u2013 27 = 92",
+    "options": [
+      "+ and \u00d7",
+      "\u00f7 and \u00d7",
+      "+ and \u2212",
+      "\u00f7 and +"
+    ],
+    "correctOption": 3,
+    "explanation": "Interchanging + and \u2212 gives 17 \u00d7 4 - 6 \u00f7 2 + 27 = 68 - 3 + 27 = 92."
+  },
+  {
+    "qid": "bb7acef8-4842-4a78-b0b2-b31538a236b8",
+    "subtopic": "Mathematical Operations",
+    "question": "Which two signs should be interchanged to make the following equation correct? 18 \u2212 23 \u00d7 455 \u00f7 7 + 28 = 377",
+    "options": [
+      "\u00f7 and \u2212",
+      "\u2212 and +",
+      "+ and \u00d7",
+      "\u2212 and \u00d7"
+    ],
+    "correctOption": 4,
+    "explanation": "Interchanging \u2212 and \u00d7 gives 18 \u00d7 23 - 455 \u00f7 7 + 28 = 414 - 65 + 28 = 377."
+  },
+  {
+    "qid": "829510a6-b6c5-4d81-9f87-fea4c4f8513b",
+    "subtopic": "Mathematical Operations",
+    "question": "Which two signs should be interchanged to make the given equation correct? 34 \u00f7 16 + 4 * 8 \u2212 6 = 60",
+    "options": [
+      "\u2212 and *",
+      "+ and *",
+      "\u00f7 and \u2212",
+      "\u00f7 and +"
+    ],
+    "correctOption": 4,
+    "explanation": "Interchanging \u00f7 and + gives 34 + 16 \u00f7 4 * 8 - 6 = 34 + 4 * 8 - 6 = 34 + 32 - 6 = 60."
+  },
+  {
+    "qid": "288ac164-af32-474c-8ec3-43bd8e4fa9fb",
+    "subtopic": "Mathematical Operations",
+    "question": "Which two signs should be interchanged to make the following equation correct? 247 \u00f7 13 + 16 \u00d7 3 \u2212 148 = 119",
+    "options": [
+      "\u2212 and +",
+      "\u00f7 and \u00d7",
+      "\u2212 and \u00d7",
+      "+ and \u00d7"
+    ],
+    "correctOption": 1,
+    "explanation": "Interchanging \u2212 and + gives 247 \u00f7 13 - 16 \u00d7 3 + 148 = 19 - 48 + 148 = 119."
+  },
+  {
+    "qid": "ba236ab5-597f-4881-96e4-c739261e7b34",
+    "subtopic": "Mathematical Operations",
+    "question": "Which two signs should be interchanged to make the given equation correct? 95 * 5 + 19 \u00f7 2 \u2212 21 = 36",
+    "options": [
+      "\u00f7 and *",
+      "+ and \u2212",
+      "\u00f7 and \u2212",
+      "+ and *"
+    ],
+    "correctOption": 1,
+    "explanation": "Interchanging \u00f7 and * gives 95 \u00f7 5 + 19 * 2 - 21 = 19 + 38 - 21 = 36."
+  },
+  {
+    "qid": "23b2e787-7416-4d7d-97cb-318653118e68",
+    "subtopic": "Mathematical Operations",
+    "question": "Which two signs should be interchanged to make the following equation correct? 29 \u00d7 145 + 5 \u2212 640 \u00f7 15 = 216",
+    "options": [
+      "\u2212 and \u00d7",
+      "\u00f7 and +",
+      "\u2212 and +",
+      "\u00f7 and \u00d7"
+    ],
+    "correctOption": 2,
+    "explanation": "Interchanging \u00f7 and + gives 29 \u00d7 145 \u00f7 5 - 640 + 15 = 29 \u00d7 29 - 640 + 15 = 841 - 640 + 15 = 216."
+  }
+]

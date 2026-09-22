@@ -1,0 +1,25 @@
+{
+  "questionCount": 221,
+  "topicCount": 9,
+  "topics": {
+    "Letter-cluster Analogy / Series": 22,
+    "Coded Language": 24,
+    "Dictionary Order": 45,
+    "Syllogism": 34,
+    "Blood Relations": 28,
+    "Mathematical Operations": 26,
+    "Number/Figure Series": 17,
+    "Classification (Odd One Out)": 16,
+    "Analogy (Word/Number)": 9
+  },
+  "quality": {
+    "invalid": 0,
+    "sourceInsufficient": 0,
+    "quarantined": 0
+  },
+  "adaptiveValidated": true,
+  "productionQaPassed": true,
+  "seoPassed": true,
+  "mobilePassed": true,
+  "privacyPassed": true
+}

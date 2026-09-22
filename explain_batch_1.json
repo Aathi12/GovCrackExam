@@ -1,0 +1,392 @@
+[
+  {
+    "qid": "296fad94-61fc-4d69-8134-52eae183e0b6",
+    "subtopic": "Coded Language",
+    "question": "In a certain code language, 'RAT' is coded as \u201839\u2019 and 'MICE' is coded as \u201830\u2019. How will 'ZEBRA' be coded in that language?",
+    "options": [
+      "53",
+      "52",
+      "51",
+      "50"
+    ],
+    "correctOption": 2,
+    "explanation": "The code is the direct sum of the positional values of the letters. ZEBRA: 26 + 5 + 2 + 18 + 1 = 52."
+  },
+  {
+    "qid": "ab6cd0bd-ef83-470b-a1bf-e5a6431ca8f0",
+    "subtopic": "Coded Language",
+    "question": "In a certain code language, \u2018CAKE\u2019 is written as \u20186874\u2019, \u2018EASY\u2019 is written as \u20184882\u2019. How will \u2018MAKE\u2019 be written in that language?",
+    "options": [
+      "5875",
+      "5874",
+      "5884",
+      "5774"
+    ],
+    "correctOption": 2,
+    "explanation": "Direct letter substitution based on the given examples. A=8, K=7, E=4. Thus MAKE must end with 874. Only 5874 matches."
+  },
+  {
+    "qid": "d67b25c5-09d8-451f-ae53-5cd021a1d2a9",
+    "subtopic": "Coded Language",
+    "question": "In a certain code language, if \u2018RPD\u2019 is written as \u201843\u2019 and \u2018FCL\u2019 is written as \u201860\u2019, how will \u2018QTS\u2019 be written in the same code language?",
+    "options": [
+      "35",
+      "28",
+      "25",
+      "40"
+    ],
+    "correctOption": 3,
+    "explanation": "The code is the sum of the reverse alphabetical values of the letters. QTS reverse is J(10), G(7), H(8). 10 + 7 + 8 = 25."
+  },
+  {
+    "qid": "f3d7f758-1a5e-43b2-809e-c5d2f9207871",
+    "subtopic": "Coded Language",
+    "question": "In a certain code language, \u2018DISCIPLINE\u2019 is written as \u2018DKSCKPLKNG\u2019, \u2018REVOLUTION\u2019 is written as \u2018RGVQLWTKQN\u2019. How will \u2018UNIVERSITY\u2019 be written in that language?",
+    "options": [
+      "WNKGVRSKTY",
+      "WNKVGSRKTY",
+      "WNKVGRSKTY",
+      "WNKVGRKSTY"
+    ],
+    "correctOption": 3,
+    "explanation": "Vowels are shifted by +2 while consonants remain unchanged. UNIVERSITY -> U(+2)=W, I(+2)=K, E(+2)=G, I(+2)=K. Result: WNKVGRSKTY."
+  },
+  {
+    "qid": "f94997df-6033-430e-b54f-785cc036ae80",
+    "subtopic": "Coded Language",
+    "question": "In a certain code language, 'MOBILE' is coded as BJFZLK and 'TABLET' is coded as QCIZXR. How will 'KINDLE' be coded in the same language?",
+    "options": [
+      "BJALFI",
+      "BJBKFI",
+      "CIBKGC",
+      "CJBLGI"
+    ],
+    "correctOption": 1,
+    "explanation": "The word is reversed, and then the letters are shifted by -3, -2, -3, -2, -3, -2 respectively. KINDLE reversed -> ELDNIK. E(-3)=B, L(-2)=J, D(-3)=A, N(-2)=L, I(-3)=F, K(-2)=I -> BJALFI."
+  },
+  {
+    "qid": "c54f6b73-d805-4ed6-80b7-efd8e32756ed",
+    "subtopic": "Dictionary Order",
+    "question": "Select the correct option that indicates the arrangement of the given words in the order in which they appear in an English dictionary. 1. Freeze 2. Freedom 3. Fryer 4. Frozen 5. Fraud 6. Fringe",
+    "options": [
+      "5, 6, 2, 1, 4, 3",
+      "5, 1, 2, 6, 4, 3",
+      "5, 2, 1, 6, 3, 4",
+      "5, 2, 1, 6, 4, 3"
+    ],
+    "correctOption": 4,
+    "explanation": "The correct alphabetical order is Fraud (5), Freedom (2), Freeze (1), Fringe (6), Frozen (4), Fryer (3)."
+  },
+  {
+    "qid": "f9e39eaf-0750-43dd-9105-0da91d7af70a",
+    "subtopic": "Dictionary Order",
+    "question": "Select the correct option that indicates the arrangement of the given words in the order in which they appear in an English dictionary. 1. Protest 2. Palindrome 3. Probability 4. Pathetic 5. Parking",
+    "options": [
+      "2, 5, 4, 3, 1",
+      "2, 4, 5, 3, 1",
+      "2, 5, 1, 4, 3",
+      "2, 1, 3, 4, 5"
+    ],
+    "correctOption": 1,
+    "explanation": "The correct alphabetical order is Palindrome (2), Parking (5), Pathetic (4), Probability (3), Protest (1)."
+  },
+  {
+    "qid": "10e13924-f3cf-429b-abf5-885d0da98c2e",
+    "subtopic": "Dictionary Order",
+    "question": "Select the correct option that indicates the arrangement of the given words in the order in which they appear in an English dictionary. 1. Sorting 2. Solitary 3. Solution 4. Sophisticate 5. Solvent",
+    "options": [
+      "2, 3, 5, 4, 1",
+      "2, 3, 1, 4, 5",
+      "2, 4, 1, 3, 5",
+      "2, 5, 3, 4, 1"
+    ],
+    "correctOption": 1,
+    "explanation": "The correct alphabetical order is Solitary (2), Solution (3), Solvent (5), Sophisticate (4), Sorting (1)."
+  },
+  {
+    "qid": "10419834-2054-472a-a44a-23dfd34af3b3",
+    "subtopic": "Dictionary Order",
+    "question": "Select the correct option that indicates the arrangement of the given words in the order in which they appear in an English dictionary. 1. Umbilical 2. Urgent 3. Unaltered 4. Umbrella 5. Unanimous",
+    "options": [
+      "1, 4, 3, 5, 2",
+      "4, 1, 3, 5, 2",
+      "1, 4, 2, 3, 5",
+      "4, 1, 5, 3, 2"
+    ],
+    "correctOption": 1,
+    "explanation": "The correct alphabetical order is Umbilical (1), Umbrella (4), Unaltered (3), Unanimous (5), Urgent (2)."
+  },
+  {
+    "qid": "8f1fdba1-69f7-4edc-a938-ce093c31f7af",
+    "subtopic": "Dictionary Order",
+    "question": "Select the correct option that indicates the arrangement of the given words in the order in which they appear in an English dictionary. 1. Success 2. Surreal 3. Succumb 4. Suction 5. Surrogate 6. Surprise",
+    "options": [
+      "1, 3, 4, 6, 2, 5",
+      "1, 4, 3, 6, 2, 5",
+      "1, 3, 6, 4, 2, 5",
+      "1, 3, 4, 6, 5, 2"
+    ],
+    "correctOption": 1,
+    "explanation": "The correct alphabetical order is Success (1), Succumb (3), Suction (4), Surprise (6), Surreal (2), Surrogate (5)."
+  },
+  {
+    "qid": "8424f0de-1405-49c8-b160-df122076de60",
+    "subtopic": "Dictionary Order",
+    "question": "Select the correct option that indicates the arrangement of the given words in the order in which they appear in an English dictionary. 1. Introduce 2. Internship 3. Interaction 4. Interjection 5. Intervene 6. Interruption",
+    "options": [
+      "3, 2, 4, 6, 5, 1",
+      "3, 4, 2, 6, 5, 1",
+      "3, 4, 2, 6, 1, 5",
+      "3, 4, 2, 5, 6, 1"
+    ],
+    "correctOption": 2,
+    "explanation": "The correct alphabetical order is Interaction (3), Interjection (4), Internship (2), Interruption (6), Intervene (5), Introduce (1)."
+  },
+  {
+    "qid": "d3c31019-59f6-42ae-8708-05c70673b85c",
+    "subtopic": "Dictionary Order",
+    "question": "Select the correct option that indicates the arrangement of the given words in the order in which they appear in an English dictionary. 1. Sensational 2. Sensitize 3. Sentiment 4. September 5. Sentence",
+    "options": [
+      "1, 2, 5, 3, 4",
+      "5, 3, 2, 1, 4",
+      "2, 1, 5, 3, 4",
+      "5, 1, 2, 4, 3"
+    ],
+    "correctOption": 1,
+    "explanation": "The correct alphabetical order is Sensational (1), Sensitize (2), Sentence (5), Sentiment (3), September (4)."
+  },
+  {
+    "qid": "fcb5aa5d-e52b-4fe2-b3c2-c46c3512dee0",
+    "subtopic": "Dictionary Order",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary. 1. Warriors 2. Warehouse 3. Warcraft 4. Warranty 5. Wardrobe 6. Wardenship",
+    "options": [
+      "3, 6, 5, 2, 1, 4",
+      "3, 5, 6, 2, 1, 4",
+      "3, 5, 6, 2, 4, 1",
+      "3, 6, 5, 2, 4, 1"
+    ],
+    "correctOption": 4,
+    "explanation": "The correct alphabetical order is Warcraft (3), Wardenship (6), Wardrobe (5), Warehouse (2), Warranty (4), Warriors (1)."
+  },
+  {
+    "qid": "8ddd62d0-6c4f-4e7c-be61-d4c21c3930da",
+    "subtopic": "Dictionary Order",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary. 1. Strident 2. Student 3. Shirking 4. Stuffy 5. Spider 6. Spawn",
+    "options": [
+      "3, 6, 5, 1, 2, 4",
+      "3, 5, 6, 1, 2, 4",
+      "3, 6, 5, 1, 4, 2",
+      "3, 5, 6, 1, 4, 2"
+    ],
+    "correctOption": 1,
+    "explanation": "The correct alphabetical order is Shirking (3), Spawn (6), Spider (5), Strident (1), Student (2), Stuffy (4)."
+  },
+  {
+    "qid": "8fb70ed5-f0a2-48ba-9a28-53120fccf210",
+    "subtopic": "Dictionary Order",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary. 1. Monorail 2. Monument 3. Monopoly 4. Monster 5. Monitor 6. Monsoon",
+    "options": [
+      "3, 1, 6, 4, 2, 5",
+      "5, 1, 3, 6, 4, 2",
+      "5, 3, 1, 4, 6, 2",
+      "5, 3, 1, 6, 4, 2"
+    ],
+    "correctOption": 4,
+    "explanation": "The correct alphabetical order is Monitor (5), Monopoly (3), Monorail (1), Monsoon (6), Monster (4), Monument (2)."
+  },
+  {
+    "qid": "c3f2a032-9dc1-4dd7-9949-f7e581516fe7",
+    "subtopic": "Dictionary Order",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary. 1. Cartoon 2. Carrier 3. Carrying 4. Carousel 5. Carnival 6. Carriage",
+    "options": [
+      "5, 4, 2, 6, 3, 1",
+      "5, 4, 6, 3, 2, 1",
+      "5, 1, 4, 6, 2, 3",
+      "5, 4, 6, 2, 3, 1"
+    ],
+    "correctOption": 4,
+    "explanation": "The correct alphabetical order is Carnival (5), Carousel (4), Carriage (6), Carrier (2), Carrying (3), Cartoon (1)."
+  },
+  {
+    "qid": "fb478cb6-ed9a-412c-aa7d-fecbe6b2ab21",
+    "subtopic": "Dictionary Order",
+    "question": "Which option represents the correct order of the given words as they would appear in an English dictionary? 1 Typographical 2 Typologically 3 Typifications 4 Typicalness 5 Tyrannosaurus",
+    "options": [
+      "4, 3, 1, 2, 5",
+      "5, 2, 1, 3, 4",
+      "2, 3, 5, 1, 4",
+      "2, 3, 5, 4, 1"
+    ],
+    "correctOption": 1,
+    "explanation": "The correct alphabetical order is Typicalness (4), Typifications (3), Typographical (1), Typologically (2), Tyrannosaurus (5)."
+  },
+  {
+    "qid": "fcd2db91-872e-4ba4-9598-7e41ceb44530",
+    "subtopic": "Dictionary Order",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary. 1. Canvas 2. Candidly 3. Canteen 4. Canopy 5. Cannibal 6. Cancer",
+    "options": [
+      "6, 5, 2, 4, 3, 1",
+      "6, 2, 5, 4, 3, 1",
+      "6, 2, 5, 3, 4, 1",
+      "5, 2, 6, 4, 1, 3"
+    ],
+    "correctOption": 2,
+    "explanation": "The correct alphabetical order is Cancer (6), Candidly (2), Cannibal (5), Canopy (4), Canteen (3), Canvas (1)."
+  },
+  {
+    "qid": "1c798623-af3e-424c-bcb2-aedd4235d115",
+    "subtopic": "Dictionary Order",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary. 1. Circulate 2. Circuit 3. Citrus 4. Cinnamon 5. Circular 6. Citizen",
+    "options": [
+      "2, 1, 5, 4, 3, 6",
+      "4, 2, 1, 5, 6, 3",
+      "4, 5, 2, 1, 6, 3",
+      "4, 2, 5, 1, 6, 3"
+    ],
+    "correctOption": 4,
+    "explanation": "The correct alphabetical order is Cinnamon (4), Circuit (2), Circular (5), Circulate (1), Citizen (6), Citrus (3)."
+  },
+  {
+    "qid": "7f9ada2f-d372-4eca-bb90-26d7e7efd84d",
+    "subtopic": "Dictionary Order",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary. 1. Accompany 2. Accident 3. Accuracy 4. Acclaimed 5. Accepted 6. Accessary",
+    "options": [
+      "5, 6, 4, 2, 3, 1",
+      "6, 5, 4, 2, 3, 1",
+      "5, 6, 2, 4, 1, 3",
+      "6, 5, 2, 4, 1, 3"
+    ],
+    "correctOption": 3,
+    "explanation": "The correct alphabetical order is Accepted (5), Accessary (6), Accident (2), Acclaimed (4), Accompany (1), Accuracy (3)."
+  },
+  {
+    "qid": "68238837-5edd-47ef-9b9c-e22ee168495c",
+    "subtopic": "Dictionary Order",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary. 1. Strategy 2. Strength 3. Stranger 4. Stretch 5. Struggle 6. Strange",
+    "options": [
+      "3, 6, 1, 2, 4, 5",
+      "6, 3, 1, 4, 2, 5",
+      "6, 1, 3, 2, 4, 5",
+      "6, 3, 1, 2, 4, 5"
+    ],
+    "correctOption": 4,
+    "explanation": "The correct alphabetical order is Strange (6), Stranger (3), Strategy (1), Strength (2), Stretch (4), Struggle (5)."
+  },
+  {
+    "qid": "2eb1b9bd-6f68-421b-94e2-e27ebc293eb0",
+    "subtopic": "Dictionary Order",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary. 1. Dither 2. Defiance 3. Dramatic 4. Dedicated 5. Differentiate 6. Diabolical",
+    "options": [
+      "3, 6, 4, 2, 5, 1",
+      "4, 2, 6, 5, 1, 3",
+      "4, 6, 2, 5, 3, 1",
+      "3, 2, 4, 6, 5, 1"
+    ],
+    "correctOption": 2,
+    "explanation": "The correct alphabetical order is Dedicated (4), Defiance (2), Diabolical (6), Differentiate (5), Dither (1), Dramatic (3)."
+  },
+  {
+    "qid": "6e7589a9-0c18-49ae-9cd9-41685015528c",
+    "subtopic": "Dictionary Order",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary. 1. Diamond 2. Dialogue 3. Dictator 4. Dialect 5. Diameter 6. Diagram",
+    "options": [
+      "6, 2, 4, 1, 5, 3",
+      "6, 4, 2, 1, 5, 3",
+      "4, 2, 6, 5, 1, 3",
+      "6, 4, 2, 5, 1, 3"
+    ],
+    "correctOption": 4,
+    "explanation": "The correct alphabetical order is Diagram (6), Dialect (4), Dialogue (2), Diameter (5), Diamond (1), Dictator (3)."
+  },
+  {
+    "qid": "c33c8c05-46ae-4ff7-91ae-cda582c28604",
+    "subtopic": "Dictionary Order",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary. 1. Appear 2. Approach 3. Approximate 4. Apparition 5. Apparel",
+    "options": [
+      "4,5,1,2,3",
+      "4,1,5,2,3",
+      "5,4,1,2,3",
+      "5,1,4,2,3"
+    ],
+    "correctOption": 3,
+    "explanation": "The correct alphabetical order is Apparel (5), Apparition (4), Appear (1), Approach (2), Approximate (3)."
+  },
+  {
+    "qid": "99caf7ba-3482-4c7c-8e5f-7c94a198c77a",
+    "subtopic": "Dictionary Order",
+    "question": "After arranging the given words according to dictionary order, which word will come at \u2018Fifth\u2019 position? 1. Popular 2. Population 3. Populace 4. Pope 5. Poppy",
+    "options": [
+      "Population",
+      "Poppy",
+      "Popular",
+      "Populace"
+    ],
+    "correctOption": 1,
+    "explanation": "The alphabetical order is Pope (4), Poppy (5), Populace (3), Popular (1), Population (2). The word at the fifth position is Population."
+  },
+  {
+    "qid": "470a5e43-7241-451b-acea-15a4c5693941",
+    "subtopic": "Dictionary Order",
+    "question": "After arranging the given words according to dictionary order, which word will come at \u2018Fourth\u2019 position? 1. Unseen 2. Unseam 3. Unsafe 4. Unsound 5. Unsay",
+    "options": [
+      "Unseen",
+      "Unsay",
+      "Unseam",
+      "Unsound"
+    ],
+    "correctOption": 1,
+    "explanation": "The alphabetical order is Unsafe (3), Unsay (5), Unseam (2), Unseen (1), Unsound (4). The word at the fourth position is Unseen."
+  },
+  {
+    "qid": "3750c55f-51ab-4f72-8631-1590a3b91bc2",
+    "subtopic": "Dictionary Order",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary. 1. Inundate 2. Invidious 3. Individual 4. Inveterate 5. Invective 6. Invincible 7. Inviolable",
+    "options": [
+      "1, 5, 4, 2, 3, 6, 7",
+      "1, 5, 3, 4, 2, 6, 7",
+      "3, 1, 5, 4, 2, 6, 7",
+      "3, 1, 5, 4, 6, 2, 7"
+    ],
+    "correctOption": 3,
+    "explanation": "The correct alphabetical order is Individual (3), Inundate (1), Invective (5), Inveterate (4), Invidious (2), Invincible (6), Inviolable (7)."
+  },
+  {
+    "qid": "c915ce61-b2e2-4695-8b5f-d150084e2160",
+    "subtopic": "Dictionary Order",
+    "question": "After arranging the given words according to dictionary order, which word will come at \u2018Third\u2019 position? 1. Aquarium 2. Aquatic 3. Aquarial 4. Aquatint 5. Aquavit",
+    "options": [
+      "Aquatic",
+      "Aquatint",
+      "Aqurial",
+      "Aquarium"
+    ],
+    "correctOption": 1,
+    "explanation": "The alphabetical order is Aquarial (3), Aquarium (1), Aquatic (2), Aquatint (4), Aquavit (5). The word at the third position is Aquatic."
+  },
+  {
+    "qid": "85c44d19-ed81-4ca1-a4b5-2310fda0ce2b",
+    "subtopic": "Dictionary Order",
+    "question": "After arranging the given words according to dictionary order, which word will come at \u2018Fifth\u2019 position? 1. Overload 2. Overplay 3. Overlook 4. Overlain 5. Overland",
+    "options": [
+      "Overlay",
+      "Overplay",
+      "Overload",
+      "Overland"
+    ],
+    "correctOption": 2,
+    "explanation": "The alphabetical order is Overlain (4), Overland (5), Overload (1), Overlook (3), Overplay (2). The word at the fifth position is Overplay."
+  },
+  {
+    "qid": "4d309842-eb35-4b51-bfa6-96e8f1965c93",
+    "subtopic": "Dictionary Order",
+    "question": "Select the option that represents the correct order of the given words as they would appear in an English dictionary. 1. Amphibian 2. Ambiguous 3. Ambience 4. Amplify 5. Amorphous 6. Ambivalent 7. Ameliorate",
+    "options": [
+      "3, 2, 6, 7, 5, 1, 4",
+      "3, 2, 6, 7, 5, 4, 1",
+      "3, 2, 4, 6, 7, 5, 1",
+      "3, 2, 6, 5, 7, 1, 4"
+    ],
+    "correctOption": 1,
+    "explanation": "The correct alphabetical order is Ambience (3), Ambiguous (2), Ambivalent (6), Ameliorate (7), Amorphous (5), Amphibian (1), Amplify (4)."
+  }
+]
