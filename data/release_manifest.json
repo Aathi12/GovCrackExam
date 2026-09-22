@@ -1,0 +1,11 @@
+{
+  "project": "GovCrackExam",
+  "questionCount": 221,
+  "topicCount": 9,
+  "architecture": "static-client-side",
+  "storage": "localStorage",
+  "testsPassed": true,
+  "seoPassed": true,
+  "accessibilityPassed": true,
+  "commitHash": "4a053a48b4ee45f2d47d3a94c29670f051993d1d"
+}
