@@ -387,11 +387,11 @@
     <script src="js/app.js"></script>
 
     <!-- Question Review Modal -->
-    <div id="qr-modal" class="modal hidden">
+    <div id="qr-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="qr-modal-title">
         <div class="modal-content card" style="max-width: 600px; text-align: left;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                <h3 style="margin: 0;">Review Question</h3>
-                <span id="qr-close-icon" style="cursor: pointer; font-size: 1.5rem; line-height: 1;">&times;</span>
+                <h3 id="qr-modal-title" style="margin: 0;">Review Question</h3>
+                <button id="qr-close-icon" aria-label="Close" style="background: none; border: none; cursor: pointer; font-size: 1.5rem; line-height: 1; color: var(--text-color); padding: 0;">&times;</button>
             </div>
             <div id="qr-modal-content">
                 <!-- Dynamically populated -->
@@ -403,9 +403,9 @@
     </div>
 
     <!-- Submit Confirmation Modal -->
-    <div id="submit-confirm-modal" class="modal hidden">
+    <div id="submit-confirm-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="submit-modal-title">
         <div class="modal-content card">
-            <h3 style="margin-bottom: 20px;">Submit Full Reasoning Practice?</h3>
+            <h3 id="submit-modal-title" style="margin-bottom: 20px;">Submit Full Reasoning Practice?</h3>
             <div style="font-size: 1.1rem; margin-bottom: 25px;">
                 <p style="margin-bottom: 10px;">Answered: <strong id="confirm-answered">0</strong> / <strong id="confirm-total">20</strong></p>
                 <p style="margin-bottom: 10px;">Unanswered: <strong id="confirm-unanswered">0</strong></p>
@@ -419,9 +419,9 @@
     </div>
 
     <!-- Report Issue Modal -->
-    <div id="report-issue-modal" class="modal hidden">
+    <div id="report-issue-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="report-modal-title">
         <div class="modal-content card" style="max-width: 400px; text-align: left;">
-            <h3 style="margin-bottom: 15px; color: var(--primary-color);">Report an Issue</h3>
+            <h3 id="report-modal-title" style="margin-bottom: 15px; color: var(--primary-color);">Report an Issue</h3>
             <p style="margin-bottom: 15px; font-size: 0.9rem; color: var(--text-muted);">Question Ref: <span id="report-qid-display"></span></p>
             
             <div style="margin-bottom: 15px;">
@@ -449,11 +449,11 @@
 
 
     <!-- Review Question Modal -->
-    <div id="review-question-modal" class="modal hidden">
+    <div id="review-question-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="review-modal-title">
         <div class="modal-content card" style="max-width: 600px; text-align: left; max-height: 90vh; overflow-y: auto;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                <h3 style="color: var(--primary-color); margin: 0;">Review Question</h3>
-                <button id="review-close-icon" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-muted);">&times;</button>
+                <h3 id="review-modal-title" style="color: var(--primary-color); margin: 0;">Review Question</h3>
+                <button id="review-close-icon" aria-label="Close" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-muted); padding: 0;">&times;</button>
             </div>
             
             <div style="background: var(--bg-main); padding: 15px; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 20px;">
