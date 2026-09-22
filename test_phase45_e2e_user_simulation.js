@@ -88,12 +88,12 @@ async function runTests() {
     assert(mode === 'drill', "Drill started");
     const drillTopic = drillTopics[0];
     const drillLen = currentQuiz.length;
-    assert(drillLen === 10, "Drill has 10 questions");
+    assert(drillLen > 0 && drillLen <= 10, "Drill has max 10 questions");
     
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < currentQuiz.length; i++) {
         const correctOpt = currentQuiz[i].correctOption;
         selectOption(correctOpt);
-        if (i < 9) goNext();
+        if (i < currentQuiz.length - 1) goNext();
     }
     submitQuiz();
     

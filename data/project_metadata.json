@@ -1,0 +1,18 @@
+{
+  "project": "GovCrackExam",
+  "release": "1.0",
+  "status": "production",
+  "questions": 221,
+  "topics": 9,
+  "difficulty": {
+    "easy": 3,
+    "medium": 137,
+    "hard": 81
+  },
+  "corpusCount": 251,
+  "privacy": "local-only",
+  "analytics": false,
+  "tracking": false,
+  "backend": false,
+  "questionBankHash": "e3109fce7742b66ba97fa6401e392e86e44fb84e316b7e69eb6b7566873767ed"
+}

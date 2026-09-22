@@ -115,10 +115,33 @@ No backend implies no cross-device sync. Data clears if browser cache/localStora
 - **Corpus papers**: Reconciled the 251 vs 205 discrepancy (251 total files, 205 English files).
 - **Difficulty schema**: Reconciled legacy integer difficulty (1-3) to semantic string difficulty ("Easy", "Medium", "Hard") adopted in Phase 35.
 
-## Source-of-Truth Rules
-1. `data/questions.json` is authoritative for question count/content.
-2. `data/frequency.json` is authoritative for frequency weights.
-3. production source code is authoritative for behavior.
-4. corpus file is authoritative for corpus structure.
-5. `PROJECT_STATE.md` is the human-readable summary of verified facts.
-6. Historical phase reports remain historical records and are not automatically treated as current state.
+
+## Source-of-Truth Hierarchy
+
+1. `data/questions.json`
+   Authoritative for question content, question count, IDs, answers, explanations, topics and difficulty.
+2. `data/frequency.json`
+   Authoritative for frequency weights.
+3. Production JavaScript/source code
+   Authoritative for actual application behavior.
+4. `SSC_CGL_ALL_PAPERS.txt`
+   Authoritative for the supplied corpus structure.
+5. `PROJECT_STATE.md`
+   Authoritative human-readable summary of verified current state.
+6. `README.md`
+   Public project documentation that must agree with the authoritative sources.
+7. `PHASE*_REPORT.md` files
+   Historical records, not current-state authority. Do not rewrite historical reports to make them appear current.
+
+## Change Governance
+
+- Question-bank changes require dedicated verification.
+- Frequency changes require methodology/evidence.
+- Adaptive algorithm changes require deterministic testing.
+- Production behavior changes require regression testing.
+- SEO changes require SEO validation.
+- Accessibility changes require accessibility validation.
+- Current-state documentation must be updated when authoritative source data changes.
+- Historical reports must remain historical.
+- No production deployment should be based solely on an agent's self-reported PASS result.
+
