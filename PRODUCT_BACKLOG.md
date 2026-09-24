@@ -11,16 +11,16 @@
 - **Evidence confidence**: HIGH
 - **Status**: DEFERRED (Pending source material)
 
-## BLK-2: Difficulty Rebalancing
-- **Title**: Increase Easy question representation
+## BLK-2: Difficulty Reclassification Audit
+- **Title**: Manually verify and reclassify algorithmic false-positives.
 - **Area**: Content
-- **Evidence**: `questions.json` currently possesses only 3 "Easy" questions versus 137 "Medium" and 81 "Hard".
-- **Problem**: New users may find the baseline assessment overly punishing.
-- **Possible approach**: Perform a targeted extraction for questions historically flagged as Easy, or adjust current classification heuristics.
+- **Evidence**: Phase 57 audit confirmed the 3 "Easy" Syllogism questions and several "Hard" Blood Relations questions were misclassified by brute-force algorithmic regex/word-count limits during Phase 35.
+- **Problem**: Algorithmic classifications skewed the distribution, punishing verbose but simple questions and accidentally marking nested Syllogisms as Easy.
+- **Possible approach**: Perform a manual, human-driven review of the 3 Easy questions and the 81 Hard questions to accurately reclassify them to Medium where appropriate. Do not arbitrarily invent new Easy questions, as competitive exams naturally skew Medium/Hard.
 - **Dependencies**: None.
 - **Risk**: Low.
 - **Evidence confidence**: HIGH
-- **Status**: READY FOR FUTURE PHASE
+- **Status**: NEEDS ADDITIONAL VERIFICATION
 
 ## BLK-3: Progress Data Portability
 - **Title**: Export and Import Local Progress
