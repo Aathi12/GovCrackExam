@@ -83,6 +83,7 @@ A small randomization noise (+0 to 5) is added to break exact ties, and question
 - **Topic Practice**: Practice all questions in a specific topic directly.
 - **Full Practice**: A timed 20-question comprehensive mock assessment across all topics.
 - **Progress**: Comprehensive dashboard visualizing history, difficulty performance, and accuracy.
+- **Data Portability**: Users can locally export and import their `govcrackexam-drill-v1` progress as JSON.
 - **Question History**: Detailed per-question local tracking of attempts, correctness, and streaks.
 - **Mistake Review**: Dedicated review screen to re-evaluate missed questions.
 - **Feedback**: Local-only reporting and review UI for flagging bad questions (`govcrackexam-feedback-v1`).
