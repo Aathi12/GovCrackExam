@@ -21,9 +21,9 @@ September 22, 2026
   - Classification (Odd One Out): 16
   - Analogy (Word/Number): 9
 - **difficulty counts**:
-  - Easy: 3
-  - Medium: 137
-  - Hard: 81
+  - Easy: 0
+  - Medium: 147
+  - Hard: 74
 - **duplicate status**: 0 duplicates, all 221 unique `qid`/`id`.
 
 ## Topics

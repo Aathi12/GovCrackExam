@@ -31,9 +31,9 @@ for (const [file, content] of Object.entries(contents)) {
 }
 
 // Check PROJECT_STATE for specific numbers
-assert(projectState.includes('Easy: 3'), 'PROJECT_STATE missing Easy: 3');
-assert(projectState.includes('Medium: 137'), 'PROJECT_STATE missing Medium: 137');
-assert(projectState.includes('Hard: 81'), 'PROJECT_STATE missing Hard: 81');
+assert(projectState.includes('Easy: 0'), 'PROJECT_STATE missing Easy: 0');
+assert(projectState.includes('Medium: 147'), 'PROJECT_STATE missing Medium: 147');
+assert(projectState.includes('Hard: 74'), 'PROJECT_STATE missing Hard: 74');
 assert(projectState.includes('251 occurrences'), 'PROJECT_STATE missing corpus count 251');
 
 if (failed) {

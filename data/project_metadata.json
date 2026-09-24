@@ -5,14 +5,15 @@
   "questions": 221,
   "topics": 9,
   "difficulty": {
-    "easy": 3,
-    "medium": 137,
-    "hard": 81
+    "easy": 0,
+    "medium": 147,
+    "hard": 74
   },
   "corpusCount": 251,
   "privacy": "local-only",
   "analytics": false,
   "tracking": false,
   "backend": false,
-  "questionBankHash": "e3109fce7742b66ba97fa6401e392e86e44fb84e316b7e69eb6b7566873767ed"
+  "questionBankHash": "e3109fce7742b66ba97fa6401e392e86e44fb84e316b7e69eb6b7566873767ed",
+  "authoritative_question_bank_sha256": "2d5596839f832e29603259c6703b2283864e8983504e082ed06e4627aca490dc"
 }

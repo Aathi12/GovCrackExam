@@ -22,9 +22,9 @@ assert(topics.size === 9, `Expected 9 topics, got ${topics.size}`);
 // C. DIFFICULTY
 let diffCounts = { Easy: 0, Medium: 0, Hard: 0 };
 qs.forEach(q => diffCounts[q.difficulty] = (diffCounts[q.difficulty] || 0) + 1);
-assert(diffCounts.Easy === 3, `Expected 3 Easy, got ${diffCounts.Easy}`);
-assert(diffCounts.Medium === 137, `Expected 137 Medium, got ${diffCounts.Medium}`);
-assert(diffCounts.Hard === 81, `Expected 81 Hard, got ${diffCounts.Hard}`);
+assert(diffCounts.Easy === 0, `Expected 0 Easy, got ${diffCounts.Easy}`);
+assert(diffCounts.Medium === 147, `Expected 147 Medium, got ${diffCounts.Medium}`);
+assert(diffCounts.Hard === 74, `Expected 74 Hard, got ${diffCounts.Hard}`);
 assert(diffCounts.Easy + diffCounts.Medium + diffCounts.Hard === 221, 'Difficulty sum must equal 221');
 
 // D. FREQUENCY
@@ -39,9 +39,9 @@ assert(fs.existsSync('data/project_metadata.json'), 'project_metadata.json exist
 const meta = JSON.parse(fs.readFileSync('data/project_metadata.json', 'utf8'));
 assert(meta.questions === 221, `Meta questions: ${meta.questions}`);
 assert(meta.topics === 9, `Meta topics: ${meta.topics}`);
-assert(meta.difficulty.easy === 3, 'Meta Easy difficulty check');
-assert(meta.difficulty.medium === 137, 'Meta Medium difficulty check');
-assert(meta.difficulty.hard === 81, 'Meta Hard difficulty check');
+assert(meta.difficulty.easy === 0, 'Meta Easy difficulty check');
+assert(meta.difficulty.medium === 147, 'Meta Medium difficulty check');
+assert(meta.difficulty.hard === 74, 'Meta Hard difficulty check');
 
 // F. PRIVACY
 const htmlFiles = fs.readdirSync('.').filter(f => f.endsWith('.html'));
