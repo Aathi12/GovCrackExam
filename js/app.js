@@ -2201,7 +2201,7 @@ function executeImport() {
 // ==========================================
 // PWA & SERVICE WORKER REGISTRATION
 // ==========================================
-if ('serviceWorker' in navigator) {
+if (typeof navigator !== 'undefined' && 'serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js').then(registration => {
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
@@ -2248,6 +2248,8 @@ function showUpdateBanner(worker) {
         banner.style.display = 'flex';
         banner.style.alignItems = 'center';
         banner.style.gap = '15px';
+        banner.style.flexWrap = 'wrap';
+        banner.style.maxWidth = 'calc(100% - 40px)';
         banner.setAttribute('role', 'alert');
         banner.setAttribute('aria-live', 'polite');
         

@@ -653,9 +653,9 @@ button:focus, a:focus {
 /* Mobile adjustments */
 @media (max-width: 600px) {
     .palette-btn {
-        width: 32px;
-        height: 32px;
-        font-size: 0.85rem;
+        width: 40px;
+        height: 40px;
+        font-size: 0.95rem;
     }
     .quiz-controls > div {
         display: flex;
