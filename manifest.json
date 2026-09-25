@@ -1,0 +1,23 @@
+{
+  "name": "GovCrackExam",
+  "short_name": "GovCrackExam",
+  "description": "Practice SSC CGL General Intelligence & Reasoning with a diagnostic quiz and targeted weak-topic drills.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#0f4c81",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

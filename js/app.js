@@ -2197,3 +2197,96 @@ function executeImport() {
         alert("Failed to import progress due to a storage error. Your existing progress is intact.");
     }
 }
+
+// ==========================================
+// PWA & SERVICE WORKER REGISTRATION
+// ==========================================
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').then(registration => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            
+            // Listen for updates
+            registration.addEventListener('updatefound', () => {
+                const newWorker = registration.installing;
+                newWorker.addEventListener('statechange', () => {
+                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                        // A new service worker is waiting.
+                        showUpdateBanner(newWorker);
+                    }
+                });
+            });
+        }).catch(err => {
+            console.error('ServiceWorker registration failed: ', err);
+        });
+
+        // Prevent duplicate reloads
+        let refreshing = false;
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+            if (refreshing) return;
+            refreshing = true;
+            window.location.reload();
+        });
+    });
+}
+
+function showUpdateBanner(worker) {
+    // Show non-blocking banner for update
+    let banner = document.getElementById('update-banner');
+    if (!banner) {
+        banner = document.createElement('div');
+        banner.id = 'update-banner';
+        banner.style.position = 'fixed';
+        banner.style.bottom = '20px';
+        banner.style.right = '20px';
+        banner.style.backgroundColor = 'var(--primary-color, #0f4c81)';
+        banner.style.color = '#fff';
+        banner.style.padding = '15px 20px';
+        banner.style.borderRadius = '8px';
+        banner.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+        banner.style.zIndex = '9999';
+        banner.style.display = 'flex';
+        banner.style.alignItems = 'center';
+        banner.style.gap = '15px';
+        banner.setAttribute('role', 'alert');
+        banner.setAttribute('aria-live', 'polite');
+        
+        const text = document.createElement('span');
+        text.textContent = 'A new version is available.';
+        
+        const updateBtn = document.createElement('button');
+        updateBtn.textContent = 'Update Now';
+        updateBtn.style.backgroundColor = '#fff';
+        updateBtn.style.color = 'var(--primary-color, #0f4c81)';
+        updateBtn.style.border = 'none';
+        updateBtn.style.padding = '8px 12px';
+        updateBtn.style.borderRadius = '4px';
+        updateBtn.style.cursor = 'pointer';
+        updateBtn.style.fontWeight = 'bold';
+        
+        const dismissBtn = document.createElement('button');
+        dismissBtn.textContent = 'Later';
+        dismissBtn.style.background = 'transparent';
+        dismissBtn.style.border = '1px solid #fff';
+        dismissBtn.style.color = '#fff';
+        dismissBtn.style.padding = '8px 12px';
+        dismissBtn.style.borderRadius = '4px';
+        dismissBtn.style.cursor = 'pointer';
+        
+        updateBtn.addEventListener('click', () => {
+            banner.style.display = 'none';
+            worker.postMessage({ type: 'SKIP_WAITING' });
+        });
+        
+        dismissBtn.addEventListener('click', () => {
+            banner.style.display = 'none';
+        });
+        
+        banner.appendChild(text);
+        banner.appendChild(updateBtn);
+        banner.appendChild(dismissBtn);
+        document.body.appendChild(banner);
+    } else {
+        banner.style.display = 'flex';
+    }
+}
