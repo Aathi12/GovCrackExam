@@ -4,9 +4,11 @@ A free, client-side, browser-based diagnostic and drill tool for the SSC CGL Gen
 
 ## Features
 - **Diagnostic Quiz**: Takes you through a randomly selected set of 15 questions across multiple subtopics.
-- **Weak-Topic Analysis**: Calculates accuracy and weakness (1 - accuracy) for each topic.
-- **Priority Scoring**: Multiplies weakness by the historical frequency weight of the topic to determine the highest-priority weak topic.
-- **Drill Mode**: Generates a quick 10-question drill focused exclusively on your highest-priority weak topics, with immediate feedback.
+- **Weak-Topic Drill**: Generates a quick 10-question adaptive drill focused exclusively on your highest-priority weak topic.
+- **Full Practice**: A 20-question comprehensive mock assessment across all topics.
+- **Topic Practice**: Practice all questions in a specific topic directly.
+- **Progress Dashboard**: Comprehensive visualization of your history, difficulty performance, and accuracy.
+- **Data Portability (Export/Import)**: Locally export and import your progress backup as JSON.
 - **Local Storage**: Automatically saves your progress so you don't lose it if you refresh the page. No login required!
 
 ## Current Pilot Scope
@@ -61,9 +63,9 @@ Frequency weights are normalized estimates derived from unique, deduplicated, te
 
 ## Soft Launch
 The application is currently in a public Soft Launch phase for real-user validation.
-- **Production URL**: [https://aathi12.github.io/GovCrackExam/](https://aathi12.github.io/GovCrackExam/) (Deployed via GitHub Pages)
+- **Production URL**: [https://govcrackexam.online](https://govcrackexam.online)
 - **Feedback**: Users can report technical issues or incorrect questions by opening an issue on the [GitHub repository](https://github.com/Aathi12/GovCrackExam/issues).
-- **Scope**: The pilot contains 128 verified questions across 6 Reasoning topics.
+- **Scope**: The current question bank contains 221 verified questions across 9 Reasoning topics.
 - **Data Limitations**: The questions are limited to text-verifiable PyQs, and the prioritization frequency weights are corpus-derived estimates rather than statistical guarantees.
 - **Future Validation**: User behavior, search visibility, and feedback will be evaluated during this soft launch before undertaking any major data expansion or introducing new features.
 
