@@ -19,12 +19,12 @@
 - *Reason:* Touch interactions, layout rendering at exactly 320px, iOS Safari notch overlap, and virtual keyboard layout shifts require actual physical mobile device rendering. 
 
 ### Offline Verification Status
-- **Status:** OUTSTANDING MANUAL CHECK
-- *Reason:* Simulating an offline airplane-mode reload and service worker cache-first execution requires browser DevTools or native device disconnection. The `sw.js` file logic has been structurally verified, but the true native offline behavior remains pending human sign-off.
+- **Status:** VERIFIED (MANUAL - LIVE PRODUCTION)
+- *Details:* The user successfully installed the live GovCrackExam site as a Microsoft Edge app. It was physically confirmed that the installed live app functions properly offline.
 
 ### Service-Worker Update Status
-- **Status:** OUTSTANDING MANUAL CHECK
-- *Reason:* Evaluating the "Update Available" banner appearance and the clean non-disruptive `SKIP_WAITING` reload lifecycle demands a real-world session across two distinct service worker versions.
+- **Status:** PARTIALLY VERIFIED (MANUAL - LOCALHOST ONLY)
+- *Details:* A controlled local update-lifecycle test was performed manually. A new service worker was successfully detected by the browser and entered the waiting state. Clicking the app's Update Now banner correctly triggered the `SKIP_WAITING` signal, and DevTools confirmed the new worker activated and took control. The local test cache was subsequently restored to the baseline `govcrackexam-cache-v1` and the original blue appearance was restored. Note: The CSS red-color visual change was not confirmed during this test, so it is not marked as passed. No production update was tested; this confirms only the local lifecycle functionality.
 
 ### Progress and Backup Safety
 - **Status:** CONDITIONALLY VERIFIED (via Automation)
