@@ -1646,7 +1646,7 @@
     "sourcePaper": "25-July-shift-1-2023.pdf",
     "correctOption": 4,
     "difficulty": "Hard",
-    "explanation": "Q is the sister of T, and T is the father of Y (and thus K). Therefore, Q is the father's sister of K."
+    "explanation": "Q is the sister of T, and T is the father of Y (and thus K). Therefore, Q is the father's sister of K. (Note: The question is ambiguous; it assumes that because Y and K share a mother M, they also share a father T, which is required to match the given options.)"
   },
   {
     "qid": "e6fad04c-4a81-43bc-ae23-7f475c2826de",
@@ -2343,7 +2343,7 @@
     "difficulty": "Hard",
     "sourceYear": 2022,
     "sourcePaper": "12-Dec-shift-2.pdf",
-    "explanation": "W is the son of Q, and Q is the mother of T, making W the brother of T. T is the father of Y, and Y is the son of M, meaning T and M are Y's parents. M is the mother of K. Since T and M are parents, T is the father of K. As W is T's brother, W is K's father's brother."
+    "explanation": "W is the son of Q, and Q is the mother of T, making W the brother of T. T is the father of Y, and Y is the son of M, meaning T and M are Y's parents. M is the mother of K. Since T and M are parents, T is the father of K. As W is T's brother, W is K's father's brother. (Note: The question is ambiguous; it assumes that because Y and K share a mother M, they also share a father T, which is required to match the given options.)"
   },
   {
     "qid": "5d590497-2856-42b7-a06f-b258671b5631",
