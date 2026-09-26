@@ -652,7 +652,8 @@ function calculateDiagnosticResults() {
         score: results.totalCorrect,
         attempted: results.totalQuestions,
         accuracy: results.overallAccuracy,
-        topicPerformance: JSON.parse(JSON.stringify(results.topics))
+        topicPerformance: JSON.parse(JSON.stringify(results.topics)),
+        difficultyPerformance: JSON.parse(JSON.stringify(results.difficultyPerformance))
     });
     
     if (history.diagnostics.length > 20) {
